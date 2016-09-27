@@ -37,13 +37,18 @@
         }, 
         {
             "location": "/lab01/", 
-            "text": "iostream\n\n\niostream\n is the library you use to do input and output.\nThe most important parts to us this week are \ncin\n and \ncout\n.\n\ncin\n is used for \ninput\n, and \ncout\n is used for \noutput\n.", 
+            "text": "iostream\n\n\niostream\n is the library you use to do input and output.\nThe most important parts to us this week are \ncin\n and \ncout\n.\n\ncin\n is used for \nkeyboard input\n, and \ncout\n is used for \ncharacter output\n.\n\n\nYour first program\n\n\n#include \niostream\n\nusing namespace std;\n\nint main() {\n    cout \n \nHello world!\n \n endl;\n    return 0;\n}", 
             "title": "Lab 1: Input and Output"
         }, 
         {
             "location": "/lab01/#iostream", 
-            "text": "iostream  is the library you use to do input and output.\nThe most important parts to us this week are  cin  and  cout . cin  is used for  input , and  cout  is used for  output .", 
+            "text": "iostream  is the library you use to do input and output.\nThe most important parts to us this week are  cin  and  cout . cin  is used for  keyboard input , and  cout  is used for  character output .", 
             "title": "iostream"
+        }, 
+        {
+            "location": "/lab01/#your-first-program", 
+            "text": "#include  iostream \nusing namespace std;\n\nint main() {\n    cout    Hello world!    endl;\n    return 0;\n}", 
+            "title": "Your first program"
         }
     ]
 }
