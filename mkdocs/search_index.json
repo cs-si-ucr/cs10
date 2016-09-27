@@ -37,12 +37,7 @@
         }, 
         {
             "location": "/lab01/", 
-            "text": "Lab 1: Input and Output\n\n\niostream\n\n\niostream\n is the library you use to do input and output.\nThe most important parts to us this week are \ncin\n and \ncout\n.\n\ncin\n is used for \ninput\n, and \ncout\n is used for \noutput\n.", 
-            "title": "Lab Week 1"
-        }, 
-        {
-            "location": "/lab01/#lab-1-input-and-output", 
-            "text": "", 
+            "text": "iostream\n\n\niostream\n is the library you use to do input and output.\nThe most important parts to us this week are \ncin\n and \ncout\n.\n\ncin\n is used for \ninput\n, and \ncout\n is used for \noutput\n.", 
             "title": "Lab 1: Input and Output"
         }, 
         {
