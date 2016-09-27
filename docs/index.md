@@ -2,6 +2,13 @@ Welcome to CS10 SI!
 ===================
 This is where all of the labs will be posted.
 
+General Info
+------------
+- **Instructors:** Kris Miller, Brian Linard, Adam Koehler, and Kelly Downy
+- **Course:** CS10
+- **SI Leader:** Michael Evans, Robyn Haley, Guthrie Price, and Andre Castro
+- **Website:** [CS10 SI](http://cs-si-ucr.github.io/cs10)
+
 What is SI?
 -----------
 Supplemental Instruction is a series of weekly review sessions for students taking historically difficult courses.

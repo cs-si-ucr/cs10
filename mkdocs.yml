@@ -1,7 +1,6 @@
 site_name: "CS 12 SI Labs: Winter 2015"
 pages:
     - [index.md, "Home"]
-    - [syllabus.md, "Syllabus"]
 #    - [lab01.md, "Lab Week 1"]
 #    - [lab02.md, "Lab Week 2"]
 #    - [lab03.md, "Lab Week 3"]
