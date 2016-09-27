@@ -34,6 +34,21 @@
             "location": "/#guidelines", 
             "text": "Be respectful - This includes silencing your cell phones and not using them during sessions.  Participate - You won\u2019t get very much out of SI if you don\u2019t.  No food or drink besides water - This is a rule placed by the administration. I will enforce it.  Late entry and early exit should be quiet - I realize everyone\u2019s schedules are different.\nHowever, please do not enter or leave in such a way that draws everyone\u2019s attention to you.  Sign in - There will usually be a working computer for you to sign into when you arrive.\nPlease use it to check in (even if you\u2019re not on time).", 
             "title": "Guidelines:"
+        }, 
+        {
+            "location": "/lab01/", 
+            "text": "Lab 1: Input and Output\n\n\niostream\n\n\niostream\n is the library you use to do input and output.\nThe most important parts to us this week are \ncin\n and \ncout\n.\n\ncin\n is used for \n_\n_, and \ncout\n is used for \n____.", 
+            "title": "Lab Week 1"
+        }, 
+        {
+            "location": "/lab01/#lab-1-input-and-output", 
+            "text": "", 
+            "title": "Lab 1: Input and Output"
+        }, 
+        {
+            "location": "/lab01/#iostream", 
+            "text": "iostream  is the library you use to do input and output.\nThe most important parts to us this week are  cin  and  cout . cin  is used for  _ _, and  cout  is used for  ____.", 
+            "title": "iostream"
         }
     ]
 }
