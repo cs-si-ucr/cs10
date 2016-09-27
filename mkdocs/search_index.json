@@ -37,17 +37,17 @@
         }, 
         {
             "location": "/lab01/", 
-            "text": "iostream\n\n\niostream\n is the library you use to do input and output.\nThe most important parts to us this week are \ncin\n and \ncout\n.\n\ncin\n is used for \nkeyboard input\n, and \ncout\n is used for \ncharacter output\n.\n\n\nYour first program\n\n\n#include \niostream\n\nusing namespace std;\n\nint main() {\n    cout \n \nHello world!\n \n endl;\n    return 0;\n}", 
+            "text": "iostream\n\n\niostream\n is the library you use to do input and output.\n\n\nThe most important parts to us this week are \ncin\n and \ncout\n.\n\n\ncin\n is used for \nkeyboard input\n, and \ncout\n is used for \ncharacter output\n.\n\n\nYour first program\n\n\n#include \niostream\n\nusing namespace std;\n\nint main() {\n    cout \n \nHello world!\n \n endl;\n    return 0;\n}\n\n\n\n\nThe first line of code enables \ninput and output\n.\n\n\nThe second line is magic.\nIgnore it for now.\n\n\nThe fourth line of code contains the main function.\nThis is the entry point for every c++ program you will ever create.\n\n\nThe fifth line prints \"Hello world!\" to the user's screen.\n\n\nThe sixth line stops the execution of this function, and says that everything went ok (0).", 
             "title": "Lab 1: Input and Output"
         }, 
         {
             "location": "/lab01/#iostream", 
-            "text": "iostream  is the library you use to do input and output.\nThe most important parts to us this week are  cin  and  cout . cin  is used for  keyboard input , and  cout  is used for  character output .", 
+            "text": "iostream  is the library you use to do input and output.  The most important parts to us this week are  cin  and  cout .  cin  is used for  keyboard input , and  cout  is used for  character output .", 
             "title": "iostream"
         }, 
         {
             "location": "/lab01/#your-first-program", 
-            "text": "#include  iostream \nusing namespace std;\n\nint main() {\n    cout    Hello world!    endl;\n    return 0;\n}", 
+            "text": "#include  iostream \nusing namespace std;\n\nint main() {\n    cout    Hello world!    endl;\n    return 0;\n}  The first line of code enables  input and output .  The second line is magic.\nIgnore it for now.  The fourth line of code contains the main function.\nThis is the entry point for every c++ program you will ever create.  The fifth line prints \"Hello world!\" to the user's screen.  The sixth line stops the execution of this function, and says that everything went ok (0).", 
             "title": "Your first program"
         }
     ]
