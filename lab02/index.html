@@ -144,18 +144,24 @@ and
 They have the same precedence.</p>
 <p>When an expression has multiple operators of the same precedence, they are evaluated
 <a style="color:white;border:solid black;border-width:1px">left to right</a>.
-For instance, 4/1/2==(4/1)/2, not 4/(1/2).
-<a style="color:white;border:solid black;border-width:1px">(this would be a problem)</a></p>
+For instance, 4/1/2==(4/1)/2, and <strong>not</strong> 4/(1/2).
+<a style="color:white;border:solid black;border-width:1px">(the second would be a problem)</a></p>
 <p>Arithmetic expressions don't always behave the way they do in math.
 In math, 3/4==0.75 .
-In c++, 3/4==<a style="color:white;border:solid black;border-width:1px">0</a>.</p>
+In c++, 3/4==<a style="color:white;border:solid black;border-width:1px">0</a>.
+Division is the only operator that doesn't play nice, though.
+The next most common mistake is with precedence, so use plenty of parenthesis.</p>
 <p>Because <code>int</code> only stores
 <a style="color:white;border:solid black;border-width:1px">integers</a>,
-all fractional information is lost.</p>
-<p><a style="color:white;border:solid black;border-width:1px">
-<a style="color:white;border:solid black;border-width:1px">
-<a style="color:white;border:solid black;border-width:1px">
-<a style="color:white;border:solid black;border-width:1px"></p>
+all fractional information is lost.
+If you want to do math with fractional information included, use
+<code>&lt;a style="color:white;border:solid black;border-width:1px"&gt;double&lt;/a&gt;</code>.</p>
+<p>The <code>string</code> is used to store text information.
+Strings can be thought of as collections of
+<a style="color:white;border:solid black;border-width:1px">characters</a>.</p>
+<p>Lastly, and most importantly, 
+<a style="color:white;border:solid black;border-width:1px"><strong>FOLLOW THE STYLE GUIDELINES</strong></a>.
+<blink>follow the style guidelines</a>.</p>
 <h2 id="code-tracing">Code tracing</h2>
 <p>What does each main function ouptut?
 Assume all required libraries are included
