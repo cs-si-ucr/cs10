@@ -97,7 +97,7 @@
         }, 
         {
             "location": "/lab02/", 
-            "text": "Exercise 1\n\n\nAsk the user for 2 numbers, then divide them and show the result.\n\n\nExample:\n\n\n\n\nEnter the dividend: \n4\n\nEnter the divisor: \n2\n\n4 / 2 == 2\n\n\n\n\nExercise 2\n\n\nUsing a combination of math, the datatypes \ndouble\n and \nint\n, and/or type casting, write a program that performs floating point modulus.\n\n\nHere's a hint:\n\n\n\n\nFor two positive integers P and Q where P \n= Q,\n\nP can be expressed as Q*D + R\n\nD is some divisor of Q\n\nR is the remainder (and is always less than Q)\n\n\n\n\nDon't worry about negative floating point values.\n\n\nExamples:\n\n\n\n\nEnter the dividend: \n23.4\n\nEnter the divisor: \n3.2\n\n23.4 % 3.2 == 1\n\n\nEnter the dividend: \n54.7\n\nEnter the divisor: \n3.14\n\n54.7 % 3.14 == 1.32\n\n\n\n\nExercise 3\n\n\nGet a character from the user, and display its integer equivalent.\n\n\nExample:\n\n\n\n\nEnter a character: \nc\n\n'c' in decimal is 99.\n\n\n\n\nExercise 4\n\n\nGet a 5-letter word from the user.\nThen, convert it to the proper capitalization (first letter is capitalized, and the rest are lowercase).\n\n\nExample:\n\n\n\n\nEnter a 5-letter word: \nhElLo\n\nYour word is Hello.\n\n\n\n\nExercise 5 (advanced)\n\n\nUse modulus and division to print the binary value of a character.\n\n\nExample:\n\n\n\n\nEnter a character: \nc\n\n'c' in binary is 01100011.\n\n\n\n\nHint: once you have the decimal value of a character [part 3],\nyou can google something like \"\n99 in binary\n\"\nto double-check your results.\n\n\n\n\n\nQuiz!\n\n\nquiz02", 
+            "text": "Exercise 1\n\n\nAsk the user for 2 numbers, then divide them and show the result.\n\n\nExample:\n\n\n\n\nEnter the dividend: \n4\n\nEnter the divisor: \n2\n\n4 / 2 == 2\n\n\n\n\nExercise 2\n\n\nUsing a combination of math, the datatypes \ndouble\n and \nint\n, and/or type casting, write a program that performs floating point modulus.\n\n\nHere's a hint:\n\n\n\n\nFor two positive integers P and Q where P \n= Q,\n\nP can be expressed as Q*D + R\n\nD is some divisor of Q\n\nR is the remainder (and is always less than Q)\n\n\n\n\nDon't worry about negative floating point values.\n\n\nExamples:\n\n\n\n\nEnter the dividend: \n23.4\n\nEnter the divisor: \n3.2\n\n23.4 % 3.2 == 1\n\n\nEnter the dividend: \n54.7\n\nEnter the divisor: \n3.14\n\n54.7 % 3.14 == 1.32\n\n\n\n\nExercise 3\n\n\nGet a character from the user, and display its integer equivalent.\nThe keyword for the character datatype is \nchar\n.\n\n\nExample:\n\n\n\n\nEnter a character: \nc\n\n'c' in decimal is 99.\n\n\n\n\nExercise 4\n\n\nGet a 5-letter word from the user.\nThen, convert it to the proper capitalization (first letter is capitalized, and the rest are lowercase).\n\n\nExample:\n\n\n\n\nEnter a 5-letter word: \nhElLo\n\nYour word is Hello.\n\n\n\n\nExercise 5 (advanced)\n\n\nUse modulus and division to print the binary value of a character.\n\n\nExample:\n\n\n\n\nEnter a character: \nc\n\n'c' in binary is 01100011.\n\n\n\n\nHint: once you have the decimal value of a character [part 3],\nyou can google something like \"\n99 in binary\n\"\nto double-check your results.\nAlso, characters all have 8 bits.\n\n\n\n\n\nQuiz!\n\n\nquiz02", 
             "title": "Lab 2: Variables and Math"
         }, 
         {
@@ -112,7 +112,7 @@
         }, 
         {
             "location": "/lab02/#exercise-3", 
-            "text": "Get a character from the user, and display its integer equivalent.  Example:   Enter a character:  c \n'c' in decimal is 99.", 
+            "text": "Get a character from the user, and display its integer equivalent.\nThe keyword for the character datatype is  char .  Example:   Enter a character:  c \n'c' in decimal is 99.", 
             "title": "Exercise 3"
         }, 
         {
@@ -122,7 +122,7 @@
         }, 
         {
             "location": "/lab02/#exercise-5-advanced", 
-            "text": "Use modulus and division to print the binary value of a character.  Example:   Enter a character:  c \n'c' in binary is 01100011.   Hint: once you have the decimal value of a character [part 3],\nyou can google something like \" 99 in binary \"\nto double-check your results.", 
+            "text": "Use modulus and division to print the binary value of a character.  Example:   Enter a character:  c \n'c' in binary is 01100011.   Hint: once you have the decimal value of a character [part 3],\nyou can google something like \" 99 in binary \"\nto double-check your results.\nAlso, characters all have 8 bits.", 
             "title": "Exercise 5 (advanced)"
         }, 
         {
