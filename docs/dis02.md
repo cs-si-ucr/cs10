@@ -48,12 +48,11 @@ If you want to do math with fractional information included, use
 <a style="color:white;border:solid black;border-width:1px">double</a>.
 
 The ``string`` is used to store text information.
-Strings can be thought of as collections of
+A string can be thought of as a collection of
 <a style="color:white;border:solid black;border-width:1px">characters</a>.
 
 Lastly, and most importantly, 
 <a style="color:white;border:solid black;border-width:1px">**FOLLOW THE STYLE GUIDELINES**</a>.
-<blink>follow the style guidelines</blink>.
 
 
 Code tracing
