@@ -97,13 +97,23 @@
         }, 
         {
             "location": "/lab02/", 
-            "text": "Exercise 1", 
+            "text": "Exercise 1\n\n\nWrite a short program that asks the user for 2 numbers, then divides them and shows the result.\n\n\nExercise 2\n\n\nUsing a combination of math, \ndouble\n, \nint\n, and/or type casting, write a program that performs floating point modulus.\n\n\nHere's a hint:\n\n\nFor two integers P and Q, P == Q*d\n\n\nQuiz!\n\n\nquiz01", 
             "title": "Lab 2: Variables and Math"
         }, 
         {
             "location": "/lab02/#exercise-1", 
-            "text": "", 
+            "text": "Write a short program that asks the user for 2 numbers, then divides them and shows the result.", 
             "title": "Exercise 1"
+        }, 
+        {
+            "location": "/lab02/#exercise-2", 
+            "text": "Using a combination of math,  double ,  int , and/or type casting, write a program that performs floating point modulus.  Here's a hint:  For two integers P and Q, P == Q*d", 
+            "title": "Exercise 2"
+        }, 
+        {
+            "location": "/lab02/#quiz", 
+            "text": "quiz01", 
+            "title": "Quiz!"
         }
     ]
 }
