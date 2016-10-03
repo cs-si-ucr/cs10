@@ -76,13 +76,7 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#code-tracing">Code tracing</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#extra-help">Extra Help</a></li>
+                <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
                 
             
             </ul>
@@ -122,142 +116,7 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="introduction">Introduction</h2>
-<p>A variable is a
-<a style="color:white;border:solid black;border-width:1px">named location in memory</a>.
-The name we give a variable is called an
-<a style="color:white;border:solid black;border-width:1px">identifier</a>.</p>
-<p>Variables can be assigned to using the
-<a style="color:white;border:solid black;border-width:1px">=</a> operator.</p>
-<p>In c++, <code>* / % + -</code> are mathematical operators, and can be used to
-<a style="color:white;border:solid black;border-width:1px">multiply</a>,
-<a style="color:white;border:solid black;border-width:1px">divide</a>,
-<a style="color:white;border:solid black;border-width:1px">modulo</a>,
-<a style="color:white;border:solid black;border-width:1px">add</a>, and
-<a style="color:white;border:solid black;border-width:1px">subtract</a> two numbers, respectively.</p>
-<p>c++ math operators behave according to precedence.
-<a style="color:white;border:solid black;border-width:1px">(&nbsp;)</a>
-has the highest precedence.
-Next is
-<a style="color:white;border:solid black;border-width:1px"> * / % </a>,
-and they have the same precedence.
-Last are
-<a style="color:white;border:solid black;border-width:1px">+</a>
-and
-<a style="color:white;border:solid black;border-width:1px">-</a>;
-They have the same precedence.</p>
-<p>When an expression has multiple operators of the same precedence, they are evaluated
-<a style="color:white;border:solid black;border-width:1px">left to right</a>.
-For instance, 4/1/2==(4/1)/2, and <strong>not</strong> 4/(1/2).
-<a style="color:white;border:solid black;border-width:1px">(the second would be a problem)</a></p>
-<p>Arithmetic expressions don't always behave the way they do in math.
-In math, 3/4==0.75 .
-In c++, 3/4==<a style="color:white;border:solid black;border-width:1px">0</a>.
-Division is the only operator that doesn't play nice, though.
-The next most common mistake is with precedence, so use plenty of parenthesis.</p>
-<p>Because <code>int</code> only stores
-<a style="color:white;border:solid black;border-width:1px">integers</a>,
-all fractional information is lost.
-If you want to do math with fractional information included, use
-<a style="color:white;border:solid black;border-width:1px">double</a>.</p>
-<p>The <code>string</code> is used to store text information.
-Strings can be thought of as collections of
-<a style="color:white;border:solid black;border-width:1px">characters</a>.</p>
-<p>Lastly, and most importantly, 
-<a style="color:white;border:solid black;border-width:1px"><strong>FOLLOW THE STYLE GUIDELINES</strong></a>.
-<blink>follow the style guidelines</blink>.</p>
-<h2 id="code-tracing">Code tracing</h2>
-<p>What does each main function ouptut?
-Assume all required libraries are included.
-Refer to the next section for extra help.</p>
-<pre><code class="c++">// 1
-int main(){
-    int temp = 4;
-    double temp2 = 2.5;
-    float temp3 = 2.0;
-
-    cout &lt;&lt; temp3 &lt;&lt; endl;
-    cout &lt;&lt; temp/ temp2 &lt;&lt; endl;
-
-    temp = temp2;
-    cout &lt;&lt; temp &lt;&lt; endl;
-
-    return 0;
-}
-
-// 2
-int main(){
-    int temp = 4;
-    double temp2 = 2.5;
-    double temp3 = 1.5;
-
-    temp3 = temp / temp2;
-    temp /= temp2;
-
-    cout &lt;&lt; temp3 &lt;&lt; &quot;, &quot; &lt;&lt; temp &lt;&lt; endl;
-
-    // some other primitive number variable types:
-    float temp4 = 5.5;     // half the precision of double
-    long temp5 = 9.1;
-    short temp6 = 4.7;
-    long long temp7 = 8.6;
-
-    cout &lt;&lt; temp4 + temp6 &lt;&lt; endl;
-    temp7 -= temp5;
-    cout &lt;&lt; temp7 &lt;&lt; endl;
-
-    return 0;
-}
-
-// 3
-int main(){
-    string jake = &quot;jake&quot;;
-    string james = &quot;james&quot;;
-    char a = 'a';
-
-    jake = james;
-    cout &lt;&lt; jake &lt;&lt; endl;
-    jake = jake + james;
-    cout &lt;&lt; jake &lt;&lt; endl;
-
-    jake = &quot;j&quot;;
-    jake += a;
-    a += 12;
-    jake += a;
-    a -= 8;
-    jake += a;
-    a = ((a/ 2) * 3) - (12*2 + 4); // hint: http://www.ascii-code.com/
-    jake += a;
-    cout &lt;&lt; jake &lt;&lt; endl;
-
-    return 0;
-}
-
-// 4
-int main(){
-    int intgr = 20;
-    char letter = 'a';
-    double dbl = 10.67;
-
-    cout &lt;&lt; static_cast&lt;char&gt;(letter + static_cast&lt;int&gt;(dbl) * 2 - intgr * 2.5);
-    cout &lt;&lt; static_cast&lt;char&gt;((intgr * 2 + dbl * 4) + (dbl / 9));
-    cout &lt;&lt; &quot; &quot; &lt;&lt; intgr % 11 + 1;
-    string temp = &quot;&quot;;
-    temp += static_cast&lt;char&gt;(intgr + 12);
-    temp += static_cast&lt;char&gt;(letter + static_cast&lt;int&gt;(dbl) - 1.67);
-    temp += (18+ letter);
-    cout &lt;&lt; temp &lt;&lt; &quot; awesome!&quot; &lt;&lt; endl;
-
-    return 0;
-}
-</code></pre>
-
-<h2 id="extra-help">Extra Help</h2>
-<ul>
-<li><a href="http://www-h.eng.cam.ac.uk/help/tpl/languages/C++/strongtyping.html">type conversion specifics:</a></li>
-<li><a href="http://www.cplusplus.com/reference/cmath/">standard math library</a></li>
-<li>the space character ' ' has an value of 32</li>
-</ul>
+                <h2 id="exercise-1">Exercise 1</h2>
               
             </div>
           </div>
