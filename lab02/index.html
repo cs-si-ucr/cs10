@@ -165,6 +165,7 @@ function loadStyleSheet( path, fn, scope ) {
                 }, 15000 );                                 // how long to wait before failing
 
     head.appendChild( link );  // insert the link node into the DOM and start loading the style sheet
+    console.log(link);
 
     return link; // return the link node;
 }
