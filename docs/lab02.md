@@ -7,7 +7,7 @@ Write a short program that asks the user for 2 numbers, then divides them and sh
 Exercise 2
 ---
 
-Using a combination of math, ``double``, ``int``, and/or type casting, write a program that performs floating point modulus.
+Using a combination of math, the datatypes ``double`` and ``int``, and/or type casting, write a program that performs floating point modulus.
 
 Here's a hint:
 
