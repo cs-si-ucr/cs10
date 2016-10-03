@@ -4,9 +4,9 @@ This is where all of the labs will be posted.
 
 General Info
 ------------
-- **Instructors:** Kris Miller, Brian Linard, Adam Koehler, and Kelly Downy
+- **Instructors:** Kris Miller [001, 002, 003], Kelly Downey [004, 010V-1], and Adam Koehler [005]
 - **Course:** CS10
-- **SI Leader:** Michael Evans, Robyn Haley, Guthrie Price, and Andre Castro
+- **SI Leaders:** Michael Evans, Robyn Haley, Guthrie Price, and Andre Castro
 - **Website:** [CS10 SI](http://cs-si-ucr.github.io/cs10)
 
 What is SI?
