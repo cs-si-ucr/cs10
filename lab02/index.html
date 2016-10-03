@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lab 1: Input and Output - CS010 SI: Fall 2016</title>
+  <title>Lab 2: Variables and Math - CS010 SI: Fall 2016</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Lab 1: Input and Output";
+    var mkdocs_page_name = "Lab 2: Variables and Math";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -57,8 +57,15 @@
 <li>
           
             <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab01/">Lab 1: Input and Output</a>
+        
+    </li>
+<li>
+          
+            <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Lab 1: Input and Output</a>
+        <a class="current" href="./">Lab 2: Variables and Math</a>
         
             <ul>
             
@@ -88,13 +95,6 @@
     </li>
 <li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lab02/">Lab 2: Variables and Math</a>
-        
-    </li>
-<li>
-          
         </ul>
       </div>
       &nbsp;
@@ -117,7 +117,7 @@
     
       
     
-    <li>Lab 1: Input and Output</li>
+    <li>Lab 2: Variables and Math</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -187,6 +187,102 @@ Don't attempt it unless you're comfortable with going ahead.</p>
 <p>The answers to the blank sections above are in white.
 Highlight them to reveal the answers!
 Make sure you at least attempt an answer first!</p>
+<pre><code class="c++">/*
+ * What does each main function ouptut?
+ * Assume all required libraries are included
+ * Refer to the end of this code snippet for extra help
+ */
+
+// 1
+int main(){
+    int temp = 4;
+    double temp2 = 2.5;
+    float temp3 = 2.0;
+
+    cout &lt;&lt; temp3 &lt;&lt; endl;
+    cout &lt;&lt; temp/ temp2 &lt;&lt; endl;
+
+    temp = temp2;
+    cout &lt;&lt; temp &lt;&lt; endl;
+
+    return 0;
+}
+
+// 2
+int main(){
+    int temp = 4;
+    double temp2 = 2.5;
+    double temp3 = 1.5;
+
+    temp3 = temp / temp2;
+    temp /= temp2;
+
+    cout &lt;&lt; temp3 &lt;&lt; &quot;, &quot; &lt;&lt; temp &lt;&lt; endl;
+
+    // some other primitive number variable types:
+    float temp4 = 5.5;     // half the precision of double
+    long temp5 = 9.1;
+    short temp6 = 4.7;
+    long long temp7 = 8.6;
+
+    cout &lt;&lt; temp4 + temp6 &lt;&lt; endl;
+    temp7 -= temp5;
+    cout &lt;&lt; temp7 &lt;&lt; endl;
+
+    return 0;
+}
+
+// 3
+int main(){
+    string jake = &quot;jake&quot;;
+    string james = &quot;james&quot;;
+    char a = 'a';
+
+    jake = james;
+    cout &lt;&lt; jake &lt;&lt; endl;
+    jake = jake + james;
+    cout &lt;&lt; jake &lt;&lt; endl;
+
+    jake = &quot;j&quot;;
+    jake += a;
+    a += 12;
+    jake += a;
+    a -= 8;
+    jake += a;
+    a = ((a/ 2) * 3) - (12*2 + 4); // hint: http://www.ascii-code.com/
+    jake += a;
+    cout &lt;&lt; jake &lt;&lt; endl;
+
+    return 0;
+}
+
+// 4
+int main(){
+    int intgr = 20;
+    char letter = 'a';
+    double dbl = 10.67;
+
+    cout &lt;&lt; static_cast&lt;char&gt;(letter + static_cast&lt;int&gt;(dbl) * 2 - intgr * 2.5);
+    cout &lt;&lt; static_cast&lt;char&gt;((intgr * 2 + dbl * 4) + (dbl / 9));
+    cout &lt;&lt; &quot; &quot; &lt;&lt; intgr % 11 + 1;
+    string temp = &quot;&quot;;
+    temp += static_cast&lt;char&gt;(intgr + 12);
+    temp += static_cast&lt;char&gt;(letter + static_cast&lt;int&gt;(dbl) - 1.67);
+    temp += (18+ letter);
+    cout &lt;&lt; temp &lt;&lt; &quot; awesome!&quot; &lt;&lt; endl;
+
+    return 0;
+}
+
+/*
+ * type conversion specifics:
+ *   http://www-h.eng.cam.ac.uk/help/tpl/languages/C++/strongtyping.html
+ *
+ * the space character ' ' has an value of 32
+ *
+ * standard math library: http://www.cplusplus.com/reference/cmath/
+ */
+</code></pre>
               
             </div>
           </div>
@@ -194,10 +290,8 @@ Make sure you at least attempt an answer first!</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab02/" class="btn btn-neutral float-right" title="Lab 2: Variables and Math"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lab01/" class="btn btn-neutral" title="Lab 1: Input and Output"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -223,10 +317,8 @@ Make sure you at least attempt an answer first!</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../lab01/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab02/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
