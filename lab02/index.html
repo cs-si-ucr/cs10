@@ -135,23 +135,27 @@ The name we give a variable is called an
 <a style="color:white;border:solid black;border-width:1px">(&nbsp;)</a>
 has the highest precedence.
 Next is
-<a style="color:white;border:solid black;border-width:1px"> * / % </a>
-<a style="color:white;border:solid black;border-width:1px">
-<a style="color:white;border:solid black;border-width:1px">
-<a style="color:white;border:solid black;border-width:1px"></p>
+<a style="color:white;border:solid black;border-width:1px"> * / % </a>,
+and they have the same precedence.
+Last are
+<a style="color:white;border:solid black;border-width:1px">+</a>
+and
+<a style="color:white;border:solid black;border-width:1px">-</a>;
+They have the same precedence.</p>
+<p>When an expression has multiple operators of the same precedence, they are evaluated
+<a style="color:white;border:solid black;border-width:1px">left to right</a>.
+For instance, 4/1/2==(4/1)/2, not 4/(1/2).
+<a style="color:white;border:solid black;border-width:1px">(this would be a problem)</a></p>
 <p>Arithmetic expressions don't always behave the way they do in math.
 In math, 3/4==0.75 .
 In c++, 3/4==<a style="color:white;border:solid black;border-width:1px">0</a>.</p>
 <p>Because <code>int</code> only stores
 <a style="color:white;border:solid black;border-width:1px">integers</a>,
 all fractional information is lost.</p>
-<!--
+<p><a style="color:white;border:solid black;border-width:1px">
 <a style="color:white;border:solid black;border-width:1px">
 <a style="color:white;border:solid black;border-width:1px">
-<a style="color:white;border:solid black;border-width:1px">
-<a style="color:white;border:solid black;border-width:1px">
--->
-
+<a style="color:white;border:solid black;border-width:1px"></p>
 <h2 id="code-tracing">Code tracing</h2>
 <p>What does each main function ouptut?
 Assume all required libraries are included
