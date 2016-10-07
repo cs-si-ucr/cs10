@@ -2,8 +2,10 @@ site_name: "CS010 SI: Fall 2016"
 pages:
     - [index.md, "Home"]
     - [lab01.md, "Lab 1: Input and Output"]
-    - [dis02.md, "Dis 2: Variables and Math"]
+    - [dis02.md, "Discussion 2: Variables and Math"]
     - [lab02.md, "Lab 2: Variables and Math"]
+    - [dis03.md, "Discussion 3: Branches and Characters"]
+
 #    - [lab03.md, "Lab Week 3"]
 #    - [lab04.md, "Lab Week 4"]
 #    - [lab05.md, "Lab Week 5"]
