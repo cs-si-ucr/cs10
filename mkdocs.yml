@@ -4,9 +4,9 @@ pages:
     - [lab01.md, "Lab 1: Input and Output"]
     - [dis02.md, "Discussion 2: Variables and Math"]
     - [lab02.md, "Lab 2: Variables and Math"]
-    - [dis03.md, "Discussion 3: Branches and Characters"]
-
-#    - [lab03.md, "Lab Week 3"]
+    - [dis03.md, "Discussion 3: Characters and Branches"]
+    - [lab03.md, "Lab 3: Characters and Branches"]
+    
 #    - [lab04.md, "Lab Week 4"]
 #    - [lab05.md, "Lab Week 5"]
 #    - [lab06.md, "Lab Week 6"]
