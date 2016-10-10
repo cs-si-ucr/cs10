@@ -128,7 +128,6 @@ int main(){
     cout << "i = " << i << endl;
     cout << "j = " << j << endl;
     cout << "k = " << k << endl;
-    cout << endl;
     
     return 0;
 }
@@ -172,7 +171,6 @@ int main(){
     cout << "i = " << i << endl;
     cout << "j = " << j << endl;
     cout << "k = " << k << endl;
-    cout << endl;
 
     return 0;
 }
@@ -240,7 +238,6 @@ int main(){
     cout << "i = " << i << endl;
     cout << "j = " << j << endl;
     cout << "k = " << k << endl;
-    cout << endl;
 
     return 0;
 }
