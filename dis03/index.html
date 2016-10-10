@@ -3,9 +3,12 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discussion 3: Branches and Characters - CS010 SI: Fall 2016</title>
+  
+  
+  <title>Discussion 3: Characters and Branches - CS010 SI: Fall 2016</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Discussion 3: Branches and Characters";
+    var mkdocs_page_name = "Discussion 3: Characters and Branches";
+    var mkdocs_page_input_path = "dis03.md";
+    var mkdocs_page_url = "/dis03/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -79,7 +84,7 @@
           
             <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Discussion 3: Branches and Characters</a>
+        <a class="current" href="./">Discussion 3: Characters and Branches</a>
         
             <ul>
             
@@ -93,6 +98,13 @@
                 
             
             </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
         
     </li>
 <li>
@@ -119,7 +131,7 @@
     
       
     
-    <li>Discussion 3: Branches and Characters</li>
+    <li>Discussion 3: Characters and Branches</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -130,128 +142,230 @@
             <div class="section">
               
                 <h2 id="introduction">Introduction</h2>
-<p>Characters are a datatype that are used to hold
-<a style="color:white;border:solid black;border-width:1px">character information</a>.</p>
-<p>Variables can be assigned to using the
-<a style="color:white;border:solid black;border-width:1px">=</a> operator.</p>
-<p>In c++, <code>* / % + -</code> are mathematical operators, and can be used to
-<a style="color:white;border:solid black;border-width:1px">multiply</a>,
-<a style="color:white;border:solid black;border-width:1px">divide</a>,
-<a style="color:white;border:solid black;border-width:1px">modulo</a>,
-<a style="color:white;border:solid black;border-width:1px">add</a>, and
-<a style="color:white;border:solid black;border-width:1px">subtract</a> two numbers, respectively.</p>
-<p>c++ math operators behave according to precedence.
-<a style="color:white;border:solid black;border-width:1px">(&nbsp;)</a>
-has the highest precedence.
-Next is
-<a style="color:white;border:solid black;border-width:1px"> * / % </a>,
-and they have the same precedence.
-Last are
-<a style="color:white;border:solid black;border-width:1px">+</a>
-and
-<a style="color:white;border:solid black;border-width:1px">-</a>;
-They have the same precedence.</p>
-<p>When an expression has multiple operators of the same precedence, they are evaluated
-<a style="color:white;border:solid black;border-width:1px">left to right</a>.
-For instance, 4/1/2==(4/1)/2, and <strong>not</strong> 4/(1/2).
-<a style="color:white;border:solid black;border-width:1px">(the second would be a problem)</a></p>
-<p>Arithmetic expressions don't always behave the way they do in math.
-In math, 3/4==0.75 .
-In c++, 3/4==<a style="color:white;border:solid black;border-width:1px">0</a>.
-Division is the only operator that doesn't play nice.
-The next most common integer arithmetic mistake is with precedence.
-This can be avoided by using parenthesis, in most cases.</p>
-<p>Because <code>int</code> only stores
-<a style="color:white;border:solid black;border-width:1px">integers</a>,
-all fractional information is lost.
-If you want to do math with fractional information included, use
-<a style="color:white;border:solid black;border-width:1px">double</a>.</p>
-<p>The <code>string</code> is used to store text information.
-A string can be thought of as a collection of
-<a style="color:white;border:solid black;border-width:1px">characters</a>.</p>
-<p>Lastly, and most importantly, 
-<a style="color:white;border:solid black;border-width:1px"><strong>FOLLOW THE STYLE GUIDELINES</strong></a>.</p>
+<p>A variable of <code>char</code> type can store a
+<a style="color:white;border:solid black;border-width:1px">single character</a>.</br>
+Character literals must be declared using
+<a style="color:white;border:solid black;border-width:1px">single quotes</a>.</br>
+<a style="color:white;border:solid black;border-width:1px">ASCII</a>
+is a standard for encoding characters to numbers.</br>
+An
+<a style="color:white;border:solid black;border-width:1px">escape sequence</a>
+is a two-character sequence that represent a special character. Example: <code>'\n'</code></p>
+<p>An initialized variable whose value cannot change is called a </br>
+<a style="color:white;border:solid black;border-width:1px">constant variable</a>.</p>
+<p>An 
+<a style="color:white;border:solid black;border-width:1px">overflow</a>
+occurs when the value being assigned to a variable is greater than the maximum value the variable can store.</p>
+<p>When debugging error messages from compilation, start from the
+<a style="color:white;border:solid black;border-width:1px">top</a>
+of the error messages and work 
+<a style="color:white;border:solid black;border-width:1px">down</a>
+recompiling after each message.</p>
+<p>A <code>bool</code> stores a
+<a style="color:white;border:solid black;border-width:1px">true\false value</a>.</p>
+<p><a style="color:white;border:solid black;border-width:1px">Braces {}</a>
+surround a branch's statements.</br>
+<a style="color:white;border:solid black;border-width:1px">Parentheses ()</a>
+surround a branch's conditions.</br>
+If-else statements within other if/else statements are called: </br>
+<a style="color:white;border:solid black;border-width:1px">nested if-else statements</a>.</p>
+<p>The 6 relational and equality operators are:
+<a style="color:white;border:solid black;border-width:1px">&lt;, &gt;, &lt;=, &gt;=, ==, !=</a>.</br>
+These relational operators evaluate to a
+<a style="color:white;border:solid black;border-width:1px">boolean value</a>.</p>
+<p>The 3 logical operators are:
+<a style="color:white;border:solid black;border-width:1px">&amp;&amp;, ||, !</a>.</br>
+<code>&amp;&amp;</code> is true when 
+<a style="color:white;border:solid black;border-width:1px">both of its operands are true</a>.</br>
+<code>||</code> is true when
+<a style="color:white;border:solid black;border-width:1px">at least one of its operands are true</a>.</br>
+<code>!</code> is true when
+<a style="color:white;border:solid black;border-width:1px">its operand is false</a>.</p>
+<p>The order of evaluation for logical/relational operators is: </br>
+<a style="color:white;border:solid black;border-width:1px">()</a>
+,
+<a style="color:white;border:solid black;border-width:1px">!</a>
+,
+<a style="color:white;border:solid black;border-width:1px">* \ % + -</a>
+,
+<a style="color:white;border:solid black;border-width:1px">&lt; &lt;= &gt; &gt;=</a>
+,
+<a style="color:white;border:solid black;border-width:1px">== !=</a>
+,
+<a style="color:white;border:solid black;border-width:1px">&amp;</a>
+,
+<a style="color:white;border:solid black;border-width:1px">|</a>
+,
+<a style="color:white;border:solid black;border-width:1px">&amp;&amp;</a>
+,
+<a style="color:white;border:solid black;border-width:1px">||</a></p>
 <h2 id="code-tracing">Code tracing</h2>
 <p>What does each main function ouptut?
 Assume all required libraries are included.
 Refer to the next section for extra help.</p>
 <pre><code class="c++">// 1
 int main(){
-    int temp = 4;
-    double temp2 = 2.5;
-    float temp3 = 2.0;
+    char c1 = 'a';
+    char c2 = c1 - 32;
 
-    cout &lt;&lt; temp3 &lt;&lt; endl;
-    cout &lt;&lt; temp/ temp2 &lt;&lt; endl;
+    cout &lt;&lt; c1 &lt;&lt; ' ' &lt;&lt; c2 &lt;&lt; endl;
 
-    temp = temp2;
-    cout &lt;&lt; temp &lt;&lt; endl;
+    c1 += 1;
+    c2 += 1;
+
+    cout &lt;&lt; c1 &lt;&lt; ' ' &lt;&lt; c2 &lt;&lt; endl;
 
     return 0;
 }
 
 // 2
 int main(){
-    int temp = 4;
-    double temp2 = 2.5;
-    double temp3 = 1.5;
+    int i = 2;
+    int j = 5;
+    int k = -3;
 
-    temp3 = temp / temp2;
-    temp /= temp2;
+    if(i &gt; k){
+        i *= k;
+    }
 
-    cout &lt;&lt; temp3 &lt;&lt; &quot;, &quot; &lt;&lt; temp &lt;&lt; endl;
+    if(j &lt; i){
+        j *= i;
+    }
+    else{
+        j /= 5;
+    }
 
-    // some other primitive number variable types:
-    float temp4 = 5.5;     // half the precision of double
-    long temp5 = 9.1;
-    short temp6 = 4.7;
-    long long temp7 = 8.6;
+    if(j * 3 &gt; -k){
+        k = -k / 3;
+    }
+    else if (j * 3 &lt;= -k){
+        j = j * 3;
+        k = -k;
+    }
 
-    cout &lt;&lt; temp4 + temp6 &lt;&lt; endl;
-    temp7 -= temp5;
-    cout &lt;&lt; temp7 &lt;&lt; endl;
+    if(i &gt; 0){
+        i = k;
+    }
+    else if(k &gt; 0){
+        k = i;
+    }
+    else if(j &gt; 0){
+        j = i;
+    }
+
+    cout &lt;&lt; &quot;i = &quot; &lt;&lt; i &lt;&lt; endl;
+    cout &lt;&lt; &quot;j = &quot; &lt;&lt; j &lt;&lt; endl;
+    cout &lt;&lt; &quot;k = &quot; &lt;&lt; k &lt;&lt; endl;
 
     return 0;
 }
 
 // 3
 int main(){
-    string jake = &quot;jake&quot;;
-    string james = &quot;james&quot;;
-    char a = 'a';
+    int i = 2;
+    int j = 5;
+    int k = -3;
+    bool b1 = true;
 
-    jake = james;
-    cout &lt;&lt; jake &lt;&lt; endl;
-    jake = jake + james;
-    cout &lt;&lt; jake &lt;&lt; endl;
+    if(i &gt; k &amp;&amp; !b1){
+        i *= k;
+    }
 
-    jake = &quot;j&quot;;
-    jake += a;
-    a += 12;
-    jake += a;
-    a -= 8;
-    jake += a;
-    a = ((a/ 2) * 3) - (12*2 + 4); // hint: http://www.ascii-code.com/
-    jake += a;
-    cout &lt;&lt; jake &lt;&lt; endl;
+    if(j &lt; i &amp;&amp; b1){
+        j *= i;
+    }
+    else{
+        j /= 5;
+    }
+
+    if(!(j * 3 &gt; -k)){
+        k = -k / 3;
+    }
+    else if (j * 3 &lt;= -k){
+        j = j * 3;
+        k = -k;
+    }
+
+    if(!(i &gt; 0) || (j - i &gt; 0)){
+        i = k;
+    }
+    else if(((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1){
+        k = i;
+    }
+    else if(!(j &gt; 0) || (i - j &gt; 0)){
+        j = i;
+    }
+
+    cout &lt;&lt; &quot;i = &quot; &lt;&lt; i &lt;&lt; endl;
+    cout &lt;&lt; &quot;j = &quot; &lt;&lt; j &lt;&lt; endl;
+    cout &lt;&lt; &quot;k = &quot; &lt;&lt; k &lt;&lt; endl;
 
     return 0;
 }
 
 // 4
 int main(){
-    int intgr = 20;
-    char letter = 'a';
-    double dbl = 10.67;
+    int i = 2;
+    int j = 5;
+    int k = -3;
+    bool b1 = true;
 
-    cout &lt;&lt; static_cast&lt;char&gt;(letter + static_cast&lt;int&gt;(dbl) * 2 - intgr * 2.5);
-    cout &lt;&lt; static_cast&lt;char&gt;((intgr * 2 + dbl * 4) + (dbl / 9));
-    cout &lt;&lt; &quot; &quot; &lt;&lt; intgr % 11 + 1;
-    string temp = &quot;&quot;;
-    temp += static_cast&lt;char&gt;(intgr + 12);
-    temp += static_cast&lt;char&gt;(letter + static_cast&lt;int&gt;(dbl) - 1.67);
-    temp += (18+ letter);
-    cout &lt;&lt; temp &lt;&lt; &quot; awesome!&quot; &lt;&lt; endl;
+    if(i &gt; k &amp;&amp; b1){
+        if(-i &lt; -k || !b1){
+            k += 5;
+        }
+        i *= k;
+    }
+
+    if(j &gt;= i){
+        if(j == i){
+            j -= 6;
+        }
+        j /= i;
+    }
+    else{
+        if(j &gt; k &amp;&amp; j &lt; i){
+            j -= 1;
+        }
+        j *= 5;
+    }
+
+    if(j * 3 &gt; k){
+        if(!(j * 3 &lt;= -k)){
+            b1 = !b1;
+        }
+        k = -k * 3;
+    }
+    else if (j * 3 &lt;= -k || b1){
+        j = j * 3;
+        k = -k;
+    }
+
+    if(!(i &gt; 0) || (j - i &gt; 0)){
+        i = k;
+        if(i == k){
+            k += 6;
+        }
+    }
+    else if(((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1){
+        k = i;
+        if(b1){
+            i += 6;   
+        }
+    }
+    else if(!(j &gt; 0) || (i - j &gt; 0)){
+        j = i;
+        if(b1){
+            j += 6;
+        }
+        else if(b1 || !b1){
+            i += 3;
+        }
+    }
+
+    cout &lt;&lt; &quot;i = &quot; &lt;&lt; i &lt;&lt; endl;
+    cout &lt;&lt; &quot;j = &quot; &lt;&lt; j &lt;&lt; endl;
+    cout &lt;&lt; &quot;k = &quot; &lt;&lt; k &lt;&lt; endl;
 
     return 0;
 }
@@ -259,9 +373,7 @@ int main(){
 
 <h2 id="extra-help">Extra Help</h2>
 <ul>
-<li><a href="http://www-h.eng.cam.ac.uk/help/tpl/languages/C++/strongtyping.html">type conversion specifics</a></li>
-<li><a href="http://www.cplusplus.com/reference/cmath/">standard math library</a></li>
-<li>the space character <code>' '</code> has an value of 32</li>
+<li><a href="http://www.asciitable.com/">ASCII Table</a></li>
 </ul>
               
             </div>
@@ -269,6 +381,8 @@ int main(){
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../lab03/" class="btn btn-neutral float-right" title="Lab 3: Characters and Branches">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../lab02/" class="btn btn-neutral" title="Lab 2: Variables and Math"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -299,6 +413,8 @@ int main(){
       
         <span><a href="../lab02/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../lab03/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
