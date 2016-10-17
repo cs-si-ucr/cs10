@@ -109,6 +109,9 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#note">Note</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
                 
             
@@ -164,9 +167,16 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="exercise-1">Exercise 1</h2>
-<p>Take in a string from the user and print it back out repeatedly with each print having one less
-character on the end. Stop printing once there are no more chars in the string left to print.</p>
+                <h2 id="note">Note</h2>
+<p>You do not need to complete bonus exercises.
+I recommend you attempt them, but if you're spending too long go ahead and move to the next exercise.</p>
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Get a word from the user and print it back.
+Each print should have one less letter than the line before it.
+Stop printing when there are no more characters in the string.</p>
+<p>(Bonus 1): Get an entire line of text from the user.</p>
+<p>(Bonus 2): Skip an extra amount for spaces you encounter.
+Read <a href="https://zybooks.zyante.com/#/zybook/UCRCS10Fall2016/chapter/8/section/3">this</a> (warning: advanced), and checkout the bonus example below.</p>
 <p>Example:</p>
 <blockquote>
 <p>Enter a string: <strong>Test</strong></br>
@@ -175,6 +185,32 @@ Tes </br>
 Te </br>
 T</p>
 </blockquote>
+<p>Bonus 2 Example:</p>
+<blockquote>
+<p>Enter a string: Hey there!</br>
+Hey there</br>
+Hey ther</br>
+Hey the</br>
+Hey th</br>
+Hey t</br>
+Hey</br>
+He</br>
+H</br></p>
+</blockquote>
+<p>An <strong>incorrect</strong> version of bonus 2:</p>
+<blockquote>
+<p>Enter a string: Hey there!</br>
+Hey there</br>
+Hey ther</br>
+Hey the</br>
+Hey th</br>
+Hey t</br>
+Hey</br>
+Hey</br>
+He</br>
+H</br></p>
+</blockquote>
+<p>(notice the red)</p>
 <h2 id="exercise-2">Exercise 2</h2>
 <p>Take in two integers from the user and multiply them without using the multiplication operator <code>*</code>
 Then, output the result.</p>
@@ -202,8 +238,7 @@ took that number to reach 1.</p>
 1</p>
 </blockquote>
 <p>Hint:
-Take a look at the collatz conjecture on wikipedia:
-<a href="https://en.wikipedia.org/wiki/Collatz_conjecture">click here</a></p>
+Take a look at the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">collatz conjecture on wikipedia</a></p>
 <h2 id="exercise-4">Exercise 4</h2>
 <p>Create a program that takes in a user string and reverses it. (Bonus: if it is a palindrome, output a sentnce saying so).</p>
 <p>Example 1:</p>
