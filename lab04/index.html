@@ -174,8 +174,8 @@ I recommend you attempt them, but if you are spending too long move to the next 
 <p>Get a word from the user and print it back.
 Each print should have one less letter than the line before it.
 Stop printing when there are no more characters in the string.</p>
-<p>(Bonus 1): Get an entire line of text from the user.</p>
-<p>(Bonus 2): Skip an extra amount for spaces you encounter.
+<p>[Bonus 1]: Get an entire line of text from the user.</p>
+<p>[Bonus 2]: Skip an extra amount for spaces you encounter.
 Read <a href="https://zybooks.zyante.com/#/zybook/UCRCS10Fall2016/chapter/8/section/3">this</a> (warning: advanced), and checkout the bonus example below.</p>
 <p>Example:</p>
 <blockquote>
@@ -212,24 +212,28 @@ H</br></p>
 </blockquote>
 <p>(notice the repetition)</p>
 <h2 id="exercise-2">Exercise 2</h2>
-<p>Take in two integers from the user and multiply them without using the multiplication operator <code>*</code>
-Then, output the result.</p>
+<p>Get two integers from the user and multiply them without using the <code>*</code> operator.</p>
 <p>Example:</p>
 <blockquote>
-<p>Enter two numbers: <strong>5 6</strong> </br>
+<p>Enter two numbers: <strong>5 6</strong></br>
 5 * 6 = 30</p>
 </blockquote>
 <h2 id="exercise-3">Exercise 3</h2>
-<p>Create a program that implements the collatz conjecture. The collatz conjecture can be summarized 
-as follows:<br>
-Take any positive integer n. If n is even, divide it by two. If n is odd, multiply it by 3 and add
-one. Repeat this process for the new n. Eventually, no matter what number n is, it will end up as 1.<br>
-Create this program by taking in an integer from the user and then performing the collatz 
-conjecture algorithm on it. Print out the number each time it gets changed to show the steps it 
-took that number to reach 1.</p>
+<p>Write a program that prints a collatz conjecture sequence.
+The collatz conjecture is defined as follows:</p>
+<blockquote>
+<p>Take any positive integer <code>n</code><br>
+If <code>n</code> is even, divide it by two.<br>
+If <code>n</code> is odd, multiply it by 3 and add 1<br>
+Repeat this until <code>n == 1</code><br></p>
+</blockquote>
+<p>The collatz conjecture states that no matter what <code>n</code> you choose, you will always end up at 1.
+No one has found a number that does not satisfy this conjecture.
+No one knows why.</p>
 <p>Example:</p>
 <blockquote>
-<p>Enter an integer: <strong>5</strong></br>
+<p>Enter an integer: <strong>3</strong></br>
+10</br>
 5</br>
 16</br>
 8</br>
@@ -237,27 +241,29 @@ took that number to reach 1.</p>
 2</br>
 1</p>
 </blockquote>
-<p>Hint:
-Take a look at the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">collatz conjecture on wikipedia</a></p>
+<p>Take a look at the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">collatz conjecture on wikipedia</a> if you would like to read more about it.</p>
 <h2 id="exercise-4">Exercise 4</h2>
-<p>Create a program that takes in a user string and reverses it. (Bonus: if it is a palindrome, output a sentnce saying so).</p>
+<p>Write a program that takes a string and reverses it.</p>
+<p>[Bonus]: if it is a palindrome, output a sentnce saying so.</p>
 <p>Example 1:</p>
 <blockquote>
 <p>Enter a string: <strong>Andre Castro</strong><br>
 ortsaC erdnA</p>
 </blockquote>
-<p>Example 2:</p>
+<p>Bonus Example:</p>
 <blockquote>
 <p>Enter a string: <strong>lionoil</strong><br>
 lionoil<br>
 lionoil is a palindrome!</p>
 </blockquote>
 <h2 id="exercise-5">Exercise 5</h2>
-<p>Create a password protected program where the user has to guess a password in a certain amount of
-tries. The amount of times should be at least 4 but the max is up to you. Read a single string as
-the password and output a hint eachtime the user gets it wrong (until you run out of hints).
-(Bonus: treat words with lowercase and uppercase letters the same, ex: WorD and woRd should both
-be considered correct by the program)</p>
+<p>Password-protect one of the previous exercises from this lab.
+The user gets at least 5 attempts to guess the password before the program quits with a failure message.
+The maximum number of tries is up to you.
+Read a single word as the password.
+Output a hint if the user gets it wrong.</p>
+<p>[Bonus]: treat words with lowercase and uppercase letters the same.
+ For instance, <code>WorD</code> and <code>woRd</code> should both be considered correct.</p>
 <p>Example 1:</p>
 <blockquote>
 <p>Enter a word: <strong>Test</strong> <br>
