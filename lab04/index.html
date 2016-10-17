@@ -8,7 +8,7 @@
   
   
   
-  <title>Lab 3: Characters and Branches - CS010 SI: Fall 2016</title>
+  <title>Lab Week 4: Strings and loops - CS010 SI: Fall 2016</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Lab 3: Characters and Branches";
-    var mkdocs_page_input_path = "lab03.md";
-    var mkdocs_page_url = "/lab03/";
+    var mkdocs_page_name = "Lab Week 4: Strings and loops";
+    var mkdocs_page_input_path = "lab04.md";
+    var mkdocs_page_url = "/lab04/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -90,8 +90,22 @@
 <li>
           
             <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis04/">Discussion 4: Strings and Loops</a>
+        
+    </li>
+<li>
+          
+            <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Lab 3: Characters and Branches</a>
+        <a class="current" href="./">Lab Week 4: Strings and loops</a>
         
             <ul>
             
@@ -118,20 +132,6 @@
     </li>
 <li>
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../dis04/">Discussion 4: Strings and Loops</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lab04/">Lab Week 4: Strings and loops</a>
-        
-    </li>
-<li>
-          
         </ul>
       </div>
       &nbsp;
@@ -154,7 +154,7 @@
     
       
     
-    <li>Lab 3: Characters and Branches</li>
+    <li>Lab Week 4: Strings and loops</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -165,73 +165,80 @@
             <div class="section">
               
                 <h2 id="exercise-1">Exercise 1</h2>
-<p>Take in a letter from the user as a <code>char</code>, and display its integer equivalent.
-Then display the uppercase version of the letter and its integer equivalent.</p>
+<p>Take in a string from the user and print it back out repeatedly with each print having one less
+character on the end. Stop printing once there are no more chars in the string left to print.</p>
 <p>Example:</p>
 <blockquote>
-<p>Enter a character: <strong>c</strong><br>
-'c' in decimal is 99.<br>
-'C' in decimal is 67.</p>
-</blockquote>
-<p>Hint:</p>
-<blockquote>
-<p>Check out an ASCII table to see distance between upper and lowercase letters. <br>
-<a href="http://www.asciitable.com/">ASCII Table</a></p>
+<p>Enter a string: <strong>Test</strong></br>
+Test </br>
+Tes </br>
+Te </br>
+T</p>
 </blockquote>
 <h2 id="exercise-2">Exercise 2</h2>
-<p>Take in a 5-letter word from the user.</br>
-Then, convert the word to the proper capitalization (first letter is capitalized, and the rest lowercase).</p>
+<p>Take in two integers from the user and multiply them without using the multiplication operator <code>*</code>
+Then, output the result.</p>
 <p>Example:</p>
 <blockquote>
-<p>Enter a 5-letter word: <strong>hElLo</strong><br>
-Your word is Hello.</p>
+<p>Enter two numbers: <strong>5 6</strong> </br>
+5 * 6 = 30</p>
 </blockquote>
 <h2 id="exercise-3">Exercise 3</h2>
-<p>Create a program which will guess what number the user is thinking of (between 1 and 5) in as few guesses as possible.</p>
+<p>Create a program that implements the collatz conjecture. The collatz conjecture can be summarized 
+as follows:<br>
+Take any positive integer n. If n is even, divide it by two. If n is odd, multiply it by 3 and add
+one. Repeat this process for the new n. Eventually, no matter what number n is, it will end up as 1.<br>
+Create this program by taking in an integer from the user and then performing the collatz 
+conjecture algorithm on it. Print out the number each time it gets changed to show the steps it 
+took that number to reach 1.</p>
 <p>Example:</p>
 <blockquote>
-<p>Is your number greater than, less than, or equal to 3?<br>
-<strong>greater</strong><br>
-Is your number less than, or equal to 5?<br>
-<strong>equal</strong><br>
-I got it! Your number is 5!</p>
+<p>Enter an integer: <strong>5</strong>
+5
+16
+8
+4
+2
+1</p>
 </blockquote>
+<p>Hint:
+Take a look at the collatz conjecture on wikipedia:
+<a href="https://en.wikipedia.org/wiki/Collatz_conjecture">click here</a></p>
 <h2 id="exercise-4">Exercise 4</h2>
-<p>Take in a number from the user (between -50 and 50) then output between which multiples of 10 the number is between and whether it is positive or negative.
-If the number is 0, simply output that the number was 0. 
-If the number is a multiple of 10, output that the number was a positive/negative multiple of 10. </p>
+<p>Create a program that takes in a user string and reverses it. (Bonus: if it is a palindrome, output a sentnce saying so).</p>
 <p>Example 1:</p>
 <blockquote>
-<p>Enter a number: <strong>-37</strong><br>
-Your number is negative and between -30 and -40</p>
+<p>Enter a string: <strong>Andre Castro</strong> <br>
+ortsaC erdnA</p>
 </blockquote>
 <p>Example 2:</p>
 <blockquote>
-<p>Enter a number: <strong>40</strong><br>
-Your number is a positive multiple of 10</p>
-</blockquote>
-<p>Example 3:</p>
-<blockquote>
-<p>Enter a number: <strong>0</strong><br>
-Your number is 0</p>
+<p>Enter a string: <strong>lionoil</strong> <br>
+lionoil <br>
+lionoil is a palindrome!</p>
 </blockquote>
 <h2 id="exercise-5">Exercise 5</h2>
-<p>Take in how much money (integer) the user has.</br>
-Then take in 4 items from the user.</br>
-Each item should have a name (string), cost (integer), and appeal (integer).</br>
-Then output which item the user should buy with appeal being of highest priority followed by lowest cost.</br>
-Do not reccomend the user to buy an item they cannot afford.</p>
-<p>Example:</p>
+<p>Create a password protected program where the user has to guess a password in a certain amount of
+tries. The amount of times should be at least 4 but the max is up to you. Read a single string as
+the password and output a hint eachtime the user gets it wrong (until you run out of hints).
+(Bonus: treat words with lowercase and uppercase letters the same, ex: WorD and woRd should both
+be considered correct by the program)</p>
+<p>Example 1:</p>
 <blockquote>
-<p>Enter how much money you have: <strong>3</strong><br>
-Enter the name, cost, and appeal of your first item: <strong>Doritoes 3 3</strong><br>
-Enter the name, cost, and appeal of your second item: <strong>Lays 1 2</strong><br>
-Enter the name, cost, and appeal of your third item: <strong>Cheetos 3 4</strong><br>
-Enter the name, cost, and appeal of your fourth item: <strong>Pringles 4 5</strong><br>
-You should buy the Cheetos</p>
+<p>Enter a word: <strong>Test</strong> <br>
+The word is incorrect. Hint: it is green. <br>
+Enter another word: <strong>Grass</strong><br>
+The word is correct!<br></p>
+</blockquote>
+<p>Exmaple 2:</p>
+<blockquote>
+<p>Enter a word: <strong>Temporary</strong> <br>
+The word is incorrect. Hint: it starts with s <br>
+(The user tries 5 times and failes each time)
+Im sorry, you failed to guesss the word.</p>
 </blockquote>
 <h2 id="quiz">Quiz!</h2>
-<p><a href="https://goo.gl/forms/vn6Gw250V7eXB7V62">quiz03</a></p>
+<p><a href="">quiz03</a></p>
               
             </div>
           </div>
@@ -239,10 +246,8 @@ You should buy the Cheetos</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dis04/" class="btn btn-neutral float-right" title="Discussion 4: Strings and Loops">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../dis03/" class="btn btn-neutral" title="Discussion 3: Characters and Branches"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis04/" class="btn btn-neutral" title="Discussion 4: Strings and Loops"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -268,10 +273,8 @@ You should buy the Cheetos</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../dis03/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis04/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../dis04/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
