@@ -30,6 +30,6 @@ mkdocs gh-deploy
 
 Cool Resources
 --------------
-[Daring Fireball](http://daringfireball.net/projects/markdown/) Markdown reference to edit pages. 
+[Markdown reference](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
