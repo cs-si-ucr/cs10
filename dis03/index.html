@@ -218,7 +218,7 @@ These relational operators evaluate to a
 Assume all required libraries are included.
 Refer to the next section for extra help.</p>
 <pre><code class="c++">// 1
-int main(){
+int main() {
     char c1 = 'a';
     char c2 = c1 - 32;
 
@@ -233,37 +233,37 @@ int main(){
 }
 
 // 2
-int main(){
+int main() {
     int i = 2;
     int j = 5;
     int k = -3;
 
-    if(i &gt; k){
+    if(i &gt; k) {
         i *= k;
     }
 
-    if(j &lt; i){
+    if (j &lt; i) {
         j *= i;
     }
-    else{
+    else {
         j /= 5;
     }
 
-    if(j * 3 &gt; -k){
+    if (j * 3 &gt; -k) {
         k = -k / 3;
     }
-    else if (j * 3 &lt;= -k){
+    else if (j * 3 &lt;= -k) {
         j = j * 3;
         k = -k;
     }
 
-    if(i &gt; 0){
+    if (i &gt; 0) {
         i = k;
     }
-    else if(k &gt; 0){
+    else if (k &gt; 0) {
         k = i;
     }
-    else if(j &gt; 0){
+    else if (j &gt; 0) {
         j = i;
     }
 
@@ -275,38 +275,38 @@ int main(){
 }
 
 // 3
-int main(){
+int main() {
     int i = 2;
     int j = 5;
     int k = -3;
     bool b1 = true;
 
-    if(i &gt; k &amp;&amp; !b1){
+    if (i &gt; k &amp;&amp; !b1) {
         i *= k;
     }
 
-    if(j &lt; i &amp;&amp; b1){
+    if (j &lt; i &amp;&amp; b1) {
         j *= i;
     }
-    else{
+    else {
         j /= 5;
     }
 
-    if(!(j * 3 &gt; -k)){
+    if (!(j * 3 &gt; -k)) {
         k = -k / 3;
     }
-    else if (j * 3 &lt;= -k){
+    else if (j * 3 &lt;= -k) {
         j = j * 3;
         k = -k;
     }
 
-    if(!(i &gt; 0) || (j - i &gt; 0)){
+    if (!(i &gt; 0) || (j - i &gt; 0)) {
         i = k;
     }
-    else if(((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1){
+    else if (((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1) {
         k = i;
     }
-    else if(!(j &gt; 0) || (i - j &gt; 0)){
+    else if (!(j &gt; 0) || (i - j &gt; 0)) {
         j = i;
     }
 
@@ -318,61 +318,61 @@ int main(){
 }
 
 // 4
-int main(){
+int main() {
     int i = 2;
     int j = 5;
     int k = -3;
     bool b1 = true;
 
-    if(i &gt; k &amp;&amp; b1){
-        if(-i &lt; -k || !b1){
+    if (i &gt; k &amp;&amp; b1) {
+        if (-i &lt; -k || !b1) {
             k += 5;
         }
         i *= k;
     }
 
-    if(j &gt;= i){
-        if(j == i){
+    if (j &gt;= i) {
+        if (j == i) {
             j -= 6;
         }
         j /= i;
     }
-    else{
-        if(j &gt; k &amp;&amp; j &lt; i){
+    else {
+        if (j &gt; k &amp;&amp; j &lt; i) {
             j -= 1;
         }
         j *= 5;
     }
 
-    if(j * 3 &gt; k){
-        if(!(j * 3 &lt;= -k)){
+    if (j * 3 &gt; k) {
+        if (!(j * 3 &lt;= -k)) {
             b1 = !b1;
         }
         k = -k * 3;
     }
-    else if (j * 3 &lt;= -k || b1){
+    else if (j * 3 &lt;= -k || b1) {
         j = j * 3;
         k = -k;
     }
 
-    if(!(i &gt; 0) || (j - i &gt; 0)){
+    if (!(i &gt; 0) || (j - i &gt; 0)) {
         i = k;
-        if(i == k){
+        if (i == k) {
             k += 6;
         }
     }
-    else if(((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1){
+    else if (((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1) {
         k = i;
-        if(b1){
+        if (b1) {
             i += 6;   
         }
     }
-    else if(!(j &gt; 0) || (i - j &gt; 0)){
+    else if (!(j &gt; 0) || (i - j &gt; 0)) {
         j = i;
-        if(b1){
+        if (b1) {
             j += 6;
         }
-        else if(b1 || !b1){
+        else if (b1 || !b1) {
             i += 3;
         }
     }

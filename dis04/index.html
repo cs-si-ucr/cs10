@@ -276,7 +276,7 @@ int main() {
 
     while (b) {
         cout &lt;&lt; a;
-        if(a == 5) {
+        if (a == 5) {
             b = false;
         }
         a++;
@@ -287,11 +287,10 @@ int main() {
 
     while (!b) {
         a++;
-        if(a == 5){
+        if (a == 5){
             b = true;
         }
-        cout &lt;&lt; a;
-        cout &lt;&lt; endl;
+        cout &lt;&lt; a &lt;&lt; endl;
     }
 
     double d = 12345;
@@ -305,7 +304,7 @@ int main() {
 
     while(s.size() != 0) {
         cout &lt;&lt; s &lt;&lt; endl;
-        s.resize(s.size()-1);
+        s.resize(s.size() - 1);
     }
 
     return 0;
@@ -345,7 +344,6 @@ int main() {
             i /= 3;
         }
     }
-
 
     return 0;
 }
