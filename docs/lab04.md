@@ -36,12 +36,12 @@ took that number to reach 1.
 
 Example:
 
-> Enter an integer: **5**
-> 5
-> 16
-> 8
-> 4
-> 2
+> Enter an integer: **5**</br>
+> 5</br>
+> 16</br>
+> 8</br>
+> 4</br>
+> 2</br>
 > 1
 
 Hint:
@@ -55,13 +55,13 @@ Create a program that takes in a user string and reverses it. (Bonus: if it is a
 
 Example 1:
 
-> Enter a string: **Andre Castro** <br>
+> Enter a string: **Andre Castro**<br>
 > ortsaC erdnA
 
 Example 2:
 
-> Enter a string: **lionoil** <br>
-> lionoil <br>
+> Enter a string: **lionoil**<br>
+> lionoil<br>
 > lionoil is a palindrome!
 
 Exercise 5
@@ -76,16 +76,22 @@ be considered correct by the program)
 Example 1:
 
 > Enter a word: **Test** <br>
-> The word is incorrect. Hint: it is green. <br>
+> The word "Test" is incorrect. Hint: it is green.<br>
 > Enter another word: **Grass**<br>
-> The word is correct!<br>
+> The word "Grass" is correct!
 
 Exmaple 2:
 
-> Enter a word: **Temporary** <br>
-> The word is incorrect. Hint: it starts with s <br>
-> (The user tries 5 times and failes each time)
-> Im sorry, you failed to guesss the word.
+> Enter a word: **Temporary**<br>
+> The word is incorrect. Hint: it starts with s<br>
+> Enter another word: **Sentence**<br>
+> The word is incorrect. Hint: it starts with s<br>
+> Enter another word: **Stilts**<br>
+> The word is incorrect. Hint: it starts with s<br>
+> Enter another word: **Sit**<br>
+> The word is incorrect. Hint: it starts with s<br>
+> Enter another word: **Stow**<br>
+> Im sorry. You failed to guesss the word. Goodbye.
 
 Quiz!
 ---
