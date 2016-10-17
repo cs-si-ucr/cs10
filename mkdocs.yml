@@ -6,8 +6,9 @@ pages:
     - [lab02.md, "Lab 2: Variables and Math"]
     - [dis03.md, "Discussion 3: Characters and Branches"]
     - [lab03.md, "Lab 3: Characters and Branches"]
+    - [dis04.md, "Discussion 4: Strings and Loops"]
+    - [lab04.md, "Lab Week 4: Strings and loops"]
     
-#    - [lab04.md, "Lab Week 4"]
 #    - [lab05.md, "Lab Week 5"]
 #    - [lab06.md, "Lab Week 6"]
 #    - [lab07.md, "Lab Week 7"]
