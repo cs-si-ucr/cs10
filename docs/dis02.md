@@ -64,7 +64,7 @@ Refer to the next section for extra help.
 
 ```c++
 // 1
-int main(){
+int main() {
     int temp = 4;
     double temp2 = 2.5;
     float temp3 = 2.0;
@@ -79,7 +79,7 @@ int main(){
 }
 
 // 2
-int main(){
+int main() {
     int temp = 4;
     double temp2 = 2.5;
     double temp3 = 1.5;
@@ -103,7 +103,7 @@ int main(){
 }
 
 // 3
-int main(){
+int main() {
     string jake = "jake";
     string james = "james";
     char a = 'a';
@@ -127,7 +127,7 @@ int main(){
 }
 
 // 4
-int main(){
+int main() {
     int intgr = 20;
     char letter = 'a';
     double dbl = 10.67;

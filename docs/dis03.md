@@ -76,7 +76,7 @@ Refer to the next section for extra help.
 
 ```c++
 // 1
-int main(){
+int main() {
     char c1 = 'a';
     char c2 = c1 - 32;
     
@@ -91,37 +91,37 @@ int main(){
 }
 
 // 2
-int main(){
+int main() {
     int i = 2;
     int j = 5;
     int k = -3;
     
-    if(i > k){
+    if(i > k) {
         i *= k;
     }
     
-    if(j < i){
+    if (j < i) {
         j *= i;
     }
-    else{
+    else {
         j /= 5;
     }
     
-    if(j * 3 > -k){
+    if (j * 3 > -k) {
         k = -k / 3;
     }
-    else if (j * 3 <= -k){
+    else if (j * 3 <= -k) {
         j = j * 3;
         k = -k;
     }
     
-    if(i > 0){
+    if (i > 0) {
         i = k;
     }
-    else if(k > 0){
+    else if (k > 0) {
         k = i;
     }
-    else if(j > 0){
+    else if (j > 0) {
         j = i;
     }
     
@@ -133,38 +133,38 @@ int main(){
 }
 
 // 3
-int main(){
+int main() {
     int i = 2;
     int j = 5;
     int k = -3;
     bool b1 = true;
     
-    if(i > k && !b1){
+    if (i > k && !b1) {
         i *= k;
     }
     
-    if(j < i && b1){
+    if (j < i && b1) {
         j *= i;
     }
-    else{
+    else {
         j /= 5;
     }
     
-    if(!(j * 3 > -k)){
+    if (!(j * 3 > -k)) {
         k = -k / 3;
     }
-    else if (j * 3 <= -k){
+    else if (j * 3 <= -k) {
         j = j * 3;
         k = -k;
     }
     
-    if(!(i > 0) || (j - i > 0)){
+    if (!(i > 0) || (j - i > 0)) {
         i = k;
     }
-    else if(((k > 0) && !(-k < 0)) || b1){
+    else if (((k > 0) && !(-k < 0)) || b1) {
         k = i;
     }
-    else if(!(j > 0) || (i - j > 0)){
+    else if (!(j > 0) || (i - j > 0)) {
         j = i;
     }
     
@@ -176,61 +176,61 @@ int main(){
 }
 
 // 4
-int main(){
+int main() {
     int i = 2;
     int j = 5;
     int k = -3;
     bool b1 = true;
     
-    if(i > k && b1){
-        if(-i < -k || !b1){
+    if (i > k && b1) {
+        if (-i < -k || !b1) {
             k += 5;
         }
         i *= k;
     }
     
-    if(j >= i){
-        if(j == i){
+    if (j >= i) {
+        if (j == i) {
             j -= 6;
         }
         j /= i;
     }
-    else{
-        if(j > k && j < i){
+    else {
+        if (j > k && j < i) {
             j -= 1;
         }
         j *= 5;
     }
     
-    if(j * 3 > k){
-        if(!(j * 3 <= -k)){
+    if (j * 3 > k) {
+        if (!(j * 3 <= -k)) {
             b1 = !b1;
         }
         k = -k * 3;
     }
-    else if (j * 3 <= -k || b1){
+    else if (j * 3 <= -k || b1) {
         j = j * 3;
         k = -k;
     }
     
-    if(!(i > 0) || (j - i > 0)){
+    if (!(i > 0) || (j - i > 0)) {
         i = k;
-        if(i == k){
+        if (i == k) {
             k += 6;
         }
     }
-    else if(((k > 0) && !(-k < 0)) || b1){
+    else if (((k > 0) && !(-k < 0)) || b1) {
         k = i;
-        if(b1){
+        if (b1) {
             i += 6;   
         }
     }
-    else if(!(j > 0) || (i - j > 0)){
+    else if (!(j > 0) || (i - j > 0)) {
         j = i;
-        if(b1){
+        if (b1) {
             j += 6;
         }
-        else if(b1 || !b1){
+        else if (b1 || !b1) {
             i += 3;
         }
     }

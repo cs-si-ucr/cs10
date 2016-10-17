@@ -138,7 +138,7 @@ int main() {
     
     while (b) {
         cout << a;
-        if(a == 5) {
+        if (a == 5) {
             b = false;
         }
         a++;
@@ -149,11 +149,10 @@ int main() {
     
     while (!b) {
         a++;
-        if(a == 5){
+        if (a == 5){
             b = true;
         }
-        cout << a;
-        cout << endl;
+        cout << a << endl;
     }
     
     double d = 12345;
@@ -167,7 +166,7 @@ int main() {
     
     while(s.size() != 0) {
         cout << s << endl;
-        s.resize(s.size()-1);
+        s.resize(s.size() - 1);
     }
     
     return 0;
@@ -182,7 +181,7 @@ int main() {
             i *= 2;
         }
     }
-    
+
     int j = 10;
     
     // Loop B
@@ -194,7 +193,7 @@ int main() {
             j += 5;
         }
     }
-    
+
     // Loop C
     for (int i = 0; i < 30; i++) {
         if (i % 3 == 2) {
@@ -207,8 +206,7 @@ int main() {
             i /= 3;
         }
     }
-    
-    
+
     return 0;
 }
 ```
