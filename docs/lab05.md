@@ -1,9 +1,13 @@
 Exercise 1
 ---
 
-Create a program that outputs a menu that asks the user to pick an option between 1 - 5. If the option is 5 then the program should exit. Options 1 - 4 will be for the rest of the exercises. If the output is not in the range from 1 - 5 then the program should alert the user that the option is invalid and ask the user to enter another option.
+Write a program that outputs a menu that asks the user to pick an option between 1 - 6.
+If the option is 6 then the program should exit.
+Options 1 - 5 will be for the exercises.
+If the output is not in the range from 1 - 6 then the program should alert the user that the option is invalid and ask the user to enter another option.
 
-Until you implement the other exercises simply do nothing if the user chooses 1 - 4.
+Until you implement the other exercises simply do nothing if the user chooses 2 - 5.
+All of the exercises for this week will go in this file.
 
 Example output:
 
