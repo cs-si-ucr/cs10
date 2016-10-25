@@ -17,7 +17,7 @@ Example output:
 > 3. Exercise 3<br>
 > 4. Exercise 4<br>
 > 5. Exercise 5<br>
-> 6. Exit<br>
+> 6. Exit
 >
 > Enter your choice: **1**
 >
@@ -28,6 +28,14 @@ Example output:
 > 4. Exercise 4<br>
 > 5. Exercise 5<br>
 > 6. Exit
+>
+> Enter your choice: **7**<br>
+> Invalid choice, try again.<br>
+> Enter your choice: **6**
+>
+> Goodbye!
+
+Another example:
 
 > Lab 05 Menu<br>
 > 1. Do nothing<br>
@@ -35,20 +43,115 @@ Example output:
 > 3. Exercise 3<br>
 > 4. Exercise 4<br>
 > 5. Exercise 5<br>
-> 6. Exit<br>
+> 6. Exit
 >
-> Enter your choice: **7**
-> Invalid choice, try again.<br>
+> Enter your choice: **2**
+>
+> Executing exercise 2...<br>
+> (exercise 2 runs here)
+>
+> Lab 05 Menu<br>
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit
+>
 > Enter your choice: **6**
 >
 > Goodbye!
 
+
 Exercise 2
 ---
 
-Modify your program from Exercise 1 to do the following when the user chooses option 1:
+Ask the user to enter a word that is exactly 3 characters long and output all permutations of that word.
+Output 1 permutation of the word per line.
 
-Ask the user to enter an integer *n* and print out a diamond whose center width is equal to (2 \* *n*) - 1.
+Example output:
+
+> Enter a 3 letter word: **bug**<br>
+> bbb
+> bbu
+> bbg
+> bub
+> buu
+> bug
+> bgb
+> bgu
+> bgg
+> ubb
+> ubu
+> ubg
+> uub
+> uuu
+> uug
+> ugb
+> ugu
+> ugg
+> gbb
+> gbu
+> gbg
+> gub
+> guu
+> gug
+> ggb
+> ggu
+> ggg
+
+Note that the order does not have to be exactly the same as above as long as all permutations are there (this order is the easiest, though).
+
+**Bonus**
+
+Allow a string of 4 characters and output all permutations of that word with 4 words on each line.
+
+
+Exercise 3
+---
+
+Ask the user for a number and output the multiplication table up to and including that number.
+
+Example output:
+
+> Please enter a number: **4**<br>
+> 1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+> 2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
+> 3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
+> 4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
+
+**Bonus 1**
+
+Add row and column numbers to your output
+
+Example output for **Bonus 1**:
+
+> Please enter a number: **4**<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+> 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+> 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
+> 3&nbsp;&nbsp;3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
+> 4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
+
+**Bonus 2**
+
+Notice in the table above that the table become more skewed as the numbers get larger.
+Fix the problem by making the numbers right justified instead of left justified.
+
+Example output for **Bonus 2**:
+
+> Please enter a number: **4**<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+> 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+> 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>
+> 3&nbsp;&nbsp;3&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
+> 4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
+
+
+Exercise 4
+---
+
+Ask the user to enter an integer ``n`` and print out a diamond whose center width is equal to ``(2 * n) - 1``.
 
 Example output:
 
@@ -60,80 +163,41 @@ Example output:
 > &nbsp;&nbsp;&nbsp;&nbsp;\*<br>
 
 
-Exercise 3
+Exercise 5
 ---
 
-Modify your program from Exercise 1 to do the following when the user chooses option 2:
+Ask the user for an integer and output the factorial of that integer. Do not use multiplication.
 
-Ask the user for a number and output the multiplication table up to and including that number.
+In case you are unfamiliar with what the factorial function does, here is a brief definition:
 
-Example output:
-
-> Please enter a number: **4**<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
-> 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
-> 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
-> 3&nbsp;&nbsp;3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
-> 4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
-
-**Bonus**
-
-Notice in the table above that the table become more skewed as the numbers get larger. Fix the problem by making the numbers right justified instead of left justified.
-
-Example output for **Bonus**:
-> Please enter a number: **4**<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
-> 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
-> 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>
-> 3&nbsp;&nbsp;3&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
-> 4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
-
-Exercise 4
----
-
-Modify your program from Exercise 1 to do the following when the user chooses option 3:
-
-Ask the user for an integer and output the factorial of that integer. Don't use multiplication.
-
-In case you're unfamiliar with what the factorial function does, here is a brief definition:<br>
-1. The factorial of a number *n*, denoted *n*!, is given by *n*! == *n* \* (*n* - 1) \* (*n* - 2) \* ... \* 3 \* 2 \* 1.<br>
-2. 0! == 1.<br>
+>1. The factorial of a number ``n``, denoted ``n!``, is given by ``n! == n * (n-1) * (n-2) * (n-3) * ... * 3 * 2 * 1``<br>
+>2. The special case of ``n == 0`` is defined as follows:<br>
+>3. ``0! == 1``
 
 Example output:
 
 > Please enter an integer: **5**<br>
-> 120
+> 5! == 120
 
 **Bonus**
 
 If the user enters a negative or floating point number alert the user that their input is invalid and re-prompt the user.
 
-Example output for **Bonus**:
+Example output 1 for **Bonus**:
 
 > Please enter an integer: **-1**<br>
 > Error: Invalid Input!<br>
 > Please enter an integer: **0**<br>
 > 1
 
-Exercise 5
----
+Example output 2 for **Bonus**:
 
-Modify your program from Exercise 1 to do the following when the user chooses option 4:
+> Please enter an integer: **1.4**<br>
+> Error: Invalid Input!<br>
+> Please enter an integer: **3.0**<br>
+> 6
 
-Ask the user to enter a word that is exactly 3 characters long and output all permutations of that word, 2 words on each line.
 
-Example output:
-
-> Enter a 3 letter word: **bug**<br>
-> bug bgu<br> 
-> ugb ubg<br>
-> gub gbu 
-
-Note that the order doesn't have to be exactly the same as above as long as all permutations are there.
-
-**Bonus**
-
-Modify Exercise 5 to allow a string of 4 characters and output all permutations of that word with 4 words on each line.
 
 Quiz!
 ---
