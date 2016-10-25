@@ -66,7 +66,7 @@ Another example:
 Exercise 2
 ---
 
-Ask the user to enter a word that is exactly 3 characters long and output all permutations of that word.
+Ask the user to enter a word that is exactly 3 characters long and output all permutations of the characters in the word.
 Output 1 permutation of the word per line.
 
 Example output:
