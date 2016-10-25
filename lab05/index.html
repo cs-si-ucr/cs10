@@ -250,9 +250,21 @@ Enter your choice: <strong>6</strong></p>
 3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
 4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br></p>
 </blockquote>
-<p><strong>Bonus</strong></p>
-<p>Notice in the table above that the table become more skewed as the numbers get larger. Fix the problem by making the numbers right justified instead of left justified.</p>
-<p>Example output for <strong>Bonus</strong>:</p>
+<p><strong>Bonus 1</strong></p>
+<p>Add row and column numbers to your output</p>
+<p>Example output for <strong>Bonus 1</strong>:</p>
+<blockquote>
+<p>Please enter a number: <strong>4</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
+3&nbsp;&nbsp;3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
+4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br></p>
+</blockquote>
+<p><strong>Bonus 2</strong></p>
+<p>Notice in the table above that the table become more skewed as the numbers get larger.
+Fix the problem by making the numbers right justified instead of left justified.</p>
+<p>Example output for <strong>Bonus 2</strong>:</p>
 <blockquote>
 <p>Please enter a number: <strong>4</strong><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
@@ -262,28 +274,39 @@ Enter your choice: <strong>6</strong></p>
 4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br></p>
 </blockquote>
 <h2 id="exercise-4">Exercise 4</h2>
-<p>Modify your program from Exercise 1 to do the following when the user chooses option 3:</p>
-<p>Ask the user for an integer and output the factorial of that integer. Don't use multiplication.</p>
-<p>In case you're unfamiliar with what the factorial function does, here is a brief definition:<br>
-1. The factorial of a number <em>n</em>, denoted <em>n</em>!, is given by <em>n</em>! == <em>n</em> * (<em>n</em> - 1) * (<em>n</em> - 2) * ... * 3 * 2 * 1.<br>
-2. 0! == 1.<br></p>
+<p>Ask the user for an integer and output the factorial of that integer. Do not use multiplication.</p>
+<p>In case you are unfamiliar with what the factorial function does, here is a brief definition:</p>
+<blockquote>
+<ol>
+<li>The factorial of a number <code>n</code>, denoted <code>n!</code>, is given by <code>n! == n * (n-1) * (n-2) * (n-3) * ... * 3 * 2 * 1</code><br></li>
+<li>The special case of <code>n == 0</code> is defined as follows:<br></li>
+<li><code>0! == 1</code></li>
+</ol>
+</blockquote>
 <p>Example output:</p>
 <blockquote>
 <p>Please enter an integer: <strong>5</strong><br>
-120</p>
+5! == 120</p>
 </blockquote>
 <p><strong>Bonus</strong></p>
 <p>If the user enters a negative or floating point number alert the user that their input is invalid and re-prompt the user.</p>
-<p>Example output for <strong>Bonus</strong>:</p>
+<p>Example output 1 for <strong>Bonus</strong>:</p>
 <blockquote>
 <p>Please enter an integer: <strong>-1</strong><br>
 Error: Invalid Input!<br>
 Please enter an integer: <strong>0</strong><br>
 1</p>
 </blockquote>
+<p>Example output 2 for <strong>Bonus</strong>:</p>
+<blockquote>
+<p>Please enter an integer: <strong>1.4</strong><br>
+Error: Invalid Input!<br>
+Please enter an integer: <strong>3.0</strong><br>
+6</p>
+</blockquote>
 <h2 id="exercise-5">Exercise 5</h2>
-<p>Modify your program from Exercise 1 to do the following when the user chooses option 4:</p>
-<p>Ask the user to enter a word that is exactly 3 characters long and output all permutations of that word, 2 words on each line.</p>
+<p>Ask the user to enter a word that is exactly 3 characters long and output all permutations of that word.
+Output 2 permutations of the word each line.</p>
 <p>Example output:</p>
 <blockquote>
 <p>Enter a 3 letter word: <strong>bug</strong><br>
@@ -291,9 +314,9 @@ bug bgu<br>
 ugb ubg<br>
 gub gbu </p>
 </blockquote>
-<p>Note that the order doesn't have to be exactly the same as above as long as all permutations are there.</p>
+<p>Note that the order does not have to be exactly the same as above as long as all permutations are there.</p>
 <p><strong>Bonus</strong></p>
-<p>Modify Exercise 5 to allow a string of 4 characters and output all permutations of that word with 4 words on each line.</p>
+<p>Allow a string of 4 characters and output all permutations of that word with 4 words on each line.</p>
 <h2 id="quiz">Quiz!</h2>
 <p><a href="https://goo.gl/forms/NWbZ5G4ZiYieqh2B3">quiz05</a></p>
               
