@@ -198,9 +198,3 @@ Example output 2 for **Bonus**:
 > 6
 
 
-
-Quiz!
----
-[quiz05](https://goo.gl/forms/NWbZ5G4ZiYieqh2B3)
-
-
