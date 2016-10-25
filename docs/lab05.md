@@ -8,29 +8,35 @@ Until you implement the other exercises simply do nothing if the user chooses 1 
 Example output:
 
 > Lab 05 Menu<br>
-> 1. Exercise 2<br>
-> 2. Exercise 3<br>
-> 3. Exercise 4<br>
-> 4. Exercise 5<br>
-> 5. Exit<br>
-
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit<br>
+>
 > Enter your choice: **1**
-
-> Exercise 2 running<br>
-> ...
+>
+> Lab 05 Menu<br>
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit
 
 > Lab 05 Menu<br>
-> 1. Exercise 2<br>
-> 2. Exercise 3<br>
-> 3. Exercise 4<br>
-> 4. Exercise 5<br>
-> 5. Exit<br>
-
-> Enter your choice: **6**
-
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit<br>
+>
+> Enter your choice: **7**
 > Invalid choice, try again.<br>
-> Enter your choice: **5**
-
+> Enter your choice: **6**
+>
 > Goodbye!
 
 Exercise 2
