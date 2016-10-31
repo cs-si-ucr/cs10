@@ -289,6 +289,16 @@
             "location": "/lab05/#exercise-5", 
             "text": "Ask the user for an integer and output the factorial of that integer. Do not use multiplication.  In case you are unfamiliar with what the factorial function does, here is a brief definition:    The factorial of a number  n , denoted  n! , is given by  n! == n * (n-1) * (n-2) * (n-3) * ... * 3 * 2 * 1  The special case of  n == 0  is defined as follows:  0! == 1    Example output:   Please enter an integer:  5 \n5! == 120   Bonus  If the user enters a negative or floating point number alert the user that their input is invalid and re-prompt the user.  Example output 1 for  Bonus :   Please enter an integer:  -1 \nError: Invalid Input! \nPlease enter an integer:  0 \n1   Example output 2 for  Bonus :   Please enter an integer:  1.4 \nError: Invalid Input! \nPlease enter an integer:  3.0 \n6", 
             "title": "Exercise 5"
+        }, 
+        {
+            "location": "/dis06/", 
+            "text": "Introduction\n\n\nMock Midterm", 
+            "title": "Discussion 5: Midterm Preparation"
+        }, 
+        {
+            "location": "/dis06/#introduction", 
+            "text": "Mock Midterm", 
+            "title": "Introduction"
         }
     ]
 }
