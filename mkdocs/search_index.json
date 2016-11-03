@@ -302,7 +302,7 @@
         }, 
         {
             "location": "/lab06/", 
-            "text": "Exercise 1\n\n\nWrite a program that prints as many random numbers as the user asks for.\nThe user will provide the range.\n\n\nExample:\n\n\n\n\nHow many random numbers would you like? \n4\n\nWhat range should the numbers be in (space-separated)? \n-3 3\n\nYour random numbers are:\n\n-2\n\n3\n\n1\n\n-1\n\n\n\n\nBonus\n:\nAllow the user to enter the numbers in the wrong order.\nFor instance, they could enter \n3 -3\n and your program would output numbers in \n[-3, 3]\n.\n\n\nExercise 2\n\n\nOutput a sideways \"skyline\" with random building heights.\nDo not print an empty line as part of the skyline.\n\n\nExample:\n\n\n\n\nHow many buildings? \n7\n\nHow tall is the tallest building? \n9\n\n\n\nXXXXXXX\n\nXXX\n\nXXXX\n\nX\n\nXXXXXXXXX\n\nXXXX\n\nXXXX\n\n\n\n\nExercise 3\n\n\nExercise 4", 
+            "text": "Exercise 1\n\n\nWrite a program that prints as many random numbers as the user asks for.\nThe user will provide the range.\n\n\nExample:\n\n\n\n\nHow many random numbers would you like? \n4\n\nWhat range should the numbers be in (space-separated)? \n-3 3\n\nYour random numbers are:\n\n-2\n\n3\n\n1\n\n-1\n\n\n\n\nBonus\n:\nAllow the user to enter the numbers in the wrong order.\nFor instance, they could enter \n3 -3\n and your program would output numbers in \n[-3, 3]\n.\n\n\nExercise 2\n\n\nOutput a sideways \"skyline\" with random building heights.\nDo not print an empty line as part of the skyline.\n\n\nExample:\n\n\n\n\nHow many buildings? \n7\n\nHow tall is the tallest building? \n9\n\n\n\nXXXXXXX\n\nXXX\n\nXXXX\n\nX\n\nXXXXXXXXX\n\nXXXX\n\nXXXX\n\n\n\n\nExercise 3\n\n\nImplement your own pseudo-random number generator.\n\n\nAlgorithm:\n\n\n\n\nPick a number to mod by.\nWe will be using \n6947\n.\n\nPick a number to shift by.\nWe will be using \n27\n.\n\nStart with some intial sequence value (mod 6947)\n\nThe next term in the sequencee is the previous term plus the shift value, raised to the third power (mod 6947)\n\n\n\n\nExample:\n\n\n\n\nEnter the seed value: \n0\n\nHow many random numbers would you like? \n5\n\n5789\n\n2500\n\n2438\n\n2844\n\n267\n\n\n\n\nBonus\n:\n\n\nUse the current time as a seed value.\n\n\nExercise 4", 
             "title": "Lab Week 6: Randomness"
         }, 
         {
@@ -317,7 +317,7 @@
         }, 
         {
             "location": "/lab06/#exercise-3", 
-            "text": "", 
+            "text": "Implement your own pseudo-random number generator.  Algorithm:   Pick a number to mod by.\nWe will be using  6947 . \nPick a number to shift by.\nWe will be using  27 . \nStart with some intial sequence value (mod 6947) \nThe next term in the sequencee is the previous term plus the shift value, raised to the third power (mod 6947)   Example:   Enter the seed value:  0 \nHow many random numbers would you like?  5 \n5789 \n2500 \n2438 \n2844 \n267   Bonus :  Use the current time as a seed value.", 
             "title": "Exercise 3"
         }, 
         {
