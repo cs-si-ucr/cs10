@@ -188,10 +188,22 @@ A function definiton without parameters must still have parenthasis.
 The value passed to a parameter is kmown as an <a style="color:white;border:solid black;border-width:1px">agrument</a>.</p>
 <p>Each function must have a
 <a style="color:white;border:solid black;border-width:1px">return</a>
-statement which tranfers control of the program back to the where the functions was originally called.
-The value of the return statement depends on how the function is defined. For example, in the function <code>int main()</code> a function named main is declared to have a type of <a style="color:white;border:solid black;border-width:1px">int</a>.</p>
-<p>A loop construct that executes the body of the loop before checking the loop condition is called a
-<a style="color:white;border:solid black;border-width:1px">do-while loop</a></p>
+statement which tranfers control of the program back to the where the functions was originally called.</p>
+<p>The value of the return statement depends on how the function is defined. For
+ example, in the function <code>int main()</code> a function named main is declared to
+ have a type of 
+<a style="color:white;border:solid black;border-width:1px">int</a>.
+If a function is declared to be <code>void</code> as it is in the example above, then
+ the return statement should simply be 
+<a style="color:white;border:solid black;border-width:1px">return;</a></p>
+<p>Designating blocks of codes as functions can be useful for three reasons:
+<em>1) Improving program
+<a style="color:white;border:solid black;border-width:1px">readability</a>
+</em>2) <a style="color:white;border:solid black;border-width:1px">Modular</a>
+program development
+*3) Avoiding
+<a style="color:white;border:solid black;border-width:1px">redundant</a>
+code</p>
 <h2 id="debugging-practice">Debugging Practice</h2>
 <p>The code below is supposed to continuously ask the user for a number and output the square of that number. When the user enters 0 the program should exit. Unfortunately, the program below doesn't even compile, although thats not the only problem...</p>
 <p>How can you modify the following code so that it works correctly?</p>
