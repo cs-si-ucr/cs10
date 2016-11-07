@@ -68,4 +68,72 @@ int main(){
 	return 0;
 }
 ```
+2)
+```c++
+void print(){
+	cout << "the bomb" << endl;
+}
+void printb(){
+	cout << "dot com" << endl;
+}
+
+void foo(int a){
+	if(a < 5){
+		printa();
+	}
+	else if(a == 5){
+		printb();
+	}
+	else{
+		cout << "none" << endl;
+	}
+}
+
+int main(){
+	int a = 5;
+	int b = -5;
+	foo(a);
+	foo(b);
+
+	return 0;
+}
+```
+3)
+```c++
+int foo2(int b){
+	int c = b + 6;
+	if(c > 13){
+		b = b + 5;
+	}
+	else{
+		b = b + 9;
+	}
+	
+	return c + b;
+}
+
+int foo(int a){
+	if(a > -1){
+		return -1;
+	}
+	else if(a < 0){
+		return 0;
+	}
+}
+
+int main(){
+	int a = 0;
+	int b = 7;
+	if(foo(a) == 1){
+		cout << "Positive!" << endl;
+	}
+	else{
+		cout << "Negative!" << endl;
+	}
+
+	cout << foo2(b) + foo(a) << endl;
+
+	return 0;
+}
+```
 [Mock Midterm](https://docs.google.com/a/ucr.edu/document/d/1DWX5sqdetz-Vz8RpabkYFdxSUa_Q3DhBsVA2ugZxeCQ/edit?usp=sharing)
