@@ -12,14 +12,14 @@ Get a word from the user and print it back.
 Each print should have one less letter than the line before it.
 Stop printing when there are no more characters in the string.
 
-[Bonus 1]: Get an entire line of text from the user.
+**Bonus 1**: Get an entire line of text from the user.
 
-[Bonus 2]: Skip an extra amount for spaces you encounter.
-Read [this](https://zybooks.zyante.com/#/zybook/UCRCS10Fall2016/chapter/8/section/3) (warning: advanced), and checkout the bonus example below.
+**Bonus 2**: Always reduce the printed word by one *visible* character.
+(Spaces are not visible)
 
 Example:
 
-> Enter a string: **Test**</br>
+> Enter a word: **Test**</br>
 > Test </br>
 > Tes </br>
 > Te </br>
@@ -27,7 +27,7 @@ Example:
 
 Bonus 2 Example:
 
-> Enter a string: **Hey there!**</br>
+> Enter a phrase: **Hey there!**</br>
 > Hey there</br>
 > Hey ther</br>
 > Hey the</br>
@@ -39,7 +39,7 @@ Bonus 2 Example:
 
 An **incorrect** version of bonus 2:
 
-> Enter a string: **Hey there!**</br>
+> Enter a phrase: **Hey there!**</br>
 > Hey there</br>
 > Hey ther</br>
 > Hey the</br>
@@ -62,6 +62,11 @@ Example:
 
 > Enter two numbers: **5 6**</br>
 > 5 * 6 = 30
+
+**Bonus**:
+
+Consider the cases ``10000 2`` and ``2 10000``.
+Modify your code so you loop as few times as possible in both cases.
 
 
 Exercise 3
@@ -96,18 +101,18 @@ Take a look at the [collatz conjecture on wikipedia](https://en.wikipedia.org/wi
 Exercise 4
 ---
 
-Write a program that takes a string and reverses it.
+Write a program that takes a phrase and prints it reversed.
 
 [Bonus]: if it is a palindrome, output a sentnce saying so.
 
 Example 1:
 
-> Enter a string: **Andre Castro**<br>
+> Enter a phrase: **Andre Castro**<br>
 > ortsaC erdnA
 
 Bonus Example:
 
-> Enter a string: **lionoil**<br>
+> Enter a phrase: **lionoil**<br>
 > lionoil<br>
 > lionoil is a palindrome!
 

@@ -1,0 +1,72 @@
+Exercise 1
+---
+
+Write a program that prints as many random numbers as the user asks for.
+The user will provide the range.
+
+Example:
+
+> How many random numbers would you like? **4**<br>
+> What range should the numbers be in (space-separated)? **-3 3**<br>
+> Your random numbers are:<br>
+> -2<br>
+> 3<br>
+> 1<br>
+> -1
+
+**Bonus**:
+Allow the user to enter the numbers in the wrong order.
+For instance, they could enter ``3 -3`` and your program would output numbers in ``[-3, 3]``.
+
+
+Exercise 2
+---
+
+Output a sideways "skyline" with random building heights.
+Do not print an empty line as part of the skyline.
+
+Example:
+
+> How many buildings? **7**<br>
+> How tall is the tallest building? **9**<br>
+> <br>
+> XXXXXXX<br>
+> XXX<br>
+> XXXX<br>
+> X<br>
+> XXXXXXXXX<br>
+> XXXX<br>
+> XXXX
+
+
+Exercise 3
+---
+
+Implement your own pseudo-random number generator.
+
+Algorithm:
+
+> Pick a number to mod by.
+> We will be using **6947**.<br>
+> Pick a number to shift by.
+> We will be using **27**.<br>
+> Pick a number to exponentiate by.
+> We will be using **3**.<br>
+> Start with some intial sequence value, called the *seed* (mod 6947)<br>
+> The next term in the sequencee is the previous term plus the shift value, raised to the third power (mod 6947)
+
+Example:
+
+> Enter the seed value: **0**<br>
+> How many random numbers would you like? **5**<br>
+> 5789<br>
+> 2500<br>
+> 2438<br>
+> 2844<br>
+> 267
+
+
+**Bonus**:
+
+Use the current time as a seed value.
+
