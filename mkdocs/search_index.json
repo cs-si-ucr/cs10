@@ -317,8 +317,113 @@
         }, 
         {
             "location": "/lab07/", 
-            "text": "", 
+            "text": "Tips\n\n\nOnce you complete a function, you can use it in later exercises.\n\n\nTo run tests, go \nhere\n and download the \ntests.cpp\n file to your workspace.\nMake sure it is in the same directory as your other code from this week.\nThen, include it with the following line at the top of your source code:\n\n\n#include \ntests.cpp\n\n\n\n\n\nHave a look at \ntests.cpp\n.\nTo run all tests, call \nrunAllTests()\n in \nmain\n.\n\n\nExercise 1\n\n\nWrite a function that returns the \nmax\n of two numbers.\nCall it \nmyMax\n.\n\n\nExercise 2\n\n\nWrite a function that returns the \nmin\n of two numbers.\nCall it \nmyMin\n.\n\n\nExercise 3\n\n\nWrite a function that returns the absolute value of two integers.\nCall it \nmyAbs\n.\n\n\nExercise 4\n\n\nWrite a function that returns the absolute value of two floating-point numbers\nCall it \nmyFabs\n.\n\n\nExercise 5\n\n\nWrite a function that returns the \nmodulo\n of two integers.\nDo not use the \n%\n operator.\nCall it \nmodInt\n.\n\n\nExercise 6\n\n\nWrite a function that returns the \nmodulo\n of two floating-point numbers.\nDo not use the \n%\n operator.\nCall it \nmodDouble\n.\n\n\nExercise 7\n\n\nWrite the \ntoupper\n function.\nCall it \nmyToupper\n.\n\n\nExercise 8\n\n\nWrite the \ntolower\n function.\nCall it \nmyTolower\n.\n\n\nExercise 9\n\n\nWrite the \nisUpper\n function.\n\nisUpper\n returns true if it is passed an uppercase character.\nCall it \nmyIsUpper\n.\n\n\nExercise 10\n\n\nWrite the \nisLower\n function.\n\nisLower\n returns true if it is passed a lowercase character.\nCall it \nmyIsLower\n.\n\n\nExercise 11\n\n\nWrite the \nisDigit\n function.\n\nisDigit\n returns true if it is passed a numeric character.\nCall it \nmyIsDigit\n.\n\n\nExercise 12\n\n\nWrite the \nisAlpha\n function.\n\nisAlpha\n returns true if it is passed an alphabetic character.\nCall it \nmyIsAlpha\n.\n\n\nExercise 13\n\n\nWrite the \nisAlnum\n function.\n\nisAlnum\n returns true if it is passed an alphabetic character \nor\n a numeric character.\nCall it \nmyIsAlnum\n.\n\n\nExercise 14\n\n\nWrite a function that accepts an integer and a character.\nThe function should print the character the number of times passed into it.\nCall it \nprintRow\n.\n\n\nNote\n: This function cannot be tested by \ntests.cpp\n.\nYou will need to check it yourself.\n\n\nExercise 15\n\n\nWrite a floating-point comparison function.\nRemember that floating-point values are not always stored perfectly precisely.\nThe function should accept two doubles to compare, along with a tolerance value.\nThe tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.\n\n\nCall it \nflEq\n.\n\n\nExercise 16\n\n\nWrite a function that returns a random number in a specified range.\nCall it \nrandRange\n.\n\n\nExercise 17\n\n\nWrite a function that returns the first index of a character in a provided string.\nReturn \n-1\n if the character is unable to be found.\nCall it \nfindCharBegin\n.\n\n\nExercise 18\n\n\nWrite a funciton that returns the first index of a string in a provided string.\nReturn \n-1\n if the string is unable to be found.\nCall it \nfindStringBegin\n.\n\n\nExercise 19\n\n\nWrite a function that returns the index of a character in a provided string given a starting location.\nReturn \n-1\n if the character is unable to be found.\nCall it \nfindChar\n.\n\n\nExercise 20\n\n\nWrite a funciton that returns the index of a string in a provided string given a starting location.\nReturn \n-1\n if the string is unable to be found.\nCall it \nfindString\n.", 
             "title": "Lab Week 7: Functions"
+        }, 
+        {
+            "location": "/lab07/#tips", 
+            "text": "Once you complete a function, you can use it in later exercises.  To run tests, go  here  and download the  tests.cpp  file to your workspace.\nMake sure it is in the same directory as your other code from this week.\nThen, include it with the following line at the top of your source code:  #include  tests.cpp   Have a look at  tests.cpp .\nTo run all tests, call  runAllTests()  in  main .", 
+            "title": "Tips"
+        }, 
+        {
+            "location": "/lab07/#exercise-1", 
+            "text": "Write a function that returns the  max  of two numbers.\nCall it  myMax .", 
+            "title": "Exercise 1"
+        }, 
+        {
+            "location": "/lab07/#exercise-2", 
+            "text": "Write a function that returns the  min  of two numbers.\nCall it  myMin .", 
+            "title": "Exercise 2"
+        }, 
+        {
+            "location": "/lab07/#exercise-3", 
+            "text": "Write a function that returns the absolute value of two integers.\nCall it  myAbs .", 
+            "title": "Exercise 3"
+        }, 
+        {
+            "location": "/lab07/#exercise-4", 
+            "text": "Write a function that returns the absolute value of two floating-point numbers\nCall it  myFabs .", 
+            "title": "Exercise 4"
+        }, 
+        {
+            "location": "/lab07/#exercise-5", 
+            "text": "Write a function that returns the  modulo  of two integers.\nDo not use the  %  operator.\nCall it  modInt .", 
+            "title": "Exercise 5"
+        }, 
+        {
+            "location": "/lab07/#exercise-6", 
+            "text": "Write a function that returns the  modulo  of two floating-point numbers.\nDo not use the  %  operator.\nCall it  modDouble .", 
+            "title": "Exercise 6"
+        }, 
+        {
+            "location": "/lab07/#exercise-7", 
+            "text": "Write the  toupper  function.\nCall it  myToupper .", 
+            "title": "Exercise 7"
+        }, 
+        {
+            "location": "/lab07/#exercise-8", 
+            "text": "Write the  tolower  function.\nCall it  myTolower .", 
+            "title": "Exercise 8"
+        }, 
+        {
+            "location": "/lab07/#exercise-9", 
+            "text": "Write the  isUpper  function. isUpper  returns true if it is passed an uppercase character.\nCall it  myIsUpper .", 
+            "title": "Exercise 9"
+        }, 
+        {
+            "location": "/lab07/#exercise-10", 
+            "text": "Write the  isLower  function. isLower  returns true if it is passed a lowercase character.\nCall it  myIsLower .", 
+            "title": "Exercise 10"
+        }, 
+        {
+            "location": "/lab07/#exercise-11", 
+            "text": "Write the  isDigit  function. isDigit  returns true if it is passed a numeric character.\nCall it  myIsDigit .", 
+            "title": "Exercise 11"
+        }, 
+        {
+            "location": "/lab07/#exercise-12", 
+            "text": "Write the  isAlpha  function. isAlpha  returns true if it is passed an alphabetic character.\nCall it  myIsAlpha .", 
+            "title": "Exercise 12"
+        }, 
+        {
+            "location": "/lab07/#exercise-13", 
+            "text": "Write the  isAlnum  function. isAlnum  returns true if it is passed an alphabetic character  or  a numeric character.\nCall it  myIsAlnum .", 
+            "title": "Exercise 13"
+        }, 
+        {
+            "location": "/lab07/#exercise-14", 
+            "text": "Write a function that accepts an integer and a character.\nThe function should print the character the number of times passed into it.\nCall it  printRow .  Note : This function cannot be tested by  tests.cpp .\nYou will need to check it yourself.", 
+            "title": "Exercise 14"
+        }, 
+        {
+            "location": "/lab07/#exercise-15", 
+            "text": "Write a floating-point comparison function.\nRemember that floating-point values are not always stored perfectly precisely.\nThe function should accept two doubles to compare, along with a tolerance value.\nThe tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.  Call it  flEq .", 
+            "title": "Exercise 15"
+        }, 
+        {
+            "location": "/lab07/#exercise-16", 
+            "text": "Write a function that returns a random number in a specified range.\nCall it  randRange .", 
+            "title": "Exercise 16"
+        }, 
+        {
+            "location": "/lab07/#exercise-17", 
+            "text": "Write a function that returns the first index of a character in a provided string.\nReturn  -1  if the character is unable to be found.\nCall it  findCharBegin .", 
+            "title": "Exercise 17"
+        }, 
+        {
+            "location": "/lab07/#exercise-18", 
+            "text": "Write a funciton that returns the first index of a string in a provided string.\nReturn  -1  if the string is unable to be found.\nCall it  findStringBegin .", 
+            "title": "Exercise 18"
+        }, 
+        {
+            "location": "/lab07/#exercise-19", 
+            "text": "Write a function that returns the index of a character in a provided string given a starting location.\nReturn  -1  if the character is unable to be found.\nCall it  findChar .", 
+            "title": "Exercise 19"
+        }, 
+        {
+            "location": "/lab07/#exercise-20", 
+            "text": "Write a funciton that returns the index of a string in a provided string given a starting location.\nReturn  -1  if the string is unable to be found.\nCall it  findString .", 
+            "title": "Exercise 20"
         }
     ]
 }
