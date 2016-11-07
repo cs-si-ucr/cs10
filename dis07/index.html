@@ -342,6 +342,39 @@ int main(){
 }
 </code></pre>
 
+<p>5) (challenging)</p>
+<pre><code class="c++">int minimize(int a){
+    a -= 2;
+    int b = a + 1;
+    cout &lt;&lt; b &lt;&lt; endl;
+    return a;
+}
+
+double divisor(int a){
+    a = a / 4.5;
+    cout &lt;&lt; &quot;Double conversion&quot; &lt;&lt; endl;
+    a = minimize(a);
+    return  a;
+}
+
+int calculate(int a){
+    return a * 3 + 6;
+    cout &lt;&lt; &quot;Calculating...&quot; &lt;&lt; endl;
+}
+
+int execute(int a){
+    a += 6;
+    a *= calculate(a) + calculate(a) - minimize(6) / divisor(42);
+    minimize(a);
+    return a;
+}
+
+int main(){
+    cout &lt;&lt; execute(4) &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+
 <p><a href="https://docs.google.com/a/ucr.edu/document/d/1DWX5sqdetz-Vz8RpabkYFdxSUa_Q3DhBsVA2ugZxeCQ/edit?usp=sharing">Mock Midterm</a></p>
               
             </div>
