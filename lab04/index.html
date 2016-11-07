@@ -7,13 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="../img/favicon.ico">
+  
   <title>Lab Week 4: Strings and loops - CS010 SI: Fall 2016</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+
   
   <script>
     // Current page data
@@ -24,7 +30,9 @@
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
   
 </head>
 
@@ -44,7 +52,7 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
+        <ul class="current">
           
             <li>
     <li class="toctree-l1 ">
@@ -143,7 +151,14 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../dis06/">Discussion 6: Functions</a>
+        <a class="" href="../dis06/">Discussion 6: Midterm Preparation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab06/">Lab Week 6: Randomness</a>
         
     </li>
 <li>
@@ -187,12 +202,12 @@ I recommend you attempt them, but if you are spending too long move to the next 
 <p>Get a word from the user and print it back.
 Each print should have one less letter than the line before it.
 Stop printing when there are no more characters in the string.</p>
-<p>[Bonus 1]: Get an entire line of text from the user.</p>
-<p>[Bonus 2]: Skip an extra amount for spaces you encounter.
-Read <a href="https://zybooks.zyante.com/#/zybook/UCRCS10Fall2016/chapter/8/section/3">this</a> (warning: advanced), and checkout the bonus example below.</p>
+<p><strong>Bonus 1</strong>: Get an entire line of text from the user.</p>
+<p><strong>Bonus 2</strong>: Always reduce the printed word by one <em>visible</em> character.
+(Spaces are not visible)</p>
 <p>Example:</p>
 <blockquote>
-<p>Enter a string: <strong>Test</strong></br>
+<p>Enter a word: <strong>Test</strong></br>
 Test </br>
 Tes </br>
 Te </br>
@@ -200,7 +215,7 @@ T</p>
 </blockquote>
 <p>Bonus 2 Example:</p>
 <blockquote>
-<p>Enter a string: <strong>Hey there!</strong></br>
+<p>Enter a phrase: <strong>Hey there!</strong></br>
 Hey there</br>
 Hey ther</br>
 Hey the</br>
@@ -212,7 +227,7 @@ H</br></p>
 </blockquote>
 <p>An <strong>incorrect</strong> version of bonus 2:</p>
 <blockquote>
-<p>Enter a string: <strong>Hey there!</strong></br>
+<p>Enter a phrase: <strong>Hey there!</strong></br>
 Hey there</br>
 Hey ther</br>
 Hey the</br>
@@ -231,6 +246,9 @@ H</br></p>
 <p>Enter two numbers: <strong>5 6</strong></br>
 5 * 6 = 30</p>
 </blockquote>
+<p><strong>Bonus</strong>:</p>
+<p>Consider the cases <code>10000 2</code> and <code>2 10000</code>.
+Modify your code so you loop as few times as possible in both cases.</p>
 <h2 id="exercise-3">Exercise 3</h2>
 <p>Write a program that prints a collatz conjecture sequence.
 The collatz conjecture is defined as follows:</p>
@@ -256,16 +274,16 @@ No one knows why.</p>
 </blockquote>
 <p>Take a look at the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">collatz conjecture on wikipedia</a> if you would like to read more about it.</p>
 <h2 id="exercise-4">Exercise 4</h2>
-<p>Write a program that takes a string and reverses it.</p>
+<p>Write a program that takes a phrase and prints it reversed.</p>
 <p>[Bonus]: if it is a palindrome, output a sentnce saying so.</p>
 <p>Example 1:</p>
 <blockquote>
-<p>Enter a string: <strong>Andre Castro</strong><br>
+<p>Enter a phrase: <strong>Andre Castro</strong><br>
 ortsaC erdnA</p>
 </blockquote>
 <p>Bonus Example:</p>
 <blockquote>
-<p>Enter a string: <strong>lionoil</strong><br>
+<p>Enter a phrase: <strong>lionoil</strong><br>
 lionoil<br>
 lionoil is a palindrome!</p>
 </blockquote>
@@ -328,10 +346,10 @@ Im sorry. You failed to guesss the word. Goodbye.</p>
       </div>
 
     </section>
-    
+
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+<div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -342,7 +360,6 @@ Im sorry. You failed to guesss the word. Goodbye.</p>
       
     </span>
 </div>
-    <script src="../js/theme.js"></script>
 
 </body>
 </html>
