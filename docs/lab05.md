@@ -104,7 +104,7 @@ Note that the order does not have to be exactly the same as above as long as all
 
 **Bonus**
 
-Allow a string of 4 characters and output all permutations of that word with 4 words on each line.
+Allow a string of 4 characters and output all permutations of those characters.
 
 
 Exercise 3
@@ -177,7 +177,7 @@ In case you are unfamiliar with what the factorial function does, here is a brie
 Example output:
 
 > Please enter an integer: **5**<br>
-> 5! == 120
+> 5! = 120
 
 **Bonus**
 

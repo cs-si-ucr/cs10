@@ -63,6 +63,8 @@ Example 3:
 > Your number is 0
 
 
+<!-- this exercise SUCKS. Make a better one, or none at all.
+
 Exercise 5 
 ---
 Take in how much money (integer) the user has.</br>
@@ -80,6 +82,7 @@ Example:
 > Enter the name, cost, and appeal of your fourth item: **Pringles 4 5**<br>
 > You should buy the Cheetos
 
+-->
 
 Quiz!
 ---
