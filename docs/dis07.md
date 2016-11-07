@@ -136,4 +136,32 @@ int main(){
 	return 0;
 }
 ```
+4)
+```c++
+int getSize(string t){
+	return t.size();
+}
+
+string removeCaps(string text){
+	for(int i = 0; i < text.size(); i++){
+		if(text.at(i) == 's' || text.at(i) == 'S'){
+			cout << "S found!" << endl;
+			text.replace(i, 1, "");
+		}
+	}
+	return text;
+}
+
+int main(){
+	string text = "StephenStrange";
+	string modifiedText = removeCaps(text);
+	if(getSize(modifiedText) < getSize(text)){
+		cout << "Made at least one change to text!" << endl;
+	}
+	else{
+		cout << "Made no changes to text." << endl;
+	}
+	cout << modifiedText << endl;
+}
+```
 [Mock Midterm](https://docs.google.com/a/ucr.edu/document/d/1DWX5sqdetz-Vz8RpabkYFdxSUa_Q3DhBsVA2ugZxeCQ/edit?usp=sharing)
