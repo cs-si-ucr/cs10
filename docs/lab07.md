@@ -34,28 +34,28 @@ To run all tests, call ``runAllTests()`` in ``main``.
 Exercise 1
 ---
 
-Write a function that returns the ``max`` of two numbers.
+Write a function that returns the ``max`` of two integers.
 Call it ``myMax``.
 
 
 Exercise 2
 ---
 
-Write a function that returns the ``min`` of two numbers.
+Write a function that returns the ``min`` of two integers.
 Call it ``myMin``.
 
 
 Exercise 3
 ---
 
-Write a function that returns the absolute value of two integers.
+Write a function that returns the absolute value of an integer.
 Call it ``myAbs``.
 
 
 Exercise 4
 ---
 
-Write a function that returns the absolute value of two floating-point numbers
+Write a function that returns the absolute value of a floating-point number.
 Call it ``myFabs``.
 
 
@@ -71,7 +71,6 @@ Exercise 6
 ---
 
 Write a function that returns the ``modulo`` of two floating-point numbers.
-Do not use the ``%`` operator.
 Call it ``modDouble``.
 
 
@@ -79,14 +78,14 @@ Exercise 7
 ---
 
 Write the ``toupper`` function.
-Call it ``myToupper``.
+Call it ``myToUpper``.
 
 
 Exercise 8
 ---
 
 Write the ``tolower`` function.
-Call it ``myTolower``.
+Call it ``myToLower``.
 
 
 Exercise 9
