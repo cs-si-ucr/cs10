@@ -77,26 +77,12 @@ Call it ``modDouble``.
 Exercise 7
 ---
 
-Write the ``toupper`` function.
-Call it ``myToUpper``.
-
-
-Exercise 8
----
-
-Write the ``tolower`` function.
-Call it ``myToLower``.
-
-
-Exercise 9
----
-
 Write the ``isUpper`` function.
 ``isUpper`` returns true if it is passed an uppercase character.
 Call it ``myIsUpper``.
 
 
-Exercise 10
+Exercise 8
 ---
 
 Write the ``isLower`` function.
@@ -104,7 +90,7 @@ Write the ``isLower`` function.
 Call it ``myIsLower``.
 
 
-Exercise 11
+Exercise 9
 ---
 
 Write the ``isDigit`` function.
@@ -112,7 +98,7 @@ Write the ``isDigit`` function.
 Call it ``myIsDigit``.
 
 
-Exercise 12
+Exercise 10
 ---
 
 Write the ``isAlpha`` function.
@@ -120,12 +106,26 @@ Write the ``isAlpha`` function.
 Call it ``myIsAlpha``.
 
 
-Exercise 13
+Exercise 11
 ---
 
 Write the ``isAlnum`` function.
 ``isAlnum`` returns true if it is passed an alphabetic character *or* a numeric character.
 Call it ``myIsAlnum``.
+
+
+Exercise 12
+---
+
+Write the ``toupper`` function.
+Call it ``myToUpper``.
+
+
+Exercise 13
+---
+
+Write the ``tolower`` function.
+Call it ``myToLower``.
 
 
 Exercise 14
@@ -146,6 +146,7 @@ Write a floating-point comparison function.
 Remember that floating-point values are not always stored perfectly precisely.
 The function should accept two doubles to compare, along with a tolerance value.
 The tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.
+The difference should be strictly less than the tolerance value.
 
 Call it ``flEq``.
 
