@@ -314,6 +314,11 @@
             "location": "/lab06/#exercise-3", 
             "text": "Implement your own pseudo-random number generator.  Algorithm:   Pick a number to mod by.\nWe will be using  6947 . \nPick a number to shift by.\nWe will be using  27 . \nPick a number to exponentiate by.\nWe will be using  3 . \nStart with some intial sequence value, called the  seed  (mod 6947) \nThe next term in the sequencee is the previous term plus the shift value, raised to the third power (mod 6947)   Example:   Enter the seed value:  0 \nHow many random numbers would you like?  5 \n5789 \n2500 \n2438 \n2844 \n267   Bonus :  Use the current time as a seed value.", 
             "title": "Exercise 3"
+        }, 
+        {
+            "location": "/lab07/", 
+            "text": "", 
+            "title": "Lab Week 7: Functions"
         }
     ]
 }
