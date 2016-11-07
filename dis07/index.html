@@ -343,10 +343,25 @@ int main(){
 </code></pre>
 
 <p>5) (challenging)</p>
-<pre><code class="c++">int minimize(int a){
-    a -= 2;
-    int b = a + 1;
-    cout &lt;&lt; b &lt;&lt; endl;
+<pre><code class="c++">int calculate(int a){
+    coud &lt;&lt; &quot;calc on &quot; &lt;&lt; a &lt;&lt; endl;
+    bool even = true;
+    while(even){
+        if(a % 2 != 0){
+            even = false;
+        }
+        a /= 3;
+        a += 1;
+    }
+    return a * 3 + 6;
+    cout &lt;&lt; &quot;Calculating...&quot; &lt;&lt; endl;
+}
+
+int minimize(int a){
+    int b = 0;
+    for(b = a + 1; b &gt; 0; b -= 50){
+        a -= 2 * calculate(b);
+    }
     return a;
 }
 
@@ -354,12 +369,9 @@ double divisor(int a){
     a = a / 4.5;
     cout &lt;&lt; &quot;Double conversion&quot; &lt;&lt; endl;
     a = minimize(a);
-    return  a;
-}
-
-int calculate(int a){
-    return a * 3 + 6;
-    cout &lt;&lt; &quot;Calculating...&quot; &lt;&lt; endl;
+    for(int i = 0; i &lt; 10; i++){
+        return  a;
+    }
 }
 
 int execute(int a){
