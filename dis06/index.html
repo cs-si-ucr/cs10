@@ -125,9 +125,6 @@
                 <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
                 
             
-                <li class="toctree-l3"><a href="#debugging-practice">Debugging Practice</a></li>
-                
-            
                 <li class="toctree-l3"><a href="#code-tracing">Code Tracing</a></li>
                 
             
@@ -206,91 +203,30 @@ program development </br>
 <a style="color:white;border:solid black;border-width:1px">redundant</a>
 code</p>
 </blockquote>
-<h2 id="debugging-practice">Debugging Practice</h2>
-<p>The code below is supposed to continuously ask the user for a number and output the square of that number. When the user enters 0 the program should exit. Unfortunately, the program below doesn't even compile, although thats not the only problem...</p>
-<p>How can you modify the following code so that it works correctly?</p>
-<pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-int main(){
-    int userInput = 0;
-
-    do{
-        cout &lt;&lt; &quot;Enter a number: &quot;;
-        cin &gt;&gt; input;
-        cout &lt;&lt; endl;
-
-        cout &lt;&lt; input &lt;&lt; &quot; * &quot; &lt;&lt; input &lt;&lt; &quot; == &quot; &lt;&lt; input * input &lt;&lt; endl; 
-
-    }while(input &gt; 0)
-
-    return 0;
-}
-</code></pre>
-
-<p>The code below is supposed to output a word diagonally, but it doesn't seem to be working.</p>
-<p>For example, when the user inputs "hey" the output should be:</p>
-<p>h<br>
-&nbsp;&nbsp;e<br>
-&nbsp;&nbsp;&nbsp;&nbsp;y<br></p>
-<p>But instead the output is:</p>
-<p>h&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y </p>
-<p>How can you modify the following code so that it works correctly?</p>
-<pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-int main(){
-    string userInput;
-
-    cout &lt;&lt; &quot;Enter a string: &quot;;
-    getline(cin, userInput);
-    cout &lt;&lt; endl;
-
-    for(int i = 0; i &lt; userInput.size(); i++){
-        for(int j = 0; j &lt; userInput.size(); j++){
-            if(i == j){
-                cout &lt;&lt; userInput.at(i);
-            }
-            else{
-                cout &lt;&lt; ' ';
-            }
-        }
-    }
-    return 0;
-}
-</code></pre>
-
 <h2 id="code-tracing">Code Tracing</h2>
-<p>For the code below answer the following questions.</p>
-<ol>
-<li>What does this program output?</li>
-<li>What would happen if you switched the values of width and height? (That is, <code>width == 13</code> and <code>height == 2</code>)</li>
-</ol>
-<pre><code class="c++">int main(){
-    char start = 'a';
-    int width = 2;
-    int height = 13;
+<p>What do the following programs output?</p>
+<p>1)</p>
+<pre><code class="c++">void foo(int a, int b){
+    a += 6;
+    b += a;
+    b = a * b;
+    a = a + b;
+    cout &lt;&lt; a &lt;&lt; endl;
+    cout &lt;&lt; b &lt;&lt; endl;
+}
 
-    for(int i = 0; i &lt; height; i++){
-        for(int j = 0; j &lt; width; j++){
-            cout &lt;&lt; start &lt;&lt; ' ';
-            start++;
-        }
-        cout &lt;&lt; endl;
-    }
+int main(){
+    int a = 5;
+    int b = 3;
+    cout &lt;&lt; &quot;Functions&quot; &lt;&lt; endl;
+    foo(a,b);
+    cout &lt;&lt; &quot;take parameters.&quot; &lt;&lt; endl;
 
     return 0;
 }
+
 </code></pre>
 
-<p>For the code below answer the following questions.</p>
-<ol>
-<li>What does the code output if the user enters 2. What about if the user enters a 3 or a 4? That is, what does the main function output in the seperate cases of <code>userInput == 2</code>, <code>userInput == 3</code>, and <code>userInput == 4</code>.</li>
-<li>What mathematical function does each part represent? (refer to the comments in the code if you're unsure what is meant by 'part')</li>
-<li>What mathematical function would we have if we incremented the variable <code>result</code> in <em>n</em> nested for-loops?</li>
-</ol>
 <pre><code class="c++">int main(){
     int userInput = 0;
 
