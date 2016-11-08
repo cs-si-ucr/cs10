@@ -18,17 +18,49 @@ Go <a href="https://github.com/cs-si-ucr/cs10tests/tree/master/week07" target="_
 
 In both cases, make sure ``tests.cpp`` is in the same directory as your other code from this week.
 
-Then, include it with the following line at the top of your source code:
+Use this as a guide for starting your lab this week:
 
-```c++
+```cpp
 #include "tests.cpp"
+
+using namespace std;
+
+// this is function stubbing:
+// they will compile and run, but not produce the correct result.
+// that is not the point.
+// the point is to get everything to compile.
+
+int myMax(int left, int right) {
+    return 0;
+}
+
+int myMin(int left, int right) {
+    return 0;
+}
+
+int myAbs(int n) {
+    return -1;
+}
+
+double myFabs(double n) {
+    return -1.0;
+}
+
+int modInt(int numerator, int denominator) {
+    return -1;
+}
+
+double modDouble(double numerator, double denominator) {
+    return -1.0;
+}
+
+// TODO: stub the rest of the functions
+
+int main() {
+    // to run all tests:
+    runAllTests();
+}
 ```
-
-Finally, take a look at ``tests.cpp``.
-You will be writing unit tests in future weeks.
-This is an example of how you could implement them.
-
-To run all tests, call ``runAllTests()`` in ``main``.
 
 
 Exercise 1
