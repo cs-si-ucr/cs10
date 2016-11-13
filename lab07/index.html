@@ -118,14 +118,14 @@
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../lab06/">Lab Week 6: Randomness</a>
+        <a class="" href="../dis06/">Discussion 6: Midterm Preparation</a>
         
     </li>
 <li>
           
             <li>
     <li class="toctree-l1 ">
-        <a class="" href="../dis07/">Discussion 7: Functions</a>
+        <a class="" href="../lab06/">Lab Week 6: Randomness</a>
         
     </li>
 <li>
@@ -204,6 +204,13 @@
     </li>
 <li>
           
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab08/">Lab Week 8</a>
+        
+    </li>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -248,48 +255,14 @@ Run this command in your terminal where you would like to place <code>tests.cpp<
 <p><strong>Method 2</strong>:
 Go <a href="https://github.com/cs-si-ucr/cs10tests/tree/master/week07" target="_blank">here</a> and download <code>tests.cpp</code> to your workspace.</p>
 <p>In both cases, make sure <code>tests.cpp</code> is in the same directory as your other code from this week.</p>
-<p>Use this as a guide for starting your lab this week:</p>
-<pre><code class="cpp">#include &quot;tests.cpp&quot;
-
-using namespace std;
-
-// this is function stubbing:
-// they will compile and run, but not produce the correct result.
-// that is not the point.
-// the point is to get everything to compile.
-
-int myMax(int left, int right) {
-    return 0;
-}
-
-int myMin(int left, int right) {
-    return 0;
-}
-
-int myAbs(int n) {
-    return -1;
-}
-
-double myFabs(double n) {
-    return -1.0;
-}
-
-int modInt(int numerator, int denominator) {
-    return -1;
-}
-
-double modDouble(double numerator, double denominator) {
-    return -1.0;
-}
-
-// TODO: stub the rest of the functions
-
-int main() {
-    // to run all tests:
-    runAllTests();
-}
+<p>Then, include it with the following line at the top of your source code:</p>
+<pre><code class="c++">#include &quot;tests.cpp&quot;
 </code></pre>
 
+<p>Finally, take a look at <code>tests.cpp</code>.
+You will be writing unit tests in future weeks.
+This is an example of how you could implement them.</p>
+<p>To run all tests, call <code>runAllTests()</code> in <code>main</code>.</p>
 <h2 id="exercise-1">Exercise 1</h2>
 <p>Write a function that returns the <code>max</code> of two integers.
 Call it <code>myMax</code>.</p>
@@ -310,31 +283,31 @@ Call it <code>modInt</code>.</p>
 <p>Write a function that returns the <code>modulo</code> of two floating-point numbers.
 Call it <code>modDouble</code>.</p>
 <h2 id="exercise-7">Exercise 7</h2>
+<p>Write the <code>toupper</code> function.
+Call it <code>myToUpper</code>.</p>
+<h2 id="exercise-8">Exercise 8</h2>
+<p>Write the <code>tolower</code> function.
+Call it <code>myToLower</code>.</p>
+<h2 id="exercise-9">Exercise 9</h2>
 <p>Write the <code>isUpper</code> function.
 <code>isUpper</code> returns true if it is passed an uppercase character.
 Call it <code>myIsUpper</code>.</p>
-<h2 id="exercise-8">Exercise 8</h2>
+<h2 id="exercise-10">Exercise 10</h2>
 <p>Write the <code>isLower</code> function.
 <code>isLower</code> returns true if it is passed a lowercase character.
 Call it <code>myIsLower</code>.</p>
-<h2 id="exercise-9">Exercise 9</h2>
+<h2 id="exercise-11">Exercise 11</h2>
 <p>Write the <code>isDigit</code> function.
 <code>isDigit</code> returns true if it is passed a numeric character.
 Call it <code>myIsDigit</code>.</p>
-<h2 id="exercise-10">Exercise 10</h2>
+<h2 id="exercise-12">Exercise 12</h2>
 <p>Write the <code>isAlpha</code> function.
 <code>isAlpha</code> returns true if it is passed an alphabetic character.
 Call it <code>myIsAlpha</code>.</p>
-<h2 id="exercise-11">Exercise 11</h2>
+<h2 id="exercise-13">Exercise 13</h2>
 <p>Write the <code>isAlnum</code> function.
 <code>isAlnum</code> returns true if it is passed an alphabetic character <em>or</em> a numeric character.
 Call it <code>myIsAlnum</code>.</p>
-<h2 id="exercise-12">Exercise 12</h2>
-<p>Write the <code>toupper</code> function.
-Call it <code>myToUpper</code>.</p>
-<h2 id="exercise-13">Exercise 13</h2>
-<p>Write the <code>tolower</code> function.
-Call it <code>myToLower</code>.</p>
 <h2 id="exercise-14">Exercise 14</h2>
 <p>Write a function that accepts an integer and a character.
 The function should print the character the number of times passed into it.
@@ -345,8 +318,7 @@ You will need to check it yourself.</p>
 <p>Write a floating-point comparison function.
 Remember that floating-point values are not always stored perfectly precisely.
 The function should accept two doubles to compare, along with a tolerance value.
-The tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.
-The difference should be strictly less than the tolerance value.</p>
+The tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.</p>
 <p>Call it <code>flEq</code>.</p>
 <h2 id="exercise-16">Exercise 16</h2>
 <p>Write a function that returns a random number in a specified range.
@@ -374,8 +346,10 @@ Call it <code>findString</code>.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../lab08/" class="btn btn-neutral float-right" title="Lab Week 8">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../dis07/" class="btn btn-neutral" title="Discussion 7: Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../lab06/" class="btn btn-neutral" title="Lab Week 6: Randomness"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -401,8 +375,10 @@ Call it <code>findString</code>.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../dis07/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../lab06/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../lab08/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
