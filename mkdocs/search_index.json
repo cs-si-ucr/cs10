@@ -427,12 +427,12 @@
         }, 
         {
             "location": "/lab08/", 
-            "text": "Exercise 1\n\n\nWrite a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.\n\n\nExmaple:\n\n\n\n\n(in main)\n\nc++ \n  int a = 4;\n  int b = 5;\n  foo(a,b);\n  cout \n a \n endl;//should be 5\n  cout \n b \n endl;//should be 4", 
+            "text": "Exercise 1\n\n\nWrite a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.\n\n\nExmaple:\n\n\n\n\n(in main)\n \nc++ \n  int a = 4;\n  int b = 5;\n  foo(a,b);\n  cout \n a \n endl;\n  cout \n b \n endl;\n \nshould result in an output of:\n4\n5\n\n\n\n\nExercise 2", 
             "title": "Lab Week 8"
         }, 
         {
             "location": "/lab08/#exercise-1", 
-            "text": "Write a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.  Exmaple:   (in main) c++ \n  int a = 4;\n  int b = 5;\n  foo(a,b);\n  cout   a   endl;//should be 5\n  cout   b   endl;//should be 4", 
+            "text": "Write a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.  Exmaple:   (in main)\n  c++ \n  int a = 4;\n  int b = 5;\n  foo(a,b);\n  cout   a   endl;\n  cout   b   endl;  \nshould result in an output of:\n4\n5   Exercise 2", 
             "title": "Exercise 1"
         }
     ]
