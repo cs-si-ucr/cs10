@@ -427,13 +427,18 @@
         }, 
         {
             "location": "/lab08/", 
-            "text": "Exercise 1\n\n\nWrite a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.\n\n\nExmaple:\n\n\n\n\n(in main)\n \nc++ \n    int a = 4;\n    int b = 5;\n    foo(a,b);\n    cout \n a \n endl;\n    cout \n b \n endl;\n \n\nshould result in an output of: \n\n4\n\n5\n\n\n\n\nExercise 2", 
+            "text": "Exercise 1\n\n\nWrite a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.\n\n\nExmaple:\n (in main)\n \nc++ \n    int a = 4;\n    int b = 5;\n    foo(a,b);\n    cout \n a \n endl;\n    cout \n b \n endl;\n \n\n\n\n\nshould result in an output of: \n\n4\n\n5\n\n\n\n\nExercise 2\n\n\n\n\nWrite a string modify function that takes a string and returns only a piece of\nthat string (similar to substr). This function should take in a string \nparameter (the string to be substringed) and two integer variables (the index\nat which the user would like to begin the substr and the length of the substr\nitself). The functino should also return a bool returning true if the substr \nwas succesful and false if it wasnt.\n\n\nFor example, given the following code:\n\n\n    string str = \nOrigami\n;\n    cout \n substr(str,1,3) \n endl;\n    cout \n str \n endl;\n\n\n\n\n\n\nShould output: \n\n1\n\nrig\n\n\n\n\nThis function should return false when the user specifies a length or index \nthat goes beyond the maximum string length.\n\n\nFor example, using the code above:\n\n\n    cout \n substr(str,5,3) \n endl;\n    cout \n str \n endl;\n\n\n\n\n\n\nShould output :\n\n0\n\norigami\n\n\n\n\nThe orignial string should be unchanged if an error is to occur.\n\n\nExcercise 3", 
             "title": "Lab Week 8"
         }, 
         {
             "location": "/lab08/#exercise-1", 
-            "text": "Write a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.  Exmaple:   (in main)\n  c++ \n    int a = 4;\n    int b = 5;\n    foo(a,b);\n    cout   a   endl;\n    cout   b   endl;   \nshould result in an output of:  \n4 \n5   Exercise 2", 
+            "text": "Write a function that gets passed in two integers and set the first interger \npassed in to hold the greater of the two integers, and the second interger \npassed in to hold the lesser of the two integers.  Exmaple:\n (in main)\n  c++ \n    int a = 4;\n    int b = 5;\n    foo(a,b);\n    cout   a   endl;\n    cout   b   endl;     should result in an output of:  \n4 \n5   Exercise 2   Write a string modify function that takes a string and returns only a piece of\nthat string (similar to substr). This function should take in a string \nparameter (the string to be substringed) and two integer variables (the index\nat which the user would like to begin the substr and the length of the substr\nitself). The functino should also return a bool returning true if the substr \nwas succesful and false if it wasnt.  For example, given the following code:      string str =  Origami ;\n    cout   substr(str,1,3)   endl;\n    cout   str   endl;   Should output:  \n1 \nrig   This function should return false when the user specifies a length or index \nthat goes beyond the maximum string length.  For example, using the code above:      cout   substr(str,5,3)   endl;\n    cout   str   endl;   Should output : \n0 \norigami   The orignial string should be unchanged if an error is to occur.", 
             "title": "Exercise 1"
+        }, 
+        {
+            "location": "/lab08/#excercise-3", 
+            "text": "", 
+            "title": "Excercise 3"
         }
     ]
 }

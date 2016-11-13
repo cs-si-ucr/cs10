@@ -146,6 +146,9 @@
                 <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
                 
             
+                <li class="toctree-l3"><a href="#excercise-3">Excercise 3</a></li>
+                
+            
             </ul>
         
     </li>
@@ -187,21 +190,52 @@
 <p>Write a function that gets passed in two integers and set the first interger 
 passed in to hold the greater of the two integers, and the second interger 
 passed in to hold the lesser of the two integers.</p>
-<p>Exmaple:</p>
-<blockquote>
-<p>(in main)
+<p>Exmaple:
+ (in main)
  <code>c++ 
     int a = 4;
     int b = 5;
     foo(a,b);
     cout &lt;&lt; a &lt;&lt; endl;
-    cout &lt;&lt; b &lt;&lt; endl;</code> <br>
-should result in an output of: <br>
+    cout &lt;&lt; b &lt;&lt; endl;</code> <br></p>
+<blockquote>
+<p>should result in an output of: <br>
 4<br>
 5<br></p>
 </blockquote>
 <p>Exercise 2</p>
 <hr />
+<p>Write a string modify function that takes a string and returns only a piece of
+that string (similar to substr). This function should take in a string 
+parameter (the string to be substringed) and two integer variables (the index
+at which the user would like to begin the substr and the length of the substr
+itself). The functino should also return a bool returning true if the substr 
+was succesful and false if it wasnt.</p>
+<p>For example, given the following code:</p>
+<pre><code class="c++">    string str = &quot;Origami&quot;;
+    cout &lt;&lt; substr(str,1,3) &lt;&lt; endl;
+    cout &lt;&lt; str &lt;&lt; endl;
+</code></pre>
+
+<blockquote>
+<p>Should output: <br>
+1<br>
+rig<br></p>
+</blockquote>
+<p>This function should return false when the user specifies a length or index 
+that goes beyond the maximum string length.</p>
+<p>For example, using the code above:</p>
+<pre><code class="c++">    cout &lt;&lt; substr(str,5,3) &lt;&lt; endl;
+    cout &lt;&lt; str &lt;&lt; endl;
+</code></pre>
+
+<blockquote>
+<p>Should output :<br>
+0<br>
+origami<br></p>
+</blockquote>
+<p>The orignial string should be unchanged if an error is to occur.</p>
+<h2 id="excercise-3">Excercise 3</h2>
               
             </div>
           </div>
