@@ -256,7 +256,11 @@ int foo(int a, int&amp; b, int c) {
 int main() {
     int a = 7, b = 2, c = 13;
     int x = 1, y = 12, z = 7;
-    foo(foo(a, c, b), z, foo(y, z, foo(c, b, a)));
+
+    int r1 = foo(a, c, b);
+    int r2 = foo(c, b, a);
+    int r3 = foo(y, z, r2);
+    foo(r1, z, r3);
     foo(z, a, y);
 
     cout &lt;&lt; &quot;a: &quot; &lt;&lt; a &lt;&lt; endl;
