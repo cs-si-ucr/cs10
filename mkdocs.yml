@@ -12,10 +12,10 @@ pages:
     - [lab05.md, "Lab Week 5: Nested Loops and Do-While"]
     - [dis06.md, "Discussion 6: Midterm Preparation"]
     - [lab06.md, "Lab Week 6: Randomness"]
-    #- [dis07.md, "Discussion 7: Functions"]
+    - [dis07.md, "Discussion 7: Functions"]
     - [lab07.md, "Lab Week 7: Functions"]
-#    - [lab08.md, "Lab Week 8"]
-#    - [dis08.md, "Discussion Week 8"]
+    - [dis08.md, "Discussion 8: Reference parameters"]
+    - [lab08.md, "Lab Week 8: Reference parameters"]
 #    - [lab09.md, "Lab Week 9"]
 #    - [lab10.md, "Lab Week 10"]
 theme: readthedocs
