@@ -262,60 +262,60 @@ Overloading is when two functions have the same name, but different <strong>para
 <p><code>swap(a,c)</code> and <code>swap(one,two)</code> are calls to two different functions, despite having the same name.
 Look at the last section of this page, or ask your SI leader, to learn more about function overloading.</p>
 <h2 id="exercise-3">Exercise 3</h2>
-<p>Create a function that takes in a one or more sentences from the user and
-replaces any instances of a word specified by the user with another word
-specified by the user. The function should return an integer indicating how
-many instances of the word were replaced.</p>
+<p>Write a function that replaces all occurances of a word with another word.
+The function should return an integer indicating how many instances of the word were replaced.</p>
 <p>Example:</p>
 <blockquote>
-<p>Enter a sentence: <strong>the other day my friends and I went to the store to find
-          out the price of radishes</strong><br>
+<p>Enter a sentence: <strong>the other day my friends and I went to the store to find out the price of radishes</strong><br>
 Which word should be replaced:  <strong>radishes</strong><br>
 Replace with what word: <strong>oranges</strong><br>
-<strong>the other day my friends and I went to the store to find out the price
-of oranges</strong></p>
+the other day my friends and I went to the store to find out the price of oranges</p>
 </blockquote>
 <p>Example:</p>
 <blockquote>
-<p>Enter a sentence: <strong>I like to eat apples and bananas but if I am forced to,
-       I will eat just about anything, as long as its not
-       spicy!</strong><br>
+<p>Enter a sentence: <strong>I like to eat apples and bananas but if I am forced to, I will eat just about anything, as long as its not spicy!</strong><br>
 Which word should be replaced : <strong>eat</strong><br>
 Replace with what word: <strong>fight</strong> <br>
-<strong>I like to fight apples and bananas but if I am forced to, I will fight
-  just about anything, as long as its not spicy!</strong></p>
+I like to fight apples and bananas but if I am forced to, I will fight just about anything, as long as its not spicy!</p>
 </blockquote>
 <h2 id="exercise-4">Exercise 4</h2>
-<p>Write a string modify function that takes a string and returns only a piece of
-that string (similar to substr). This function should take in a string 
-parameter (the string to be substringed) and two integer variables (the index
-at which the user would like to begin the substr and the length of the substr
-itself). The function should also return a bool returning true if the substr 
-was succesful and false if it was not.</p>
+<p>Write a function that modifies a string to contain a subsection of itself.
+The function should accept a string, and two integers.
+The first integer is where to start the substring from.
+The second integer is how many characters to get.</p>
+<p>The function should return a bool, signaling whether or not the string was modified.
+Do not modify the string if the substr size requested is too big.
+Do not modify the string if the starting position is inside the string.</p>
 <p>For example, given the following code:</p>
 <pre><code class="c++">string str = &quot;Origami&quot;;
-cout &lt;&lt; substr(str,1,3) &lt;&lt; endl;
-cout &lt;&lt; str &lt;&lt; endl;
+bool success = substr(str, 1, 3);
+if (success) {
+    cout &lt;&lt; str &lt;&lt; endl;
+} else {
+    cout &lt;&lt; &quot;substr failed :(&quot; &lt;&lt; endl;
+}
 </code></pre>
 
+<p>The output should be:</p>
 <blockquote>
-<p>Should output: <br>
-1<br>
-rig<br></p>
+<p>rig</p>
 </blockquote>
-<p>This function should return false when the user specifies a length or index 
-that goes beyond the maximum string length.</p>
-<p>For example, using the code above:</p>
-<pre><code class="c++">cout &lt;&lt; substr(str,5,3) &lt;&lt; endl;
-cout &lt;&lt; str &lt;&lt; endl;
+<p>Given the following code:</p>
+<pre><code class="c++">string str = &quot;Origami&quot;;
+bool success = substr(str, 5, 3);
+if (success) {
+    cout &lt;&lt; str &lt;&lt; endl;
+} else {
+    cout &lt;&lt; &quot;substr failed :(&quot; &lt;&lt; endl;
+    cout &lt;&lt; str &lt;&lt; endl;
+}
 </code></pre>
 
+<p>The output should be:</p>
 <blockquote>
-<p>Should output :<br>
-0<br>
-origami<br></p>
+<p>substr failed :(<br>
+origami</p>
 </blockquote>
-<p>The orignial string should be unchanged if an error is to occur.</p>
 <h2 id="excercise-5">Excercise 5</h2>
 <p>Using the main function below, create functions <code>generateRand(int)</code>,
 <code>getUserInput(string)</code> and <code>playGuessingGame(bool, int, int)</code>. In the function
