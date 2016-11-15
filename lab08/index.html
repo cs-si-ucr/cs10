@@ -231,17 +231,12 @@ cout &lt;&lt; b &lt;&lt; endl;
 5</p>
 </blockquote>
 <h2 id="exercise-2">Exercise 2</h2>
-<p>Write 4 different swap functions that take in two values passed by reference 
-and swaps their values. The 4 different functions swap ints, double, chars, 
-and bools. In order to make these functions more useable, we will use 
-<code>function overloading</code> 
-to allow programers using these functions to only have to remember
-one name for all 4 functions rather than 4 different names. All of the 
-functions must therefore have the same name. Which function gets called is 
-then deicded based upon the variable types of the parameters.  </p>
-<p><strong>IMPORTANT:</strong> in order to ensure that the function
-overloading occurs, each one of your swap functions must have the same name 
-(ideally swap but anything else will sufice, as long as they are all the same).</p>
+<p>Write 4 different swap functions.
+Each swap function accepts two reference parameters, and swaps them.
+The 4 swap functions should operate on <code>int</code>, <code>double</code>, <code>char</code>, and <code>bool</code>.</p>
+<p>We will name them all the same thing: <code>swap</code>.
+This takes advantage of overloading.
+Overloading is when two functions have the same name, but different <strong>parameter lists</strong>.</p>
 <p>Example:</p>
 <pre><code class="c++">int main(){
     char c = 'c';
@@ -259,14 +254,13 @@ overloading occurs, each one of your swap functions must have the same name
 }
 </code></pre>
 
+<p>The example above should print:</p>
 <blockquote>
-<p>Should print out: <br>
-c a<br>
-2 1<br></p>
+<p>c a<br>
+2 1</p>
 </blockquote>
-<p>In the example above, <code>swap(a,c)</code> and <code>swap(one,two)</code> are different functions
-despite having the same names. Look at the bottom of the page or ask your SI
-leader to learn more about function overloading.</p>
+<p><code>swap(a,c)</code> and <code>swap(one,two)</code> are calls to two different functions, despite having the same name.
+Look at the last section of this page, or ask your SI leader, to learn more about function overloading.</p>
 <h2 id="exercise-3">Exercise 3</h2>
 <p>Create a function that takes in a one or more sentences from the user and
 replaces any instances of a word specified by the user with another word
