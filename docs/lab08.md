@@ -1,16 +1,23 @@
-Exercise 1
----
+# Instructions
 
-Write a function that gets passed in two integers and set the first 
-interger passed in to hold the greater of the two integers, and the second 
-interger passed in to hold the lesser of the two integers.
+Complete exercises 1 through 4, then write tests for all of them.
+After you are completely done testing, finish exercise 5.
+Show your tests to the SI leader.
+You are allowed to use assert.
+
+
+# Exercise 1
+
+Write a funciton that orders two integers.
+The first passed in should be set to the least of the two.
+The second passed in should be set to the greatest of the two.
 
 Exmaple:
-(in main)
 ```c++ 
-int a = 4;
-int b = 5;
-foo(a,b);
+// in main
+int a = 5;
+int b = 4;
+foo(a, b);
 cout << a << endl;
 cout << b << endl;
 ```
@@ -18,20 +25,16 @@ cout << b << endl;
 > 4<br>
 > 5
 
-Exercise 2
----
-Write 4 different swap functions that take in two values passed by reference 
-and swaps their values. The 4 different functions swap ints, double, chars, 
-and bools. In order to make these functions more useable, we will use 
-`function overloading` 
-to allow programers using these functions to only have to remember
-one name for all 4 functions rather than 4 different names. All of the 
-functions must therefore have the same name. Which function gets called is 
-then deicded based upon the variable types of the parameters.  
 
-**IMPORTANT:** in order to ensure that the function
-overloading occurs, each one of your swap functions must have the same name 
-(ideally swap but anything else will sufice, as long as they are all the same).
+# Exercise 2
+
+Write 4 different swap functions.
+Each swap function accepts two reference parameters, and swaps them.
+The 4 swap functions should operate on ``int``, ``double``, ``char``, and ``bool``.
+
+We will name them all the same thing: ``swap``.
+This takes advantage of overloading.
+Overloading is when two functions have the same name, but different **parameter lists**.
 
 Example:
 ```c++
@@ -50,94 +53,108 @@ int main(){
 	return 0;
 }
 ```
-> Should print out: <br>
+The example above should print:
+
 > c a<br>
-> 2 1<br>
+> 2 1
 
-In the example above, `swap(a,c)` and `swap(one,two)` are different functions
-despite having the same names. Look at the bottom of the page or ask your SI
-leader to learn more about function overloading.
+`swap(a,c)` and `swap(one,two)` are calls to two different functions, despite having the same name.
+Look at the last section of this page, or ask your SI leader, to learn more about function overloading.
 
-Exercise 3
----
-Create a function that takes in a one or more sentences from the user and
-replaces any instances of a word specified by the user with another word
-specified by the user. The function should return an integer indicating how
-many instances of the word were replaced.
+
+# Exercise 3
+
+Write a function that replaces all occurances of a word with another word.
+The function should return an integer indicating how many instances of the word were replaced.
 
 Example:
-> Enter a sentence: **the other day my friends and I went to the store to find
->			out the price of radishes**<br>
+> Enter a sentence: **the other day my friends and I went to the store to find out the price of radishes**<br>
 > Which word should be replaced:  **radishes**<br>
 > Replace with what word: **oranges**<br>
-> **the other day my friends and I went to the store to find out the price
-> of oranges**
+> the other day my friends and I went to the store to find out the price of oranges
 
 Example:
-> Enter a sentence: **I like to eat apples and bananas but if I am forced to,
-> 		 I will eat just about anything, as long as its not
->		 spicy!**<br>
+> Enter a sentence: **I like to eat apples and bananas but if I am forced to, I will eat just about anything, as long as its not spicy!**<br>
 > Which word should be replaced : **eat**<br>
 > Replace with what word: **fight** <br>
-> **I like to fight apples and bananas but if I am forced to, I will fight
->	just about anything, as long as its not spicy!**
+> I like to fight apples and bananas but if I am forced to, I will fight just about anything, as long as its not spicy!
 
-Exercise 4
----
 
-Write a string modify function that takes a string and returns only a piece of
-that string (similar to substr). This function should take in a string 
-parameter (the string to be substringed) and two integer variables (the index
-at which the user would like to begin the substr and the length of the substr
-itself). The function should also return a bool returning true if the substr 
-was succesful and false if it was not.
+# Exercise 4
+
+Write a function that modifies a string to contain a subsection of itself.
+The function should accept a string, and two integers.
+The first integer is where to start the substring from.
+The second integer is how many characters to get.
+
+The function should return a bool, signaling whether or not the string was modified.
+Do not modify the string if the substr size requested is too big.
+Do not modify the string if the starting position is inside the string.
 
 For example, given the following code:
+
 ```c++
 string str = "Origami";
-cout << substr(str,1,3) << endl;
-cout << str << endl;
+bool success = substr(str, 1, 3);
+if (success) {
+    cout << str << endl;
+} else {
+    cout << "substr failed :(" << endl;
+}
 ```
-> Should output: <br>
-> 1<br>
-> rig<br>
 
-This function should return false when the user specifies a length or index 
-that goes beyond the maximum string length.
+The output should be:
 
-For example, using the code above:
-```c++
-cout << substr(str,5,3) << endl;
-cout << str << endl;
-```
-> Should output :<br>
-> 0<br>
-> origami<br>
+> rig
 
-The orignial string should be unchanged if an error is to occur.
-
-Excercise 5
----
-
-Using the main function below, create functions `generateRand(int)`,
-`getUserInput(string)` and `playGuessingGame(bool, int, int)`. In the function
-headers given to you, which parameters should be passed by reference and
-the return types of the functions have not been specified. 
-
-Function `generateRand(int)` should generate a random number between 1-20.<br>
-Function `getUserInput(string)` prompts the user if they would like to continue
-playing this game. The program should continue to run until the user enters
-"exit". Feel free to edit the main function or the the way this function works
-to better specify the user would like to exit.<br>
-Function `playGuessingGame(bool, int, int)` should take the random number 
-generated by `generateRand(int)` and have the user attempt to guess that
-number `maxAttempts` number of times. If the user correctly guesses the number,
-the the bool `winStatus` is set to true, otherwise it is set to false. 
-Regardless of the winStatus, the number of tries it took for the user 
-to guess the number is set to numTries.
-
+Given the following code:
 
 ```c++
+string str = "Origami";
+bool success = substr(str, 5, 3);
+if (success) {
+    cout << str << endl;
+} else {
+    cout << "substr failed :(" << endl;
+    cout << str << endl;
+}
+```
+
+The output should be:
+
+> substr failed :(<br>
+> origami
+
+# Excercise 5
+
+The code below implements a guessing game.
+There are some function headers given to you.
+Which parameters should be passed by reference?
+The return types of the functions have not been specified. 
+What should the return types be?
+
+`generateRand(int)` should generate a random number in the range [1, 20].
+This function should not output.
+
+`continuePlaying(string)` prompts the user if they would like to continue playing this game.
+
+The program should continue to run until the user wins, or enters "exit".
+
+Function `playGuessingGame(bool, int, int)` should accept a random number,
+and have the user attempt to guess it `maxAttempts` number of times.
+If the user correctly guesses the number, the the bool `winStatus` is set to true.
+The function then returns the number of tries it took the user to guess the value.
+
+The while loop below does not stop when the user wins.
+Fix this.
+
+
+```c++
+// INCORRECT function headers:
+generateRand(int);
+continuePlaying(string);
+playGuessingGame(bool, int, int);
+
 int main(){
 	int randInt = 0;
 	string userInput;
@@ -145,19 +162,18 @@ int main(){
 	int numTries = 0;
 	int maxAttempts = 3;
 
-	while(userInput != "exit" || !winStatus){
+	while (userInput != "exit" || !winStatus) {
 		generateRand(randInt);
 		numTries = playGuessingGame(winStatus, randInt, maxAttempts);
-		if(!winStatus){
-			getUserInput(userInput);
+		if (!winStatus) {
+			continuePlaying(userInput);
 		}
 	}
 
 	cout << "It took you " << numTries << "to get the value ";
-	if(winStatus){
+	if (winStatus) {
 		cout << "correct!" << endl;
-	}
-	else{
+	} else {
 		cout << "incorrect!" << endl;
 	}
 
@@ -179,6 +195,10 @@ Example:
 > CORRECT!<br>
 > It took you 1 try to get the value correct!
 
+
 Extra Help
 ---
+
 * [More on function overloading](http://www.learncpp.com/cpp-tutorial/76-function-overloading/)
+
+
