@@ -59,7 +59,7 @@ The example above should print:
 > 2 1
 
 `swap(a,c)` and `swap(one,two)` are calls to two different functions, despite having the same name.
-Look at the last section of this page, or ask your SI leader, to learn more about function overloading.
+Look at the Extra Help section of this page, or ask your SI leader, to learn more about function overloading.
 
 
 # Exercise 3
@@ -196,9 +196,12 @@ Example:
 > It took you 1 try to get the value correct!
 
 
-Extra Help
----
+# Extra Help
 
 * [More on function overloading](http://www.learncpp.com/cpp-tutorial/76-function-overloading/)
 
+
+# Quiz
+
+[quiz08](https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSc5YyLSWMoNFjj6qm_1otp94c2MafU0ymnWiU-g2ft_Ygu-aQ/viewform)
 
