@@ -18,7 +18,7 @@ are native to c++ while
 are not.
 
 <a style="color:white;border:solid black;border-width:1px">vctr.push_back(value)</a>
-creates a new element at the end of vector and assigns the given value to that element.
+creates a new element at the end of the vector and assigns the given value to that element.
 
 A vector's size can be set or changed while a program is executing using 
 <a style="color:white;border:solid black;border-width:1px">vctr.resize(N)</a>
