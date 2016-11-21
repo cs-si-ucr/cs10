@@ -287,8 +287,8 @@ using namespace std;
 
 //Prints the elements of vector v vertically
 void printVerticalVector(vector&lt;int&gt; v){
-    for(int i = 0; i &lt; v.size(); i++){
-        if(i &lt; v.size() - 1){
+    for (int i = 0; i &lt; v.size(); i++){
+        if (i &lt; v.size() - 1){
             cout &lt;&lt; v.at(i) &lt;&lt; endl;
         }
         else{
@@ -329,8 +329,8 @@ using namespace std;
 
 //Prints the elements of vector v with spaces separating each element
 void printVector(vector&lt;int&gt; v){
-    for(int i = 0; i &lt; v.size(); i++){
-        if(i &lt; v.size() - 1){
+    for (int i = 0; i &lt; v.size(); i++){
+        if (i &lt; v.size() - 1){
             cout &lt;&lt; v.at(i) &lt;&lt; ' ';
         }
         else{
@@ -375,8 +375,8 @@ using namespace std;
 
 //Prints the elements of vector v with spaces separating each element
 void printVector(vector&lt;int&gt; v){
-    for(int i = 0; i &lt; v.size(); i++){
-        if(i &lt; v.size() - 1){
+    for (int i = 0; i &lt; v.size(); i++){
+        if (i &lt; v.size() - 1){
             cout &lt;&lt; v.at(i) &lt;&lt; ' ';
         }
         else{
@@ -420,15 +420,14 @@ int main(){
     r.push_back(rc1);
     r.push_back(rc2);
 
-    for(int i = 0; i &lt; a.at(0).size(); i++){
-        for(int j = 0; j &lt; a.size(); j++){
-            for(int k = 0; k &lt; b.size(); k++){
+    for (int i = 0; i &lt; a.at(0).size(); i++){
+        for (int j = 0; j &lt; a.size(); j++){
+            for (int k = 0; k &lt; b.size(); k++){
                 r.at(i).at(k) += a.at(i).at(j) * b.at(j).at(k);
             }
         }
     }
 
-    //Print the two 2d vector r
     printVector(r.at(0));
     cout &lt;&lt; endl;
     printVector(r.at(1));
