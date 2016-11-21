@@ -310,9 +310,9 @@ int main(){
     b.push_back(4);
     b.push_back(6);
 
-    r.push_back(a.at(1) * b.at(2) - a.at(2) - b.at(1));
-    r.push_back(a.at(2) * b.at(0) - a.at(0) - b.at(2));
-    r.push_back(a.at(0) * b.at(1) - a.at(1) - b.at(0));
+    r.push_back(a.at(1) * b.at(2) - a.at(2) * b.at(1));
+    r.push_back(a.at(2) * b.at(0) - a.at(0) * b.at(2));
+    r.push_back(a.at(0) * b.at(1) - a.at(1) * b.at(0));
 
     printVerticalVector(r);
     cout &lt;&lt; endl;
