@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Arrays and Vectors - CS010 SI: Fall 2016</title>
+  <title>Discussion 9: Arrays and Vectors - CS010 SI: Fall 2016</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Arrays and Vectors";
+    var mkdocs_page_name = "Discussion 9: Arrays and Vectors";
     var mkdocs_page_input_path = "dis09.md";
     var mkdocs_page_url = "/dis09/";
   </script>
@@ -160,7 +160,7 @@
           
             <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Arrays and Vectors</a>
+        <a class="current" href="./">Discussion 9: Arrays and Vectors</a>
         
             <ul>
             
@@ -206,7 +206,7 @@
     
       
     
-    <li>Arrays and Vectors</li>
+    <li>Discussion 9: Arrays and Vectors</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -244,7 +244,46 @@ have more advantages than
 <a style="color:white;border:solid black;border-width:1px">arrays,</a>
 like resizing during runtime, easy insertion of items at the front or rear, determining vector size, etc.</p>
 <h2 id="tracing-1">Tracing 1</h2>
-<pre><code class="c++">
+<pre><code class="c++">#include &lt;iostream&gt; 
+#include &lt;vector&gt;
+
+using namespace std;
+
+//Prints the vector in a straight line with spaces separating elements
+void printVector(vector&lt;int&gt; v){
+    for(int i = 0; i &lt; v.size(); i++){
+        if(i &lt; v.size() - 1){
+            cout &lt;&lt; v.at(i) &lt;&lt; ' ';
+        }
+        else{
+            cout &lt;&lt; v.at(i);
+        }
+    }
+}
+
+int main(){
+    vector&lt;int&gt; v;
+
+    for (int i = 5; i &gt; 0; i--){
+        v.push_back(i);
+    }
+
+    printVector(v);
+    cout &lt;&lt; endl;
+
+    for (int i = 0; i &lt; v.size() - 1; i++){
+        for (int j = 0; j &lt; v.size() - i - 1; j++){
+           if (v.at(j) &gt; v.at(j + 1)){
+              swap(v.at(j), v.at(j + 1));
+           }
+        }
+    }
+
+    printVector(v);
+    cout &lt;&lt; endl;
+
+    return 0;
+}
 </code></pre>
 
 <h2 id="tracing-2">Tracing 2</h2>
