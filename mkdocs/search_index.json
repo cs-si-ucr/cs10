@@ -514,6 +514,36 @@
             "location": "/lab08/#quiz", 
             "text": "quiz08", 
             "title": "Quiz"
+        }, 
+        {
+            "location": "/dis09/", 
+            "text": "Introduction\n\n\nAn \n\narray/vector\n\nis a special variable having one name, but storing a list of data items, with each item directly accessible.\n\n\nEach item in an array/vector is known as an \n\nelement\n\n.\n\n\nIn an array/vector, each element's location number is called the \n\nindex\n\n.\n\n\nArrays\n\nare native to c++ while\n\nvectors\n\nare not.\n\n\nvctr.push_back(value)\n\ncreates a new element at the end of the vector and assigns the given value to that element.\n\n\nA vector's size can be set or changed while a program is executing using \n\nvctr.resize(N)\n\n.\n\n\nVectors\n\nare safer because the access b.at(i) is checked during execution to ensure the index is within the range. \n\nArray's\n\naccess b[i] involves no such check. \n\n\nVectors\n\nhave more advantages than \n\narrays,\n\nlike resizing during runtime, easy insertion of items at the front or rear, determining vector size, etc.\n\n\nTracing 1\n\n\n\n\n\n\n\nTracing 2\n\n\n\n\n\n\n\nTracing 3\n\n\n\n\n\n\n\nQuiz\n\n\nQuiz", 
+            "title": "Arrays and Vectors"
+        }, 
+        {
+            "location": "/dis09/#introduction", 
+            "text": "An  array/vector \nis a special variable having one name, but storing a list of data items, with each item directly accessible.  Each item in an array/vector is known as an  element \n.  In an array/vector, each element's location number is called the  index \n.  Arrays \nare native to c++ while vectors \nare not.  vctr.push_back(value) \ncreates a new element at the end of the vector and assigns the given value to that element.  A vector's size can be set or changed while a program is executing using  vctr.resize(N) \n.  Vectors \nare safer because the access b.at(i) is checked during execution to ensure the index is within the range.  Array's \naccess b[i] involves no such check.   Vectors \nhave more advantages than  arrays, \nlike resizing during runtime, easy insertion of items at the front or rear, determining vector size, etc.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/dis09/#tracing-1", 
+            "text": "", 
+            "title": "Tracing 1"
+        }, 
+        {
+            "location": "/dis09/#tracing-2", 
+            "text": "", 
+            "title": "Tracing 2"
+        }, 
+        {
+            "location": "/dis09/#tracing-3", 
+            "text": "", 
+            "title": "Tracing 3"
+        }, 
+        {
+            "location": "/dis09/#quiz", 
+            "text": "Quiz", 
+            "title": "Quiz"
         }
     ]
 }
