@@ -186,36 +186,36 @@ int main(){
     vector<vector<int> > a;
     vector<vector<int> > b;
     vector<vector<int> > r;
-    vector<int> ac1(2);
-    vector<int> ac2(2);
-    vector<int> bc1(2);
-    vector<int> bc2(2);
-    vector<int> rc1(2);
-    vector<int> rc2(2);
+    vector<int> ar1(2);
+    vector<int> ar2(2);
+    vector<int> br1(2);
+    vector<int> br2(2);
+    vector<int> rr1(2);
+    vector<int> rr2(2);
     
-    ac1.at(0) = 5;
-    ac1.at(1) = 3;
-    ac2.at(0) = 4;
-    ac2.at(1) = 2;
+    ar1.at(0) = 5;
+    ar1.at(1) = 3;
+    ar2.at(0) = 4;
+    ar2.at(1) = 2;
     
-    bc1.at(0) = 1;
-    bc1.at(1) = 3;
-    bc2.at(0) = 2;
-    bc2.at(1) = 4;
+    br1.at(0) = 1;
+    br1.at(1) = 3;
+    br2.at(0) = 2;
+    br2.at(1) = 4;
     
-    rc1.at(0) = 0;
-    rc1.at(1) = 0;
-    rc2.at(0) = 0;
-    rc2.at(1) = 0;
+    rr1.at(0) = 0;
+    rr1.at(1) = 0;
+    rr2.at(0) = 0;
+    rr2.at(1) = 0;
     
-    a.push_back(ac1);
-    a.push_back(ac2);
+    a.push_back(ar1);
+    a.push_back(ar2);
     
-    b.push_back(bc1);
-    b.push_back(bc2);
+    b.push_back(br1);
+    b.push_back(br2);
     
-    r.push_back(rc1);
-    r.push_back(rc2);
+    r.push_back(rr1);
+    r.push_back(rr2);
 
     for (int i = 0; i < a.at(0).size(); i++){
         for (int j = 0; j < a.size(); j++){
