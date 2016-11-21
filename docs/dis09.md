@@ -234,7 +234,7 @@ int main(){
 }
 ```
 
-Tracing 4
+Tracing 5
 ---
 
 ```c++
