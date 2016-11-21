@@ -179,6 +179,9 @@
                 <li class="toctree-l3"><a href="#tracing-4">Tracing 4</a></li>
                 
             
+                <li class="toctree-l3"><a href="#tracing-4_1">Tracing 4</a></li>
+                
+            
             </ul>
         
     </li>
@@ -286,7 +289,7 @@ int main(){
 using namespace std;
 
 //Prints the elements of vector v vertically
-void printVerticalVector(vector&lt;int&gt; v){
+void printVerticalVector(const vector&lt;int&gt; &amp;v){
     for (int i = 0; i &lt; v.size(); i++){
         if (i &lt; v.size() - 1){
             cout &lt;&lt; v.at(i) &lt;&lt; endl;
@@ -328,7 +331,7 @@ int main(){
 using namespace std;
 
 //Prints the elements of vector v with spaces separating each element
-void printVector(vector&lt;int&gt; v){
+void printVector(const vector&lt;int&gt; &amp;v){
     for (int i = 0; i &lt; v.size(); i++){
         if (i &lt; v.size() - 1){
             cout &lt;&lt; v.at(i) &lt;&lt; ' ';
@@ -374,7 +377,7 @@ int main(){
 using namespace std;
 
 //Prints the elements of vector v with spaces separating each element
-void printVector(vector&lt;int&gt; v){
+void printVector(const vector&lt;int&gt; &amp;v){
     for (int i = 0; i &lt; v.size(); i++){
         if (i &lt; v.size() - 1){
             cout &lt;&lt; v.at(i) &lt;&lt; ' ';
@@ -432,6 +435,66 @@ int main(){
     cout &lt;&lt; endl;
     printVector(r.at(1));
     cout &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+
+<h2 id="tracing-4_1">Tracing 4</h2>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+//Prints the elements of vector v with spaces separating each element
+void printVector(const vector&lt;int&gt; &amp;v){
+    for (int i = 0; i &lt; v.size(); i++){
+        if (i &lt; v.size() - 1){
+            cout &lt;&lt; v.at(i) &lt;&lt; ' ';
+        }
+        else{
+            cout &lt;&lt; v.at(i);
+        }
+    }
+}
+
+int mod(vector&lt;int&gt; &amp;a, int sz) {
+    for(int x=0; x &lt;= sz; x += 2) {
+        swap(a.at(x), a.at(x%3));
+    }
+    return a.at(sz % 3) % 3;
+}
+
+void check(int &amp;c, int sz) {
+    //cout &lt;&lt; c &lt;&lt; '\t' &lt;&lt; sz &lt;&lt; '\t' &lt;&lt; (int)(c-'a') &lt;&lt; endl;
+    if(sz &gt;= c - sz) {
+        c++;
+    } else {
+        c--;
+    }
+}
+
+int main() {
+    ///////////////////////////////////// 1 ////////////////////////////////////
+    vector&lt;int&gt; a = {1, 2, 3, 4, 5};
+    check(a[0], mod(a, 5));
+    printVector(a); cout &lt;&lt; endl;
+
+    ///////////////////////////////////// 2 ////////////////////////////////////
+    //Now when we output boolean values they'll show as &quot;true&quot; or &quot;false&quot;
+    cout &lt;&lt; boolalpha;
+    vector&lt;int&gt; b = {3, 19, 18, 21, 12, 5, 19};
+    vector&lt;int&gt; c = {4, 15, 23, 14, 23, 9, 20, 8, 5, 5};
+    //Comparing vectors looks at each value until it finds two that are diff
+    cout &lt;&lt; (b &lt; c) &lt;&lt; endl; //will output True
+    cout &lt;&lt; mod(b, 6) &lt;&lt; endl;
+    cout &lt;&lt; (b &lt; c) &lt;&lt; endl;
+
+    ///////////////////////////////////// 3 ////////////////////////////////////
+    printVector(b); cout &lt;&lt; endl;
+    for(int x=0; x &lt; b.size(); x++) {
+        check(b[x], x);
+    }
+    printVector(b); cout &lt;&lt; endl;
 
     return 0;
 }
