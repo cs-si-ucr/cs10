@@ -38,11 +38,80 @@ Tracing 1
 ---
 
 ```c++
+#include <iostream> 
+#include <vector>
 
+using namespace std;
+
+int main(){
+    vector<int> a;
+    vector<int> b;
+    int r = 0;
+    
+    a.push_back(3);
+    a.push_back(5);
+    a.push_back(1);
+    
+    b.push_back(-2);
+    b.push_back(4);
+    b.push_back(6);
+    
+    for (int i = 0; i < a.size(); i++){
+        r += a.at(i) * b.at(i);
+    }
+    
+    cout << r << endl;
+    
+    return 0;
+}
 ```
 
-
 Tracing 2
+---
+
+```c++
+#include <iostream> 
+#include <vector>
+
+using namespace std;
+
+//Prints the elements of vector v vertically
+void printVerticalVector(vector<int> v){
+    for(int i = 0; i < v.size(); i++){
+        if(i < v.size() - 1){
+            cout << v.at(i) << endl;
+        }
+        else{
+            cout << v.at(i);
+        }
+    }
+}
+
+int main(){
+    vector<int> a;
+    vector<int> b;
+    vector<int> r;
+    
+    a.push_back(3);
+    a.push_back(5);
+    a.push_back(1);
+    
+    b.push_back(2);
+    b.push_back(4);
+    b.push_back(6);
+    
+    r.push_back(a.at(1) * b.at(2) - a.at(2) - b.at(1));
+    r.push_back(a.at(2) * b.at(0) - a.at(0) - b.at(2));
+    r.push_back(a.at(0) * b.at(1) - a.at(1) - b.at(0));
+    
+    printVerticalVector(r);
+    cout << endl;
+    
+    return 0;
+}
+```
+
+Tracing 3
 ---
 
 ```c++
@@ -89,7 +158,7 @@ int main(){
 ```
 
 
-Tracing 3
+Tracing 4
 ---
 
 ```c++
@@ -113,8 +182,8 @@ void printVector(vector<int> v){
 int main(){
     /*The following code sets up the 2d vectors:
     
-       a:  5 3    and   b:  1 3
-           4 2              2 4
+       a:  5 3    and   b:  1 3    and   r:  0 0
+           4 2              2 4              0 0
     */
     vector<vector<int> > a;
     vector<vector<int> > b;
@@ -149,17 +218,6 @@ int main(){
     
     r.push_back(rc1);
     r.push_back(rc2);
-    
-    //Print the two 2d vectors a and b
-    printVector(a.at(0));
-    cout << endl;
-    printVector(a.at(1));
-    cout << endl;
-    cout << endl;
-    printVector(b.at(0));
-    cout << endl;
-    printVector(b.at(1));
-    cout << endl;
 
     //START TRACING HERE
     for(int i = 0; i < a.at(0).size(); i++){
@@ -171,7 +229,6 @@ int main(){
     }
     
     //Print the two 2d vector r
-    cout << endl;
     printVector(r.at(0));
     cout << endl;
     printVector(r.at(1));
@@ -180,11 +237,5 @@ int main(){
     return 0;
 }
 ```
-
-
-Quiz
----
-
-[Quiz]()
 
 
