@@ -4,7 +4,10 @@
 
 The most important parts to us this week are ``cin`` and ``cout``.
 
-``cin`` is used for <a style="color:white;border:black">keyboard input</a>, and ``cout`` is used for <a style="color:white;border:black">character output</a>.
+``cin`` is used for
+<a style="color:white;border:solid black;border-width:1px">keyboard input</a>
+and ``cout`` is used for
+<a style="color:white;border:solid black;border-width:1px">character output</a>.
 
 
 Your first program
@@ -19,7 +22,8 @@ int main() {
 }
 ```
 
-The first line of code enables <a style="color:white">input and output</a>.
+The first line of code enables
+<a style="color:white;border:solid black;border-width:1px">input and output</a>
 
 The second line is magic.
 Ignore it for now.
@@ -85,7 +89,7 @@ Don't attempt it unless you're comfortable with going ahead.
 
 Quiz!
 ---
-[quiz01](https://goo.gl/forms/xax7sddS8a1G7u1J2)
+[quiz01](https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLScjKZR7DzYmg73RwV3DSFHXtk6p0OPZ_9Kq6d-zv9x22c96Og/viewform)
 
 Answers
 ---
