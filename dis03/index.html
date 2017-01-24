@@ -184,8 +184,8 @@ Assume all required libraries are included.
 Refer to the last section for extra help.</p>
 <pre><code class="c++">// 1
 int main() {
-    char c1 = 'a';
-    char c2 = c1 - 32;
+    char c1 = 'x';
+    char c2 = c1 - 'a' + 'A';
 
     cout &lt;&lt; c1 &lt;&lt; ' ' &lt;&lt; c2 &lt;&lt; endl;
 
@@ -204,32 +204,28 @@ int main() {
     int j = 5;
     int k = -3;
 
-    if(i &gt; k) {
+    if (i &gt; k) {
         i *= k;
     }
 
     if (j &lt; i) {
         j *= i;
-    }
-    else {
+    } else {
         j /= 5;
     }
 
     if (j * 3 &gt; -k) {
         k = -k / 3;
-    }
-    else if (j * 3 &lt;= -k) {
+    } else if (j * 3 &lt; -k) {
         j = j * 3;
         k = -k;
     }
 
     if (i &gt; 0) {
         i = k;
-    }
-    else if (k &gt; 0) {
+    } else if (k &gt; 0) {
         k = i;
-    }
-    else if (j &gt; 0) {
+    } else if (j &gt; 0) {
         j = i;
     }
 
@@ -254,26 +250,22 @@ int main() {
 
     if (j &lt; i &amp;&amp; b1) {
         j *= i;
-    }
-    else {
+    } else {
         j /= 5;
     }
 
     if (!(j * 3 &gt; -k)) {
         k = -k / 3;
-    }
-    else if (j * 3 &lt;= -k) {
+    } else if (j * 3 &lt;= -k) {
         j = j * 3;
         k = -k;
     }
 
     if (!(i &gt; 0) || (j - i &gt; 0)) {
         i = k;
-    }
-    else if (((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1) {
+    } else if (((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1) {
         k = i;
-    }
-    else if (!(j &gt; 0) || (i - j &gt; 0)) {
+    } else if (!(j &gt; 0) || (i - j &gt; 0)) {
         j = i;
     }
 
@@ -304,8 +296,7 @@ int main() {
             j -= 6;
         }
         j /= i;
-    }
-    else {
+    } else {
         if (j &gt; k &amp;&amp; j &lt; i) {
             j -= 1;
         }
@@ -317,8 +308,7 @@ int main() {
             b1 = !b1;
         }
         k = -k * 3;
-    }
-    else if (j * 3 &lt;= -k || b1) {
+    } else if (j * 3 &lt;= -k || b1) {
         j = j * 3;
         k = -k;
     }
@@ -328,19 +318,16 @@ int main() {
         if (i == k) {
             k += 6;
         }
-    }
-    else if (((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1) {
+    } else if (((k &gt; 0) &amp;&amp; !(-k &lt; 0)) || b1) {
         k = i;
         if (b1) {
             i += 6;   
         }
-    }
-    else if (!(j &gt; 0) || (i - j &gt; 0)) {
+    } else if (!(j &gt; 0) || (i - j &gt; 0)) {
         j = i;
         if (b1) {
             j += 6;
-        }
-        else if (b1 || !b1) {
+        } else if (b1 || !b1) {
             i += 3;
         }
     }
