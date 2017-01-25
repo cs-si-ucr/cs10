@@ -5,8 +5,8 @@ Ask the user for 2 numbers, then divide them and show the result.
 
 Example:
 
-> Enter the dividend: **4**<br>
-> Enter the divisor: **2**<br>
+> Enter the dividend: <u>**4**</u><br>
+> Enter the divisor: <u>**2**</u><br>
 > 4 / 2 == 2
 
 
@@ -18,7 +18,7 @@ The keyword for the character datatype is ``char``.
 
 Example:
 
-> Enter a character: **c**<br>
+> Enter a character: <u>**c**</u><br>
 > 'c' in decimal is 99.
 
 <!-- todo: delete -->
@@ -31,7 +31,7 @@ Then, convert it to the proper capitalization (first letter is capitalized, and 
 
 Example:
 
-> Enter a 5-letter word: **hElLo**<br>
+> Enter a 5-letter word: <u>**hElLo**</u><br>
 > Your word is Hello.
 
 
@@ -56,12 +56,12 @@ Here is a hint:
 
 Examples:
 
-> Enter the dividend: **23.4**<br>
-> Enter the divisor: **3.2**<br>
+> Enter the dividend: <u>**23.4**</u><br>
+> Enter the divisor: <u>**3.2**</u><br>
 > 23.4 % 3.2 == 1
 
-> Enter the dividend: **54.7**<br>
-> Enter the divisor: **3.14**<br>
+> Enter the dividend: <u>**54.7**</u><br>
+> Enter the divisor: <u>**3.14**</u><br>
 > 54.7 % 3.14 == 1.32
 
 
@@ -72,7 +72,7 @@ Use modulus and division to print the binary value of a character.
 
 Example:
 
-> Enter a character: **c**<br>
+> Enter a character: <u>**c**</u><br>
 > 'c' in binary is 01100011.
 
 Hint: once you have the decimal value of a character [part 3],
