@@ -1,32 +1,3 @@
-Exercise 1
----
-
-Get a character from the user, and display its integer equivalent.
-If it is a letter, print the opposite case.
-Additionally, print the integer equivqalent of the opposite case if applicable.
-
-Example:
-
-> Enter a character: <u>**c**</u><br>
-> 'c' in decimal is 99.<br>
-> 'C' in decimal is 67.
-
-> Enter a character: <u>**=**</u><br>
-> '=' in decimal is 61.
-
-
-Exercise 2
----
-
-Take in a 5-character word from the user.</br>
-Then, convert the "word" to proper capitalization (first letter is capitalized, and the rest lowercase).
-
-Example:
-
-> Enter a 5-letter word: <u>**hElLo**</u><br>
-> Your word is Hello.
-
-
 Exercise 3
 ---
 
@@ -50,6 +21,34 @@ Example 3:
 > Enter a number: <u>**0**</u><br>
 > Your number is 0
 
+
+Exercise 2
+---
+
+Take in a 5-character word from the user.</br>
+Then, convert the "word" to proper capitalization (first letter is capitalized, and the rest lowercase).
+
+Example:
+
+> Enter a 5-letter word: <u>**hElLo**</u><br>
+> Your word is Hello.
+
+
+Exercise 3
+---
+
+Get a character from the user, and display its integer equivalent.
+If it is a letter, print the opposite case.
+Additionally, print the integer equivqalent of the opposite case if applicable.
+
+Example:
+
+> Enter a character: <u>**c**</u><br>
+> 'c' in decimal is 99.<br>
+> 'C' in decimal is 67.
+
+> Enter a character: <u>**=**</u><br>
+> '=' in decimal is 61.
 
 
 Quiz!
