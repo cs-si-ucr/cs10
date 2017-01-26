@@ -1,4 +1,4 @@
-Exercise 3
+Exercise 1
 ---
 
 Take in a number from the user (between -50 and 50) then output between which multiples of 10 the number is between and whether it is positive or negative.
