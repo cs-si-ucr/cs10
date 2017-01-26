@@ -152,13 +152,13 @@
         }, 
         {
             "location": "/lab03/", 
-            "text": "Exercise 3\n\n\nTake in a number from the user (between -50 and 50) then output between which multiples of 10 the number is between and whether it is positive or negative.\nIf the number is 0, simply output that the number was 0. \nIf the number is a multiple of 10, output that the number was a positive/negative multiple of 10. \nIf the number is not between -50 and 50, inclusive, then do nothing.\n\n\nExample 1:\n\n\n\n\nEnter a number: \n-37\n\nYour number is negative and between -30 and -40\n\n\n\n\nExample 2:\n\n\n\n\nEnter a number: \n40\n\nYour number is a positive multiple of 10\n\n\n\n\nExample 3:\n\n\n\n\nEnter a number: \n0\n\nYour number is 0\n\n\n\n\nExercise 2\n\n\nTake in a 5-character word from the user.\n\nThen, convert the \"word\" to proper capitalization (first letter is capitalized, and the rest lowercase).\n\n\nExample:\n\n\n\n\nEnter a 5-letter word: \nhElLo\n\nYour word is Hello.\n\n\n\n\nExercise 3\n\n\nGet a character from the user, and display its integer equivalent.\nIf it is a letter, print the opposite case.\nAdditionally, print the integer equivqalent of the opposite case if applicable.\n\n\nExample:\n\n\n\n\nEnter a character: \nc\n\n'c' in decimal is 99.\n\n'C' in decimal is 67.\n\n\nEnter a character: \n=\n\n'=' in decimal is 61.\n\n\n\n\nQuiz!\n\n\nquiz03", 
+            "text": "Exercise 1\n\n\nTake in a number from the user (between -50 and 50) then output between which multiples of 10 the number is between and whether it is positive or negative.\nIf the number is 0, simply output that the number was 0. \nIf the number is a multiple of 10, output that the number was a positive/negative multiple of 10. \nIf the number is not between -50 and 50, inclusive, then do nothing.\n\n\nExample 1:\n\n\n\n\nEnter a number: \n-37\n\nYour number is negative and between -30 and -40\n\n\n\n\nExample 2:\n\n\n\n\nEnter a number: \n40\n\nYour number is a positive multiple of 10\n\n\n\n\nExample 3:\n\n\n\n\nEnter a number: \n0\n\nYour number is 0\n\n\n\n\nExercise 2\n\n\nTake in a 5-character word from the user.\n\nThen, convert the \"word\" to proper capitalization (first letter is capitalized, and the rest lowercase).\n\n\nExample:\n\n\n\n\nEnter a 5-letter word: \nhElLo\n\nYour word is Hello.\n\n\n\n\nExercise 3\n\n\nGet a character from the user, and display its integer equivalent.\nIf it is a letter, print the opposite case.\nAdditionally, print the integer equivqalent of the opposite case if applicable.\n\n\nExample:\n\n\n\n\nEnter a character: \nc\n\n'c' in decimal is 99.\n\n'C' in decimal is 67.\n\n\nEnter a character: \n=\n\n'=' in decimal is 61.\n\n\n\n\nQuiz!\n\n\nquiz03", 
             "title": "Lab 3: Characters and Branches"
         }, 
         {
-            "location": "/lab03/#exercise-3", 
+            "location": "/lab03/#exercise-1", 
             "text": "Take in a number from the user (between -50 and 50) then output between which multiples of 10 the number is between and whether it is positive or negative.\nIf the number is 0, simply output that the number was 0. \nIf the number is a multiple of 10, output that the number was a positive/negative multiple of 10. \nIf the number is not between -50 and 50, inclusive, then do nothing.  Example 1:   Enter a number:  -37 \nYour number is negative and between -30 and -40   Example 2:   Enter a number:  40 \nYour number is a positive multiple of 10   Example 3:   Enter a number:  0 \nYour number is 0", 
-            "title": "Exercise 3"
+            "title": "Exercise 1"
         }, 
         {
             "location": "/lab03/#exercise-2", 
@@ -166,7 +166,7 @@
             "title": "Exercise 2"
         }, 
         {
-            "location": "/lab03/#exercise-3_1", 
+            "location": "/lab03/#exercise-3", 
             "text": "Get a character from the user, and display its integer equivalent.\nIf it is a letter, print the opposite case.\nAdditionally, print the integer equivqalent of the opposite case if applicable.  Example:   Enter a character:  c \n'c' in decimal is 99. \n'C' in decimal is 67.  Enter a character:  = \n'=' in decimal is 61.", 
             "title": "Exercise 3"
         }, 
