@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Discussion 4: Strings and Loops - CS010 SI: Fall 2016</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Discussion 4: Strings and Loops";
+    var mkdocs_page_input_path = "dis04.md";
+    var mkdocs_page_url = "/dis04/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CS010 SI: Fall 2016</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab01/">Lab 1: Input and Output</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis02/">Discussion 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab02/">Lab 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis03/">Discussion 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Discussion 4: Strings and Loops</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#code-tracing">Code tracing</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CS010 SI: Fall 2016</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Discussion 4: Strings and Loops</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="introduction">Introduction</h2>
+<p>You can check if two strings are equal by using the
+<a style="color:white;border:solid black;border-width:1px">== or !=</a>
+operators.
+For two strings to be considered equal, they must have the same number of
+<a style="color:white;border:solid black;border-width:1px">characters</a>
+and each corresponding character must be
+<a style="color:white;boreder:solid black;border-width:1px">identical</a>.</p>
+<p>The operators
+<a style="color:white;border:solid black;border-width:1px">&lt;, &lt;=, &gt;, &gt;=</a>
+can also be used to order strings 
+<a style="colo:white;border:solid black;border-wiodth:1px">values</a>.</p>
+<p>The string accessor function <code>.at(i)</code> returns
+<a style="color:white;border:solid black;border-width:1px">a character</a>
+at the ith value of the string
+The string accessor function <code>.size()</code> returns
+<a style="color:white;border:solid black;border-width:1px">the number of chars in the string</a>
+or the length of the string.
+<code>substr(i,j)</code> would split a string into a substring from index
+<a style="color:white;border:solid black;border-width:1px">i</a>
+and until index
+<a style="color:white;border:solid black;border-width:1px">i+j</a></br></p>
+<p><code>toupper('c')</code> and <code>tolower('C')</code> are char functions that return the
+<a style="color:white;border:solid black;border-width:1px">lowercase and uppercase</a>
+of the character arguments, respectively.</p>
+<p>Floating point numbers should not be compared using <code>==</code> because they are sometimes not
+<a style="color:white;border:solid black;border-width:1px">precise</a>
+enough.
+Instead, to compare to floating point variables <code>f1</code> and <code>f2</code> where <code>f1 &gt; f2</code>, make sure to use a formula similar to the following:
+<a style="color:white;border:solid black;border-width:1px">(f1-f2)&lt;.00001</a>.</p>
+<p>Loops allow you to control the
+<a style="color:white;border:solid black;border-width:1px">flow</a>
+of your program by repeating actions.
+Each loop style contains a condition section.
+The block will execute as long as the provided condition evaluates to
+<a style="color:white;border:solid black;border-width:1px">true</a>.</p>
+<p>One type of loop that is visually similar to an <code>if</code> statement is a 
+<a style="color:white;border:solid black;border-width:1px">while</a>
+loop.
+Both contain a single expression that evaluates to <code>true</code> or <code>false</code>.
+This expression determines whether or not the body of the loop will be
+<a style="color:white;border:solid black;border-width:1px">executed</a>.</p>
+<p>A while loop will continue to execute until
+<a style="color:white;border:solid black;border-width:1px">its conditional expression evaluates to false</a>.
+The condition of a while loop evaluates once per iteration of the loop.</p>
+<p><code>for</code> loops are similar to <code>while</code> loops.
+For loops are composed of
+<a style="color:white;border:solid black;border-width:1px">an initialization statement</a>,
+<a style="color:white;border:solid black;border-width:1px">a conditional expression</a>, and
+<a style="color:white;border:solid black;border-width:1px">an update action</a>.
+The conditional expression of a <code>for</code> loop is evaluated
+<a style="color:white;border:solid black;border-width:1px">before</a>
+the body is executed.</p>
+<p>Although <code>for</code> and <code>while</code> loops can be used interchangeably, each is stylistically better suited for different tasks.
+A <code>for</code> loop should be used when the number of loop iterations is
+<a style="color:white;border:solid black;border-width:1px">known</a>.
+A <code>while</code> loop should be used when the number of loop iterations is
+<a style="color:white;border:solid black;border-width:1px">unknown</a>.</p>
+<h2 id="code-tracing">Code tracing</h2>
+<p>What does each main function ouptut?
+Assume all required libraries are included.</p>
+<pre><code class="c++">// 1
+int main() {
+    string Z = &quot;Z&quot;;
+    string a = &quot;a&quot;;
+
+    if (Z &lt; a) {
+        cout &lt;&lt; &quot;'Z' comes before 'a' lexicographically&quot; &lt;&lt; endl;
+    }
+    else {
+        cout &lt;&lt; &quot;'a' comes before 'Z' lexicographically&quot; &lt;&lt; endl;
+    }
+
+    Z.append(&quot;ebra&quot;);
+    cout &lt;&lt; &quot;Length = &quot; &lt;&lt; Z.length() &lt;&lt; endl;
+    cout &lt;&lt; &quot;Size = &quot; &lt;&lt; Z.size() &lt;&lt; endl;
+
+    Z.clear();
+    cout &lt;&lt; &quot;Length = &quot; &lt;&lt; Z.size() &lt;&lt; endl;
+
+    Z = &quot;hello&quot;;
+    cout &lt;&lt; Z.at(0) &lt;&lt; a &lt;&lt; Z.at(2) &lt;&lt; Z.at(4) &lt;&lt; endl;
+
+    Z.insert(0,&quot;c&quot;);
+    cout &lt;&lt; Z &lt;&lt; endl;
+
+    cout &lt;&lt; Z.substr(1,2) &lt;&lt; &quot; is awesome.&quot; &lt;&lt; endl;
+
+    return 0;
+}
+
+// 2
+int main() {
+    int counter = 0;
+    int counter2 = 0;
+
+    for (int i = 0; i &lt; 5; i++) {
+        counter += 1;
+    }
+    cout &lt;&lt; counter &lt;&lt; endl;
+
+    for (int i = 0; i &lt; 4; i++) {
+        counter *= 2;
+    }
+    cout &lt;&lt; counter &lt;&lt; endl;
+
+    counter = counter / 10;
+
+    for (int i = 28; i &gt; counter; i = i - 2) {
+        cout &lt;&lt; counter2;
+        counter2++;
+    }
+    cout &lt;&lt; endl;
+
+    return 0;
+}
+
+// 3
+int main() {
+    bool b = true;
+    int a = 0;
+
+    while (b) {
+        cout &lt;&lt; a;
+        if (a == 5) {
+            b = false;
+        }
+        a++;
+    }
+    cout &lt;&lt; endl;
+
+    a = 0;
+
+    while (!b) {
+        a++;
+        if (a == 5){
+            b = true;
+        }
+        cout &lt;&lt; a &lt;&lt; endl;
+    }
+
+    double d = 12345;
+
+    while (d &gt;= 1) {
+        d = d / 10;
+    }
+    cout &lt;&lt; d &lt;&lt; endl;
+
+    string s = &quot;Computer&quot;;
+
+    while(s.size() != 0) {
+        cout &lt;&lt; s &lt;&lt; endl;
+        s.resize(s.size() - 1);
+    }
+
+    return 0;
+}
+
+// 4
+// FOR THESE QUESTIONS, how many times does each loop run?
+int main() {
+    // Loop A
+    for (int i = 0; i &lt; 10; i++) {
+        if (i &lt; 5) {
+            i *= 2;
+        }
+    }
+
+    int j = 10;
+
+    // Loop B
+    while (j != 0) {
+        if (j &gt; 0) {
+            j -= 3;
+        }
+        if (j &lt; 0) {
+            j += 5;
+        }
+    }
+
+    // Loop C
+    for (int i = 0; i &lt; 30; i++) {
+        if (i % 3 == 2) {
+            i += 10;
+        }
+        else if (i % 3 == 1) {
+            i *= 2;
+        }
+        else {
+            i /= 3;
+        }
+    }
+
+    return 0;
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../lab03/" class="btn btn-neutral" title="Lab 3: Characters and Branches"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../lab03/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
