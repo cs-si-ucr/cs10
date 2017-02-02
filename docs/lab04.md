@@ -1,25 +1,20 @@
-Note
----
-
-You do not need to complete bonus exercises.
-I recommend you attempt them, but if you are spending too long move to the next exercise.
-
-
 Exercise 1
 ---
 
-Get a word from the user and print it back.
-Each print should have one less letter than the line before it.
-Stop printing when there are no more characters in the string.
+Get a word from the user.
+Repeat the word, removing one letter at a time (see example below).
+Stop printing when there are no more characters.
 
-**Bonus 1**: Get an entire line of text from the user.
+**Bonus 1**:
+Get an entire line of text from the user.
 
-**Bonus 2**: Always reduce the printed word by one *visible* character.
-(Spaces are not visible)
+**Bonus 2**:
+Always reduce the printed word by one *visible* character (spaces are not visible).
+There is a function in the `cctype` library that you may use to determine if a character is a space or not.
 
 Example:
 
-> Enter a word: **Test**</br>
+> Enter a word: <u>**Test**</u></br>
 > Test </br>
 > Tes </br>
 > Te </br>
@@ -27,7 +22,7 @@ Example:
 
 Bonus 2 Example:
 
-> Enter a phrase: **Hey there!**</br>
+> Enter a phrase: <u>**Hey there!**</u></br>
 > Hey there</br>
 > Hey ther</br>
 > Hey the</br>
@@ -39,7 +34,7 @@ Bonus 2 Example:
 
 An **incorrect** version of bonus 2:
 
-> Enter a phrase: **Hey there!**</br>
+> Enter a phrase: <u>**Hey there!**</u></br>
 > Hey there</br>
 > Hey ther</br>
 > Hey the</br>
@@ -56,16 +51,16 @@ An **incorrect** version of bonus 2:
 Exercise 2
 ---
 
-Get two integers from the user and multiply them without using the ``*`` operator.
+Get two integers from the user and multiply them without using the `*` operator.
 
 Example:
 
-> Enter two numbers: **5 6**</br>
+> Enter two numbers: <u>**5 6**</u></br>
 > 5 * 6 = 30
 
 **Bonus**:
 
-Consider the cases ``10000 2`` and ``2 10000``.
+Consider the input cases `10000 2` and `2 10000`.
 Modify your code so you loop as few times as possible in both cases.
 
 
@@ -152,5 +147,5 @@ Exmaple 2:
 
 Quiz!
 ---
-[quiz03](https://goo.gl/forms/NWbZ5G4ZiYieqh2B3)
+[quiz04](https://goo.gl/forms/NWbZ5G4ZiYieqh2B3)
 
