@@ -1,9 +1,11 @@
 Introduction
 ---
 
-You can check if two strings are equal by using the
-<a style="color:white;border:solid black;border-width:1px">== or !=</a>
-operators.
+You can compare two strings for similarity using the
+<a style="color:white;border:solid black;border-width:1px">==</a>
+or
+<a style="color:white;border:solid black;border-width:1px">==</a>
+operator.
 For two strings to be considered equal, they must have the same number of
 <a style="color:white;border:solid black;border-width:1px">characters</a>
 and each corresponding character must be
