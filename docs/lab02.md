@@ -26,12 +26,12 @@ Example:
 Exercise 3
 ---
 
-Get a 5-letter word from the user.
-Then, convert it to the proper capitalization (first letter is capitalized, and the rest are lowercase).
+Get a 5-character word from the user.
+Convert it to the "proper" capitalization (first letter is capitalized, and the rest are lowercase).
 
 Example:
 
-> Enter a 5-letter word: <u>**hElLo**</u><br>
+> Enter a 5-character word: <u>**hElLo**</u><br>
 > Your word is Hello.
 
 
@@ -41,7 +41,7 @@ Exercise 4
 Write a program to perform modulus between two floating-point values.
 The modulus operator `%` will not work on doubles.
 Do not use `fmod` from the cmath library (although you can use it to verify your results).
-Do not worry about negative values.
+Do not worry about negative values or modding by 0.
 
 
 Here is a hint:
