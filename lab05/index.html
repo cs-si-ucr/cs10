@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Lab Week 5: Mock Midterm - CS010 SI: Fall 2016</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lab Week 5: Mock Midterm";
+    var mkdocs_page_input_path = "lab05.md";
+    var mkdocs_page_url = "/lab05/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CS010 SI: Fall 2016</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab01/">Lab 1: Input and Output</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis02/">Discussion 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab02/">Lab 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis03/">Discussion 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis04/">Discussion 4: Strings and Loops</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab04/">Lab Week 4: Strings and loops</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis05/">Discussion 5: Nested Loops and Do-While</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Lab Week 5: Mock Midterm</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#mock-midterm">Mock Midterm</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CS010 SI: Fall 2016</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Lab Week 5: Mock Midterm</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="mock-midterm">Mock Midterm</h2>
+<ul>
+<li><a href="https://docs.google.com/a/ucr.edu/document/d/1VFP1a-wSlKHupjD6CEDd9PPUax8r8ltYpbBRjsqRl-A/edit?usp=sharing">Mock Midterm</a></li>
+<li><a href="">Solutions</a></li>
+</ul>
+<!--
+Exercise 1
+---
+
+Write a program that outputs a menu that asks the user to pick an option between 1 - 6.
+If the option is 6 then the program should exit.
+Options 1 - 5 will be for the exercises.
+If the output is not in the range from 1 - 6 then the program should alert the user that the option is invalid and ask the user to enter another option.
+
+Until you implement the other exercises simply do nothing if the user chooses 2 - 5.
+All of the exercises for this week will go in this file.
+
+Example output:
+
+> Lab 05 Menu<br>
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit
+>
+> Enter your choice: **1**
+>
+> Lab 05 Menu<br>
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit
+>
+> Enter your choice: **7**<br>
+> Invalid choice, try again.<br>
+> Enter your choice: **6**
+>
+> Goodbye!
+
+Another example:
+
+> Lab 05 Menu<br>
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit
+>
+> Enter your choice: **2**
+>
+> Executing exercise 2...<br>
+> (exercise 2 runs here)
+>
+> Lab 05 Menu<br>
+> 1. Do nothing<br>
+> 2. Exercise 2<br>
+> 3. Exercise 3<br>
+> 4. Exercise 4<br>
+> 5. Exercise 5<br>
+> 6. Exit
+>
+> Enter your choice: **6**
+>
+> Goodbye!
+
+
+Exercise 2
+---
+
+Ask the user to enter a word that is exactly 3 characters long and output all permutations of the characters in the word.
+Output 1 permutation of the word per line.
+
+Example output:
+
+> Enter a 3 letter word: **bug**<br>
+> bbb<br>
+> bbu<br>
+> bbg<br>
+> bub<br>
+> buu<br>
+> bug<br>
+> bgb<br>
+> bgu<br>
+> bgg<br>
+> ubb<br>
+> ubu<br>
+> ubg<br>
+> uub<br>
+> uuu<br>
+> uug<br>
+> ugb<br>
+> ugu<br>
+> ugg<br>
+> gbb<br>
+> gbu<br>
+> gbg<br>
+> gub<br>
+> guu<br>
+> gug<br>
+> ggb<br>
+> ggu<br>
+> ggg
+
+Note that the order does not have to be exactly the same as above as long as all permutations are there (this order is the easiest, though).
+
+**Bonus**
+
+Allow a string of 4 characters and output all permutations of those characters.
+
+
+Exercise 3
+---
+
+Ask the user for a number and output the multiplication table up to and including that number.
+
+Example output:
+
+> Please enter a number: **4**<br>
+> 1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+> 2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
+> 3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
+> 4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
+
+**Bonus 1**
+
+Add row and column numbers to your output
+
+Example output for **Bonus 1**:
+
+> Please enter a number: **4**<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+> 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
+> 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
+> 3&nbsp;&nbsp;3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
+> 4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
+
+**Bonus 2**
+
+Notice in the table above that the table become more skewed as the numbers get larger.
+Fix the problem by making the numbers right justified instead of left justified.
+
+Example output for **Bonus 2**:
+
+> Please enter a number: **4**<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+> 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+> 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>
+> 3&nbsp;&nbsp;3&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
+> 4&nbsp;&nbsp;4&nbsp;&nbsp;8&nbsp;&nbsp;12&nbsp;&nbsp;16<br>
+
+
+Exercise 4
+---
+
+Ask the user to enter an integer ``n`` and print out a diamond whose center width is equal to ``(2 * n) - 1``.
+
+Example output:
+
+> Please enter an integer: **3**<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;\*<br>
+> &nbsp;&nbsp;\*\*\*<br>
+> \*\*\*\*\*<br>
+> &nbsp;&nbsp;\*\*\*<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;\*<br>
+
+
+Exercise 5
+---
+
+Ask the user for an integer and output the factorial of that integer. Do not use multiplication.
+
+In case you are unfamiliar with what the factorial function does, here is a brief definition:
+
+>1. The factorial of a number ``n``, denoted ``n!``, is given by ``n! == n * (n-1) * (n-2) * (n-3) * ... * 3 * 2 * 1``<br>
+>2. The special case of ``n == 0`` is defined as follows:<br>
+>3. ``0! == 1``
+
+Example output:
+
+> Please enter an integer: **5**<br>
+> 5! = 120
+
+**Bonus**
+
+If the user enters a negative or floating point number alert the user that their input is invalid and re-prompt the user.
+
+Example output 1 for **Bonus**:
+
+> Please enter an integer: **-1**<br>
+> Error: Invalid Input!<br>
+> Please enter an integer: **0**<br>
+> 1
+
+Example output 2 for **Bonus**:
+
+> Please enter an integer: **1.4**<br>
+> Error: Invalid Input!<br>
+> Please enter an integer: **3.0**<br>
+> 6
+
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../dis05/" class="btn btn-neutral" title="Discussion 5: Nested Loops and Do-While"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../dis05/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
