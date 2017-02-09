@@ -49,13 +49,17 @@ The code below is supposed to output a word diagonally, but it does not seem to 
 
 For example, when the user inputs "hey" the output should be:
 
-h<br>
-&nbsp;&nbsp;e<br>
-&nbsp;&nbsp;&nbsp;&nbsp;y<br>
+<pre>
+h
+ e
+  y
+</pre>
 
 But instead the output is:
 
-h&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y 
+<pre>
+h  e  y
+</pre>
 
 How can you modify the following code so that it works correctly?
 

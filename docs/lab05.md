@@ -1,3 +1,10 @@
+Mock Midterm
+---
+
+* [Mock Midterm](https://docs.google.com/a/ucr.edu/document/d/1VFP1a-wSlKHupjD6CEDd9PPUax8r8ltYpbBRjsqRl-A/edit?usp=sharing)
+* [Solutions]()
+
+<!--
 Exercise 1
 ---
 
@@ -197,4 +204,4 @@ Example output 2 for **Bonus**:
 > Please enter an integer: **3.0**<br>
 > 6
 
-
+-->
