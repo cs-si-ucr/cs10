@@ -2,7 +2,7 @@ Mock Midterm
 ---
 
 * [Mock Midterm](https://docs.google.com/a/ucr.edu/document/d/1VFP1a-wSlKHupjD6CEDd9PPUax8r8ltYpbBRjsqRl-A/edit?usp=sharing)
-* [Solutions]()
+* [Solutions](https://docs.google.com/a/ucr.edu/document/d/11nKBgtvP5_MRBo1e34EQr5piH7xQK3ku4Xx3iKGNK_g/edit?usp=sharing)
 
 <!--
 Exercise 1
