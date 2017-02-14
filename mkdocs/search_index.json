@@ -254,6 +254,16 @@
             "location": "/lab05/#mock-midterm", 
             "text": "Mock Midterm  Solutions", 
             "title": "Mock Midterm"
+        }, 
+        {
+            "location": "/dis06/", 
+            "text": "Introduction\n\n\nMock Midterm", 
+            "title": "Discussion 6: Midterm Preparation"
+        }, 
+        {
+            "location": "/dis06/#introduction", 
+            "text": "Mock Midterm", 
+            "title": "Introduction"
         }
     ]
 }
