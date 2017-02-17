@@ -8,8 +8,8 @@ Section Convention
 Each section is separated by a header.
 To create a header, put the title on one line, and 3 dashes on the next. (see below)
 
-Every title should have two blank lines before it, and one blank line after its dashes.
-The only exception to this is if the file starts with a header.
+Every header should have two blank lines before its title, and one blank line after its dashes.
+The only exception is if the file starts with a header.
 
 ```
 <!-- other stuff -->
