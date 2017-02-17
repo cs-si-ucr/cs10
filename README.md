@@ -33,3 +33,8 @@ Cool Resources
 [Markdown reference](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
+Relative Link Test
+---
+
+[style](./style.md)
+
