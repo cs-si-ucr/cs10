@@ -1,1 +1,58 @@
-# this is a markdown file
+Uniform style is important for maintainability.
+This document contains the style guide for maintaining CS SI handouts.
+
+
+Section Convention
+---
+
+Each section is separated by a header.
+To create a header, put the title on one line, and 3 dashes on the next. (see below)
+
+Every title should have two blank lines before it, and one blank line after its dashes.
+The only exception to this is if the file starts with a header.
+
+```
+<!-- other stuff -->
+
+
+Header Title
+---
+
+<!-- more stuff -->
+```
+
+
+Text Convention
+---
+
+Each sentence goes on its own line.
+
+Inline code is denoted by single backticks.
+
+```
+The `string` datatype can hold multiple characters.
+To access individual characters in the string, use the `at` member function.
+```
+
+The `string` datatype can hold multiple characters.
+To access individual characters in the string, use the `at` member function.
+
+Fill-in-the-blank exercises are often useful to review reading concepts.
+To achieve this, it is necessary to add a bit of HDML into the markdown document.
+
+Because HTML can be quite messy, the blank with the answer should be put on its own line.
+Only punctuation can join blanks on their line.
+This is to reduce overall line count, and because lone punctuation is weird.
+
+```
+Mitochondria is the
+<a style="color:white;border:solid black;border-width:1px">powerhouse</a>
+of the cell
+```
+
+Mitochondria is the
+<a style="color:white;border:solid black;border-width:1px">powerhouse</a>
+of the cell
+
+To reveal the answer, students must highlight the blank.
+
