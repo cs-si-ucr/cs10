@@ -3,11 +3,34 @@ Exercise 1
 
 Write a program that prints one random number in `[1, 6]`.
 
+
 Exercise 2
 ---
 
+Output a sideways "skyline" with random building heights.
+Do not print an empty line as part of the skyline.
+The maximum height building need not be part of the skyline, but no building should be taller.
+
+Example:
+
+> How many buildings? <u>**7**</u><br>
+> How tall is the tallest building? <u>**9**</u><br>
+> <br>
+> XXXXXXX<br>
+> XXX<br>
+> XXXX<br>
+> X<br>
+> XXXXXXXXX<br>
+> XXXX<br>
+> XXXX
+
+
+Exercise 3
+---
+
 Write a program that prints `n` random numbers in `[a, b]`.
-`n` `a` and `b` come from the user.
+The values for `n`, `a`, and `b` will come from the user.
+`a` will be less than or equal to `b`.
 
 Example:
 
@@ -22,30 +45,6 @@ Example:
 **Bonus**:
 Allow the user to enter the numbers in the wrong order.
 For instance, they could enter `3 -3` and your program would output numbers in `[-3, 3]`.
-
-
-Exercise 3
----
-
-Output a sideways "skyline" with random building heights.
-Do not print an empty line as part of the skyline.
-The maximum height building need not be part of the skyline, but no building should be taller.
-
-Example:
-
-> How many buildings? **7**<br>
-> How tall is the tallest building? **9**<br>
-> <br>
-> XXXXXXX<br>
-> XXX<br>
-> XXXX<br>
-> X<br>
-> XXXXXXXXX<br>
-> XXXX<br>
-> XXXX
-
-**Bonus**:
-Guarantee that at least one building of the specified tallest size is in the skyline.
 
 
 Exercise 4
@@ -70,8 +69,8 @@ Algorithm:
 
 Example:
 
-> Enter the seed value: **0**<br>
-> How many random numbers would you like? **5**<br>
+> Enter the seed value: <u>**0**</u><br>
+> How many random numbers would you like? <u>**5**</u><br>
 > 5789<br>
 > 2500<br>
 > 2438<br>

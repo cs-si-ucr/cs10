@@ -26,7 +26,7 @@ Example output:
 > 5. Exercise 5<br>
 > 6. Exit
 >
-> Enter your choice: **1**
+> Enter your choice: <u>**1**</u>
 >
 > Lab 05 Menu<br>
 > 1. Do nothing<br>
@@ -36,9 +36,9 @@ Example output:
 > 5. Exercise 5<br>
 > 6. Exit
 >
-> Enter your choice: **7**<br>
+> Enter your choice: <u>**7**</u><br>
 > Invalid choice, try again.<br>
-> Enter your choice: **6**
+> Enter your choice: <u>**6**</u>
 >
 > Goodbye!
 
@@ -52,7 +52,7 @@ Another example:
 > 5. Exercise 5<br>
 > 6. Exit
 >
-> Enter your choice: **2**
+> Enter your choice: <u>**2**</u>
 >
 > Executing exercise 2...<br>
 > (exercise 2 runs here)
@@ -65,7 +65,7 @@ Another example:
 > 5. Exercise 5<br>
 > 6. Exit
 >
-> Enter your choice: **6**
+> Enter your choice: <u>**6**</u>
 >
 > Goodbye!
 
@@ -78,7 +78,7 @@ Output 1 permutation of the word per line.
 
 Example output:
 
-> Enter a 3 letter word: **bug**<br>
+> Enter a 3 letter word: <u>**bug**</u><br>
 > bbb<br>
 > bbu<br>
 > bbg<br>
@@ -121,7 +121,7 @@ Ask the user for a number and output the multiplication table up to and includin
 
 Example output:
 
-> Please enter a number: **4**<br>
+> Please enter a number: <u>**4**</u><br>
 > 1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
 > 2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
 > 3&nbsp;&nbsp;6&nbsp;&nbsp;9&nbsp;&nbsp;12<br>
@@ -133,7 +133,7 @@ Add row and column numbers to your output
 
 Example output for **Bonus 1**:
 
-> Please enter a number: **4**<br>
+> Please enter a number: <u>**4**</u><br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
 > 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;3&nbsp;&nbsp;4<br>
 > 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;8<br>
@@ -147,7 +147,7 @@ Fix the problem by making the numbers right justified instead of left justified.
 
 Example output for **Bonus 2**:
 
-> Please enter a number: **4**<br>
+> Please enter a number: <u>**4**</u><br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
 > 1&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4<br>
 > 2&nbsp;&nbsp;2&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8<br>
@@ -162,7 +162,7 @@ Ask the user to enter an integer ``n`` and print out a diamond whose center widt
 
 Example output:
 
-> Please enter an integer: **3**<br>
+> Please enter an integer: <u>**3**</u><br>
 > &nbsp;&nbsp;&nbsp;&nbsp;\*<br>
 > &nbsp;&nbsp;\*\*\*<br>
 > \*\*\*\*\*<br>
@@ -183,7 +183,7 @@ In case you are unfamiliar with what the factorial function does, here is a brie
 
 Example output:
 
-> Please enter an integer: **5**<br>
+> Please enter an integer: <u>**5**</u><br>
 > 5! = 120
 
 **Bonus**
@@ -192,16 +192,16 @@ If the user enters a negative or floating point number alert the user that their
 
 Example output 1 for **Bonus**:
 
-> Please enter an integer: **-1**<br>
+> Please enter an integer: <u>**-1**</u><br>
 > Error: Invalid Input!<br>
-> Please enter an integer: **0**<br>
+> Please enter an integer: <u>**0**</u><br>
 > 1
 
 Example output 2 for **Bonus**:
 
-> Please enter an integer: **1.4**<br>
+> Please enter an integer: <u>**1.4**</u><br>
 > Error: Invalid Input!<br>
-> Please enter an integer: **3.0**<br>
+> Please enter an integer: <u>**3.0**</u><br>
 > 6
 
 -->
