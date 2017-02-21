@@ -229,7 +229,7 @@ code</p>
 <h1 id="code-tracing">Code Tracing</h1>
 <p>What do the following programs output?</p>
 <h6 id="1">1</h6>
-<pre><code class="c++">void foo(int a, int b){
+<pre><code class="c++">void foo(int a, int b) {
     a += 6;
     b += a;
     b = a * b;
@@ -238,7 +238,7 @@ code</p>
     cout &lt;&lt; b &lt;&lt; endl;
 }
 
-int main(){
+int main() {
     int a = 5;
     int b = 3;
     cout &lt;&lt; &quot;Functions&quot; &lt;&lt; endl;
@@ -250,26 +250,24 @@ int main(){
 </code></pre>
 
 <h5 id="2">2</h5>
-<pre><code class="c++">void printa(){
+<pre><code class="c++">void printa() {
     cout &lt;&lt; &quot;the bomb&quot; &lt;&lt; endl;
 }
-void printb(){
+void printb() {
     cout &lt;&lt; &quot;dot com&quot; &lt;&lt; endl;
 }
 
-void foo(int a){
-    if(a &lt; 5){
+void foo(int a) {
+    if (a &lt; 5) {
         printa();
-    }
-    else if(a == 5){
+    } else if (a == 5) {
         printb();
-    }
-    else{
+    } else {
         cout &lt;&lt; &quot;none&quot; &lt;&lt; endl;
     }
 }
 
-int main(){
+int main() {
     int a = 5;
     int b = -5;
     foo(a);
@@ -280,34 +278,31 @@ int main(){
 </code></pre>
 
 <h5 id="3">3</h5>
-<pre><code class="c++">int foo2(int b){
+<pre><code class="c++">int foo2(int b) {
     int c = b + 6;
-    if(c &gt; 13){
+    if (c &gt; 13) {
         b = b + 5;
-    }
-    else{
+    } else {
         b = b + 9;
     }
 
     return c + b;
 }
 
-int foo(int a){
-    if(a &gt; -1){
+int foo(int a) {
+    if (a &gt; -1) {
         return -1;
-    }
-    else if(a &lt; 0){
+    } else if (a &lt; 0) {
         return 0;
     }
 }
 
-int main(){
+int main() {
     int a = 0;
     int b = 7;
-    if(foo(a) == 1){
+    if (foo(a) == 1) {
         cout &lt;&lt; &quot;Positive!&quot; &lt;&lt; endl;
-    }
-    else{
+    } else {
         cout &lt;&lt; &quot;Negative!&quot; &lt;&lt; endl;
     }
 
@@ -318,13 +313,13 @@ int main(){
 </code></pre>
 
 <h5 id="4">4</h5>
-<pre><code class="c++">int getSize(string t){
+<pre><code class="c++">int getSize(string t) {
     return t.size();
 }
 
-string removeCaps(string text){
-    for(int i = 0; i &lt; text.size(); i++){
-        if(text.at(i) == 's' || text.at(i) == 'S'){
+string removeCaps(string text) {
+    for (int i = 0; i &lt; text.size(); i++) {
+        if (text.at(i) == 's' || text.at(i) == 'S') {
             cout &lt;&lt; &quot;S found!&quot; &lt;&lt; endl;
             text.replace(i, 1, &quot;&quot;);
         }
@@ -332,13 +327,12 @@ string removeCaps(string text){
     return text;
 }
 
-int main(){
+int main() {
     string text = &quot;StephenStrange&quot;;
     string modifiedText = removeCaps(text);
-    if(getSize(modifiedText) &lt; getSize(text)){
+    if (getSize(modifiedText) &lt; getSize(text)) {
         cout &lt;&lt; &quot;Made at least one change to text!&quot; &lt;&lt; endl;
-    }
-    else{
+    } else {
         cout &lt;&lt; &quot;Made no changes to text.&quot; &lt;&lt; endl;
     }
     cout &lt;&lt; modifiedText &lt;&lt; endl;
