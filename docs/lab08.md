@@ -1,9 +1,11 @@
 # Instructions
 
-Complete exercises 1 through 4, then write tests for all of them.
-After you are completely done testing, finish exercise 5.
-Show your tests to the SI leader.
-You are allowed to use assert.
+Complete exercises 1 through 4 in groups of 2 or more.
+One or more people will solve the problems.
+The rest (minimum of 1) of the group will write the test cases.
+This should alternate per exercise.
+
+You are allowed to use assert in your tests.
 
 
 # Exercise 1
@@ -13,6 +15,7 @@ The first passed in should be set to the least of the two.
 The second passed in should be set to the greatest of the two.
 
 Exmaple:
+
 ```c++ 
 // in main
 int a = 5;
@@ -21,6 +24,7 @@ foo(a, b);
 cout << a << endl;
 cout << b << endl;
 ```
+
 > should result in an output of: <br>
 > 4<br>
 > 5
@@ -38,14 +42,14 @@ Overloading is when two functions have the same name, but different **parameter 
 
 Example:
 ```c++
-int main(){
-	char c = 'c';
+int main() {
 	char a = 'a';
-	swap(a,c);
+	char c = 'c';
+	swap(a, c);
 	
 	int one = 1;
 	int two = 2;
-	swap(one,two);
+	swap(one, two);
 
 	cout << a << " " << b << endl;
 	cout << one << " " << two << endl;
@@ -53,12 +57,13 @@ int main(){
 	return 0;
 }
 ```
+
 The example above should print:
 
 > c a<br>
 > 2 1
 
-`swap(a,c)` and `swap(one,two)` are calls to two different functions, despite having the same name.
+`swap(a, c)` and `swap(one, two)` are calls to two different functions, despite having the same name.
 Look at the Extra Help section of this page, or ask your SI leader, to learn more about function overloading.
 
 

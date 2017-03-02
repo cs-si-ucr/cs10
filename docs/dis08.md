@@ -1,5 +1,6 @@
 Introduction
 ---
+
 Value parameters receive a
 <a style="color:white;border:solid black;border-width:1px">copy</a>
 of the argument passed to the function.
@@ -8,17 +9,17 @@ Reference parameters receive a
 to the argument passed to the function.
 
 The scope of variables in c++ is from the moment they are
-<a style="color:white;border:solid black;border-width:1px">declared</a>
+<a style="color:red;border:solid black;border-width:1px">declared</a>
 to the
 <a style="color:white;border:solid black;border-width:1px">close brace</a>
 of the block they were
-<a style="color:white;border:solid black;border-width:1px">declared</a>
+<a style="color:red;border:solid black;border-width:1px">declared</a>
 in.
 
 <a style="color:white;border:solid black;border-width:1px">global variables</a>
-can be used in any scope.
+can be accessed in any scope.
 They only stop existing when the program ends.
-We do not use these in CS10 because it is often bad practice.
+We do not use these in CS10 because it is considered bad practice.
 
 A function
 <a style="color:white;border:solid black;border-width:1px">prototype</a>
@@ -32,7 +33,7 @@ tells the compiler what code is associated with a function.
 
 The
 <a style="color:white;border:solid black;border-width:1px">include</a>
-preprocessor directive gets the content of another file and puts them in the current file.
+preprocessor directive gets the content of another file and puts it in the current file.
 
 
 Tracing 1
@@ -164,11 +165,3 @@ int main() {
     return 0;
 }
 ```
-
-
-Quiz
----
-
-[quiz07](https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSe0oHXoPXinkXzdxFkevXPpHK1_5cdLMIOcxw15iK2-WMO35w/viewform)
-
-
