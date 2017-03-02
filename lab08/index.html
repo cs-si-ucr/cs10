@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Lab Week 8: Reference parameters - CS010 SI: Fall 2016</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lab Week 8: Reference parameters";
+    var mkdocs_page_input_path = "lab08.md";
+    var mkdocs_page_url = "/lab08/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CS010 SI: Fall 2016</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab01/">Lab 1: Input and Output</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis02/">Discussion 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab02/">Lab 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis03/">Discussion 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis04/">Discussion 4: Strings and Loops</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab04/">Lab Week 4: Strings and loops</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis05/">Discussion 5: Nested Loops and Do-While</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab05/">Lab Week 5: Mock Midterm</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab06/">Lab Week 6: Randomness</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis07/">Discussion 7: Functions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab07/">Lab Week 7: Functions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis08/">Discussion 8: Reference parameters</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Lab Week 8: Reference parameters</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#instructions">Instructions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-2">Exercise 2</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-3">Exercise 3</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-4">Exercise 4</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#excercise-5">Excercise 5</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#extra-help">Extra Help</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#quiz">Quiz</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CS010 SI: Fall 2016</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Lab Week 8: Reference parameters</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="instructions">Instructions</h1>
+<p>Complete exercises 1 through 4 in groups of 2 or more.
+One or more people will solve the problems.
+The rest (minimum of 1) of the group will write the test cases.
+This should alternate per exercise.</p>
+<p>You are allowed to use assert in your tests.</p>
+<h1 id="exercise-1">Exercise 1</h1>
+<p>Write a funciton that orders two integers.
+The first passed in should be set to the least of the two.
+The second passed in should be set to the greatest of the two.</p>
+<p>Exmaple:</p>
+<pre><code class="c++">// in main
+int a = 5;
+int b = 4;
+foo(a, b);
+cout &lt;&lt; a &lt;&lt; endl;
+cout &lt;&lt; b &lt;&lt; endl;
+</code></pre>
+
+<blockquote>
+<p>should result in an output of: <br>
+4<br>
+5</p>
+</blockquote>
+<h1 id="exercise-2">Exercise 2</h1>
+<p>Write 4 different swap functions.
+Each swap function accepts two reference parameters, and swaps them.
+The 4 swap functions should operate on <code>int</code>, <code>double</code>, <code>char</code>, and <code>bool</code>.</p>
+<p>We will name them all the same thing: <code>swap</code>.
+This takes advantage of overloading.
+Overloading is when two functions have the same name, but different <strong>parameter lists</strong>.</p>
+<p>Example:</p>
+<pre><code class="c++">int main() {
+    char a = 'a';
+    char c = 'c';
+    swap(a, c);
+
+    int one = 1;
+    int two = 2;
+    swap(one, two);
+
+    cout &lt;&lt; a &lt;&lt; &quot; &quot; &lt;&lt; b &lt;&lt; endl;
+    cout &lt;&lt; one &lt;&lt; &quot; &quot; &lt;&lt; two &lt;&lt; endl;
+
+    return 0;
+}
+</code></pre>
+
+<p>The example above should print:</p>
+<blockquote>
+<p>c a<br>
+2 1</p>
+</blockquote>
+<p><code>swap(a, c)</code> and <code>swap(one, two)</code> are calls to two different functions, despite having the same name.
+Look at the Extra Help section of this page, or ask your SI leader, to learn more about function overloading.</p>
+<h1 id="exercise-3">Exercise 3</h1>
+<p>Write a function that replaces all occurances of a word with another word.
+The function should return an integer indicating how many instances of the word were replaced.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter a sentence: <strong>the other day my friends and I went to the store to find out the price of radishes</strong><br>
+Which word should be replaced:  <strong>radishes</strong><br>
+Replace with what word: <strong>oranges</strong><br>
+the other day my friends and I went to the store to find out the price of oranges</p>
+</blockquote>
+<p>Example:</p>
+<blockquote>
+<p>Enter a sentence: <strong>I like to eat apples and bananas but if I am forced to, I will eat just about anything, as long as its not spicy!</strong><br>
+Which word should be replaced : <strong>eat</strong><br>
+Replace with what word: <strong>fight</strong> <br>
+I like to fight apples and bananas but if I am forced to, I will fight just about anything, as long as its not spicy!</p>
+</blockquote>
+<h1 id="exercise-4">Exercise 4</h1>
+<p>Write a function that modifies a string to contain a subsection of itself.
+The function should accept a string, and two integers.
+The first integer is where to start the substring from.
+The second integer is how many characters to get.</p>
+<p>The function should return a bool, signaling whether or not the string was modified.
+Do not modify the string if the substr size requested is too big.
+Do not modify the string if the starting position is inside the string.</p>
+<p>For example, given the following code:</p>
+<pre><code class="c++">string str = &quot;Origami&quot;;
+bool success = substr(str, 1, 3);
+if (success) {
+    cout &lt;&lt; str &lt;&lt; endl;
+} else {
+    cout &lt;&lt; &quot;substr failed :(&quot; &lt;&lt; endl;
+}
+</code></pre>
+
+<p>The output should be:</p>
+<blockquote>
+<p>rig</p>
+</blockquote>
+<p>Given the following code:</p>
+<pre><code class="c++">string str = &quot;Origami&quot;;
+bool success = substr(str, 5, 3);
+if (success) {
+    cout &lt;&lt; str &lt;&lt; endl;
+} else {
+    cout &lt;&lt; &quot;substr failed :(&quot; &lt;&lt; endl;
+    cout &lt;&lt; str &lt;&lt; endl;
+}
+</code></pre>
+
+<p>The output should be:</p>
+<blockquote>
+<p>substr failed :(<br>
+origami</p>
+</blockquote>
+<h1 id="excercise-5">Excercise 5</h1>
+<p>The code below implements a guessing game.
+There are some function headers given to you.
+Which parameters should be passed by reference?
+The return types of the functions have not been specified. 
+What should the return types be?</p>
+<p><code>generateRand(int)</code> should generate a random number in the range [1, 20].
+This function should not output.</p>
+<p><code>continuePlaying(string)</code> prompts the user if they would like to continue playing this game.</p>
+<p>The program should continue to run until the user wins, or enters "exit".</p>
+<p>Function <code>playGuessingGame(bool, int, int)</code> should accept a random number,
+and have the user attempt to guess it <code>maxAttempts</code> number of times.
+If the user correctly guesses the number, the the bool <code>winStatus</code> is set to true.
+The function then returns the number of tries it took the user to guess the value.</p>
+<p>The while loop below does not stop when the user wins.
+Fix this.</p>
+<pre><code class="c++">// INCORRECT function headers:
+generateRand(int);
+continuePlaying(string);
+playGuessingGame(bool, int, int);
+
+int main(){
+    int randInt = 0;
+    string userInput;
+    bool winStatus = false;
+    int numTries = 0;
+    int maxAttempts = 3;
+
+    while (userInput != &quot;exit&quot; || !winStatus) {
+        generateRand(randInt);
+        numTries = playGuessingGame(winStatus, randInt, maxAttempts);
+        if (!winStatus) {
+            continuePlaying(userInput);
+        }
+    }
+
+    cout &lt;&lt; &quot;It took you &quot; &lt;&lt; numTries &lt;&lt; &quot;to get the value &quot;;
+    if (winStatus) {
+        cout &lt;&lt; &quot;correct!&quot; &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; &quot;incorrect!&quot; &lt;&lt; endl;
+    }
+
+    return 0;
+} 
+</code></pre>
+
+<p>Example:</p>
+<blockquote>
+<p>A random number has been generated <br>
+What is your guess? (you have 3 attempts remaining): <strong>1</strong><br>
+INCORRECT!<br>
+What is your guess? (you have 2 attempts remainiing): <strong>2</strong><br>
+INCORRECT! <br>
+What is your guess? (you have 1 attempt remaining): <strong>12</strong><br>
+INCORRECT! <br>
+Enter exit if you no longer want to play: <strong>no</strong> <br>
+<br>
+A random number has been generated <br>
+What is your guess? (you have 3 attempts remaining): <strong>1</strong><br>
+CORRECT!<br>
+It took you 1 try to get the value correct!</p>
+</blockquote>
+<h1 id="extra-help">Extra Help</h1>
+<ul>
+<li><a href="http://www.learncpp.com/cpp-tutorial/76-function-overloading/">More on function overloading</a></li>
+</ul>
+<h1 id="quiz">Quiz</h1>
+<p><a href="https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSc5YyLSWMoNFjj6qm_1otp94c2MafU0ymnWiU-g2ft_Ygu-aQ/viewform">quiz08</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../dis08/" class="btn btn-neutral" title="Discussion 8: Reference parameters"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../dis08/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
