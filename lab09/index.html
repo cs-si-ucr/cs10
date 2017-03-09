@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Discussion 8: Reference parameters - CS010 SI: Fall 2016</title>
+  <title>Lab Week 9: Arrays and Vectors - CS010 SI: Fall 2016</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Discussion 8: Reference parameters";
-    var mkdocs_page_input_path = "dis08.md";
-    var mkdocs_page_url = "/dis08/";
+    var mkdocs_page_name = "Lab Week 9: Arrays and Vectors";
+    var mkdocs_page_input_path = "lab09.md";
+    var mkdocs_page_url = "/lab09/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -138,24 +138,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Discussion 8: Reference parameters</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#tracing-1">Tracing 1</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#tracing-2">Tracing 2</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#tracing-3">Tracing 3</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis08/">Discussion 8: Reference parameters</a>
         
     </li>
 <li>
@@ -175,8 +159,27 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lab09/">Lab Week 9: Arrays and Vectors</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Lab Week 9: Arrays and Vectors</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#instructions">Instructions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-2">Exercise 2</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-3">Exercise 3</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-4">Exercise 4</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -203,7 +206,7 @@
     
       
     
-    <li>Discussion 8: Reference parameters</li>
+    <li>Lab Week 9: Arrays and Vectors</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -213,153 +216,110 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="introduction">Introduction</h2>
-<p>Value parameters receive a
-<a style="color:white;border:solid black;border-width:1px">copy</a>
-of the argument passed to the function.
-Reference parameters receive a 
-<a style="color:white;border:solid black;border-width:1px">reference</a>
-to the argument passed to the function.</p>
-<p>The scope of variables in c++ is from the moment they are
-<a style="color:red;border:solid black;border-width:1px">declared</a>
-to the
-<a style="color:white;border:solid black;border-width:1px">close brace</a>
-of the block they were
-<a style="color:red;border:solid black;border-width:1px">declared</a>
-in.</p>
-<p><a style="color:white;border:solid black;border-width:1px">global variables</a>
-can be accessed in any scope.
-They only stop existing when the program ends.
-We do not use these in CS10 because it is considered bad practice.</p>
-<p>A function
-<a style="color:white;border:solid black;border-width:1px">prototype</a>
-or
-<a style="color:white;border:solid black;border-width:1px">declaration</a>
-tells the compiler what a functions name, return type, and parameter list is.</p>
-<p>A function
-<a style="color:white;border:solid black;border-width:1px">definition</a>
-tells the compiler what code is associated with a function.</p>
-<p>The
-<a style="color:white;border:solid black;border-width:1px">include</a>
-preprocessor directive gets the content of another file and puts it in the current file.</p>
-<h2 id="tracing-1">Tracing 1</h2>
+                <h2 id="instructions">Instructions</h2>
+<p>READ EACH EXERCISE CAREFULLY!</p>
+<p>Make sure you understand the problem before attempting to code the solution.
+Please ask your SI Leader for clarification if you are having trouble understanding the problem.</p>
+<p>Complete exercises 1 through 4, then write tests for all of them.
+Show your tests to the SI leader.
+You are allowed to use assert.</p>
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Write a function that takes as input a vector, and prints to the terminal the contents of the vector.
+This will be useful for testing the output of the rest of the exercises.</p>
+<p>To do this you need to know how to define a vector, iterate through a vector, and how to access vector elements.</p>
+<p>You can use the following code as a template for this exercise.</p>
 <pre><code class="c++">#include &lt;iostream&gt;
 
 using namespace std;
 
-int foo(int a, int&amp; b, int c) {
-    int temp = a;
-    a = b;
-    b = c;
-    c = temp;
+// YOUR FUNCTION DECLARATION HERE
 
-    return a - c;
-    return b - a;
-}
-
-int main() {
-    int a = 7, b = 2, c = 13;
-    int x = 1, y = 12, z = 7;
-
-    int r1 = foo(a, c, b);
-    int r2 = foo(c, b, a);
-    int r3 = foo(y, z, r2);
-    foo(r1, z, r3);
-    foo(z, a, y);
-
-    cout &lt;&lt; &quot;a: &quot; &lt;&lt; a &lt;&lt; endl;
-    cout &lt;&lt; &quot;b: &quot; &lt;&lt; b &lt;&lt; endl;
-    cout &lt;&lt; &quot;c: &quot; &lt;&lt; c &lt;&lt; endl;
-    cout &lt;&lt; &quot;x: &quot; &lt;&lt; x &lt;&lt; endl;
-    cout &lt;&lt; &quot;y: &quot; &lt;&lt; y &lt;&lt; endl;
-    cout &lt;&lt; &quot;z: &quot; &lt;&lt; z &lt;&lt; endl;
-}
-</code></pre>
-
-<h2 id="tracing-2">Tracing 2</h2>
-<pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-void foo(int&amp; a, int&amp; b, int&amp; c) {
-    a += b - c;
-    b += c - a;
-    c /= a * b;
-}
-
-
-int main() {
-    int a = 10, b = 5, c = 2;
-
-    for (int i = 0; i &lt; 3; ++i) {
-        foo (c, a, b);
+int main(){
+    vector&lt;int&gt; myVec;
+    for (int i = 1; i &lt;= 6; ++i) {
+        myVec.push_back(i);
     }
-
-    cout &lt;&lt; &quot;a: &quot; &lt;&lt; a &lt;&lt; endl;
-    cout &lt;&lt; &quot;b: &quot; &lt;&lt; b &lt;&lt; endl;
-    cout &lt;&lt; &quot;c: &quot; &lt;&lt; c &lt;&lt; endl;
-}
-</code></pre>
-
-<h2 id="tracing-3">Tracing 3</h2>
-<pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-void inc(int&amp; n) {
-    #include &lt;iostream&gt;
-    n++;
-}
-
-#include &lt;iostream&gt;
-
-void dec(int&amp; n) {
-    #include &lt;iostream&gt;
-    n--;
-}
-
-#include &lt;iostream&gt;
-
-int sq(int&amp; n) {
-    #include &lt;iostream&gt;
-    if (n &lt; 0) {
-        n *= -n;
-    } else {
-        n *= n;
-    }
-    return n;
-}
-
-int main() {
-    #include &lt;iostream&gt;
-
-    int x = -7;
-    int y = 13;
-
-    while (x &lt; y) {
-        int i = 0;
-        do {
-            inc(x);
-            i++;
-        } while (i &lt; x / 10);
-
-        for (i = 0; i &lt;= y / 5; ++i) {
-            dec(y);
-        }
-
-        if (x &gt; -4) {
-            sq(x);
-        }
-    }
-
-    cout &lt;&lt; &quot;x: &quot; &lt;&lt; x &lt;&lt; endl;
-    cout &lt;&lt; &quot;y: &quot; &lt;&lt; y &lt;&lt; endl;
-
-    return 0;
-    #include &lt;iostream&gt;
+    print(myVec);
     return 0;
 }
+
+// YOUR FUNCTION DEFINITION HERE
 </code></pre>
+
+<p>The above code when completed should output something like: {1, 2, 3, 4, 5, 6}</p>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>The first few numbers of the Fibonacci sequence are <code>0, 1, 1, 2, 3, 5, 8, 13, ...</code></p>
+<p>Each term in the Fibonacci sequence is defined as the sum of the previous two numbers in the sequence.
+The first two numbers are 0 and 1 because those two sequence values each do not have two previous terms.</p>
+<p>Write a function that accepts an integer <code>n</code> and returns a vector that contains the first <code>n</code> Fibonacci numbers.</p>
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Write a function that reverses a vector of strings.
+The function should accept a reference to a vector.
+The function should not return anything. </p>
+<p><em>Bonus</em>:
+Modifiy your code to also reverse each string.</p>
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Say I want to shoot myself out of a cannon;
+I might as well go as far as possible!
+<i>if I am going to do such a thing...</i></p>
+<p>I need to write a program that can help me estimate what angle I have to launch to go the furthest.</p>
+<p>I wrote some of the program already, but since I am a lazy SI leader, I am going to have you write the rest.
+Given the code below, fill out the sections labeled TODO to determine the correct launch angle.</p>
+<p>Make sure you understand what the helper function <code>getDistance</code> is doing.
+The details are not important, but knowing how to use it is.</p>
+<p>Remember to ask questions if you are struggling!</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+
+using namespace std;
+
+double getDistance(double, double);
+double metersToMiles(double);
+
+int main() {
+    const int min_angle = 20;    // The minimum angle
+    const int max_angle = 70;    // The maximum angle
+    const int angle_inc = 1;     // The amount I increment the angle
+    const double velocity = 120; // My initial velocity as I leave the cannon
+    vector&lt;double&gt; angles;       // Vector for storing angles
+    vector&lt;double&gt; distances;    // Vector for storing distances 
+
+    // TODO: Store the angles we will be using to calculate the distance 
+
+
+    // TODO: Store the impact distance for each angle 
+
+
+    // TODO: Find the maximum distance and corresponding angle
+
+
+    // TODO: Output the result
+
+
+    return 0;
+}
+
+// Returns the distance where I impact the ground given a velocity and angle
+double getDistance(double velocity, double angle) {
+    const double pi = 3.14;                          // constant for pi
+    const double gravity = 9.81;                     // gravity constant for earth
+    double radians = (angle * pi / 180);             // convert angle to radians
+    double velocity_y = velocity * sin(radians);     // velocity in y direction
+    double velocity_x = velocity * cos(radians);     // velocity in x direction
+    double impact_time = (2 * velocity_y) / gravity; // the time when I hit the ground
+    return metersToMiles(velocity_x * impact_time);  // the total distance I traveled
+}
+
+// Converts from meters to miles
+double metersToMiles(double meters) {
+    return meters / 1609.34;
+}                       
+</code></pre>
+
+<p><em>Bonus</em>:
+Look up different gravity values, such as on the moon or Jupiter.
+How far could I go on those planets?</p>
               
             </div>
           </div>
@@ -367,10 +327,8 @@ int main() {
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab08/" class="btn btn-neutral float-right" title="Lab Week 8: Reference parameters">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../lab07/" class="btn btn-neutral" title="Lab Week 7: Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis09/" class="btn btn-neutral" title="Discussion 9: Arrays and Vectors"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -396,10 +354,8 @@ int main() {
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../lab07/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis09/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab08/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
