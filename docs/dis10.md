@@ -1,7 +1,10 @@
-#Instructions
+# Instructions
 
-Take [Quiz 09](https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSeP2nd_u2cgb_TbTHAZOmamkucgLbSw8h27p5JrIp4uLLXHgQ/viewform)
+Prepare a piece of paper, or a digital document.
 
-Open questions!
+Once you are instructed to begin, go to the following link:
+[Mock Final](https://docs.google.com/a/ucr.edu/document/d/1sFCH3ZnJDUAyDkdHXBg-9ysS3VAAyu4-31H2AmZJPmE/edit?usp=sharing)
 
-Ask about in class exercises, reading material, Zybooks problems etc.
+Once everyone has finished, or an hour has passed, we will go over the answers.
+
+The solutions can be found [here](https://docs.google.com/a/ucr.edu/document/d/1J7AlsNiYefotW0p7FEMT8iSPX6JjiOTK-hYLKDcpco8/edit?usp=sharing)
