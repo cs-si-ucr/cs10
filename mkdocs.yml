@@ -2,8 +2,8 @@ site_name: "CS010 SI: Spring 2017"
 pages:
     - [index.md, "Home"]
     - [lab01.md, "Lab 1: Input and Output"]
-    - [dis02.md, "Discussion 2: Variables and Math"]
-    - [lab02.md, "Lab 2: Variables and Math"]
+    #- [dis02.md, "Discussion 2: Variables and Math"]
+    #- [lab02.md, "Lab 2: Variables and Math"]
     #- [dis03.md, "Discussion 3: Characters and Branches"]
     #- [lab03.md, "Lab 3: Characters and Branches"]
     #- [dis04.md, "Discussion 4: Strings and Loops"]
