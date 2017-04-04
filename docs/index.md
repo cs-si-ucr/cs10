@@ -4,7 +4,7 @@ This is where all of the labs will be posted.
 
 General Info
 ------------
-- **Instructors:** Kris Miller [001, 002, 003], Kelly Downey [004, 010V-1], and Adam Koehler [005]
+- **Instructors:** Kelly Downey [001, 002]
 - **Course:** CS10
 - **SI Leaders:** Krishen Wadhwani
 - **Website:** [CS10 SI](http://cs-si-ucr.github.io/cs10)
