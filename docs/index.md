@@ -6,7 +6,7 @@ General Info
 ------------
 - **Instructors:** Kris Miller [001, 002, 003], Kelly Downey [004, 010V-1], and Adam Koehler [005]
 - **Course:** CS10
-- **SI Leaders:** Michael Evans, Robyn Haley, Guthrie Price, and Andre Castro
+- **SI Leaders:** Krishen Wadhwani
 - **Website:** [CS10 SI](http://cs-si-ucr.github.io/cs10)
 
 What is SI?
