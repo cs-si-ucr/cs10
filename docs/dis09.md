@@ -1,38 +1,39 @@
 Introduction
 ---
-An 
-<a style="color:white;border:solid black;border-width:1px">array/vector</a>
-is a special variable having one name, but storing a list of data items, with each item directly accessible.
+
+A 
+<a style="color:white;border:solid black;border-width:1px">vector</a>
+is a special type that is used to create variables with a single name and multiple data items.
 
 Each item in an array/vector is known as an 
-<a style="color:white;border:solid black;border-width:1px">element</a>
-.
+<a style="color:white;border:solid black;border-width:1px">element</a>.
 
-In an array/vector, each element's location number is called the 
-<a style="color:white;border:solid black;border-width:1px">index</a>
-.
+In a vector, each element location number is called an
+<a style="color:white;border:solid black;border-width:1px">index</a>.
 
 <a style="color:white;border:solid black;border-width:1px">Arrays</a>
 are native to c++ while
 <a style="color:white;border:solid black;border-width:1px">vectors</a>
 are not.
+They perform similarly, however.
 
-<a style="color:white;border:solid black;border-width:1px">vctr.push_back(value)</a>
-creates a new element at the end of the vector and assigns the given value to that element.
+The
+<a style="color:white;border:solid black;border-width:1px">push_back</a>
+member function creates a new element at the end of the vector and assigns its argument to that element.
 
-A vector's size can be set or changed while a program is executing using 
-<a style="color:white;border:solid black;border-width:1px">vctr.resize(N)</a>
-.
+The size of a vector can be set to a specific value using the
+<a style="color:white;border:solid black;border-width:1px">resize</a>
+member function.
+
+Vectors are safer to use than arrays because the
+<a style="color:white;border:solid black;border-width:1px">at</a>
+member function checks if an element exists before accessing it.
 
 <a style="color:white;border:solid black;border-width:1px">Vectors</a>
-are safer because the access b.at(i) is checked during execution to ensure the index is within the range. 
-<a style="color:white;border:solid black;border-width:1px">Array's</a>
-access b\[i\] involves no such check. 
+are easier to use than 
+<a style="color:white;border:solid black;border-width:1px">arrays</a>
+because of the ability to determine size, resize, and insert and remove items at the rear.
 
-<a style="color:white;border:solid black;border-width:1px">Vectors</a>
-have more advantages than 
-<a style="color:white;border:solid black;border-width:1px">arrays,</a>
-like resizing during runtime, easy insertion of items at the front or rear, determining vector size, etc.
 
 Tracing 1
 ---
@@ -43,7 +44,7 @@ Tracing 1
 
 using namespace std;
 
-int main(){
+int main() {
     vector<int> a;
     vector<int> b;
     int r = 0;
@@ -56,7 +57,8 @@ int main(){
     b.push_back(4);
     b.push_back(6);
     
-    for (int i = 0; i < a.size(); i++){
+    // Bonus: what operation is being performed here?
+    for (int i = 0; i < a.size(); i++) {
         r += a.at(i) * b.at(i);
     }
     
@@ -75,19 +77,19 @@ Tracing 2
 
 using namespace std;
 
-//Prints the elements of vector v vertically
-void printVerticalVector(const vector<int> &v){
-    for (int i = 0; i < v.size(); i++){
-        if (i < v.size() - 1){
+// Prints the elements of vector v vertically
+void printVerticalVector(const vector<int> &v) {
+    for (int i = 0; i < v.size(); i++) {
+        if (i < v.size() - 1) {
             cout << v.at(i) << endl;
         }
-        else{
+        else {
             cout << v.at(i);
         }
     }
 }
 
-int main(){
+int main() {
     vector<int> a;
     vector<int> b;
     vector<int> r;
@@ -100,6 +102,7 @@ int main(){
     b.push_back(4);
     b.push_back(6);
     
+    // Bonus: what operation is being performed here?
     r.push_back(a.at(1) * b.at(2) - a.at(2) * b.at(1));
     r.push_back(a.at(2) * b.at(0) - a.at(0) * b.at(2));
     r.push_back(a.at(0) * b.at(1) - a.at(1) * b.at(0));
@@ -120,34 +123,30 @@ Tracing 3
 
 using namespace std;
 
-//Prints the elements of vector v with spaces separating each element
-void printVector(const vector<int> &v){
-    for (int i = 0; i < v.size(); i++){
-        if (i < v.size() - 1){
-            cout << v.at(i) << ' ';
-        }
-        else{
-            cout << v.at(i);
-        }
+// Prints the elements of vector v with spaces separating each element
+void printVector(const vector<int> &v) {
+    if (v.size() == 0) return;
+    for (int i = 0; i < v.size() - 1; i++) {
+        cout << v.at(i) << ' ';
     }
+    cout << v.at(v.size() - 1);
 }
 
 int main(){
     vector<int> v;
     
-	v.push_back(5);
-	v.push_back(3);
-	v.push_back(2);
-	v.push_back(-1);
-	v.push_back(1);
-	v.push_back(4);
+    v.push_back(3);
+    v.push_back(2);
+    v.push_back(-1);
+    v.push_back(1);
+    v.push_back(4);
     
     printVector(v);
     cout << endl;
     
-    for (int i = 0; i < v.size() - 1; i++){
-        for (int j = 0; j < v.size() - i - 1; j++){
-           if (v.at(j) > v.at(j + 1)){
+    for (int i = 0; i < v.size() - 1; i++) {
+        for (int j = 0; j < v.size() - i - 1; j++) {
+           if (v.at(j) > v.at(j + 1)) {
               swap(v.at(j), v.at(j + 1));
            }
         }
@@ -170,19 +169,16 @@ Tracing 4
 
 using namespace std;
 
-//Prints the elements of vector v with spaces separating each element
-void printVector(const vector<int> &v){
-    for (int i = 0; i < v.size(); i++){
-        if (i < v.size() - 1){
-            cout << v.at(i) << ' ';
-        }
-        else{
-            cout << v.at(i);
-        }
+// Prints the elements of vector v with spaces separating each element
+void printVector(const vector<int> &v) {
+    if (v.size() == 0) return;
+    for (int i = 0; i < v.size() - 1; i++) {
+        cout << v.at(i) << ' ';
     }
+    cout << v.at(v.size() - 1);
 }
 
-int main(){
+int main() {
     vector<vector<int> > a;
     vector<vector<int> > b;
     vector<vector<int> > r;
@@ -217,9 +213,9 @@ int main(){
     r.push_back(rr1);
     r.push_back(rr2);
 
-    for (int i = 0; i < a.at(0).size(); i++){
-        for (int j = 0; j < a.size(); j++){
-            for (int k = 0; k < b.size(); k++){
+    for (int i = 0; i < a.at(0).size(); i++) {
+        for (int j = 0; j < a.size(); j++) {
+            for (int k = 0; k < b.size(); k++) {
                 r.at(i).at(k) += a.at(i).at(j) * b.at(j).at(k);
             }
         }
@@ -241,19 +237,16 @@ Tracing 5
 #include <iostream>
 #include <vector>
 using namespace std;
- 
-//Prints the elements of vector v with spaces separating each element
-void printVector(const vector<int> &v){
-    for (int i = 0; i < v.size(); i++){
-        if (i < v.size() - 1){
-            cout << v.at(i) << ' ';
-        }
-        else{
-            cout << v.at(i);
-        }
+
+// Prints the elements of vector v with spaces separating each element
+void printVector(const vector<int> &v) {
+    if (v.size() == 0) return;
+    for (int i = 0; i < v.size() - 1; i++) {
+        cout << v.at(i) << ' ';
     }
+    cout << v.at(v.size() - 1);
 }
- 
+
 int mod(vector<int> &a, int sz) {
     for(int x=0; x <= sz; x += 2) {
         swap(a.at(x), a.at(x%3));
@@ -262,7 +255,7 @@ int mod(vector<int> &a, int sz) {
 }
  
 void check(int &c, int sz) {
-    //cout << c << '\t' << sz << '\t' << (int)(c-'a') << endl;
+    // cout << c << '\t' << sz << '\t' << (int)(c-'a') << endl;
     if(sz >= c - sz) {
         c++;
     } else {
@@ -273,27 +266,31 @@ void check(int &c, int sz) {
 int main() {
     ///////////////////////////////////// 1 ////////////////////////////////////
     vector<int> a = {1, 2, 3, 4, 5};
-    check(a[0], mod(a, 5));
-    printVector(a); cout << endl;
+    check(a.at(0), mod(a, 5));
+    printVector(a);
+    cout << endl;
    
     ///////////////////////////////////// 2 ////////////////////////////////////
-    //Now when we output boolean values they'll show as "true" or "false"
+    // The next line sets boolean value printing to display "false" or "true" instead of 0 or 1
     cout << boolalpha;
     vector<int> b = {3, 19, 18, 21, 12, 5, 19};
     vector<int> c = {4, 15, 23, 14, 23, 9, 20, 8, 5, 5};
-    //Comparing vectors looks at each value until it finds two that are diff
-    cout << (b < c) << endl; //will output True
+    // Comparing vectors looks at each value until it finds two that are diff
+    //     if the element on the left is less than the element on the right, the expression evaluates to true
+    //     otherwise, it evaluates to false.
+    cout << (b < c) << endl; // will output true because b.at(0) < c.at(0)
     cout << mod(b, 6) << endl;
     cout << (b < c) << endl;
    
     ///////////////////////////////////// 3 ////////////////////////////////////
-    printVector(b); cout << endl;
+    printVector(b);
+    cout << endl;
     for(int x=0; x < b.size(); x++) {
-        check(b[x], x);
+        check(b.at(x), x);
     }
-    printVector(b); cout << endl;
+    printVector(b);
+    cout << endl;
    
     return 0;
 }
 ```
-
