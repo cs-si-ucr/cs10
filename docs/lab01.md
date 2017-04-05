@@ -89,7 +89,7 @@ Don't attempt it unless you're comfortable with going ahead.
 
 Quiz!
 ---
-[quiz01](https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLScjKZR7DzYmg73RwV3DSFHXtk6p0OPZ_9Kq6d-zv9x22c96Og/viewform)
+[quiz01](https://goo.gl/forms/RyhYnkwLsuypLF9A2)
 
 Answers
 ---
