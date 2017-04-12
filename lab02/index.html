@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Lab 2: Variables and Math - CS010 SI: Spring 2017</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lab 2: Variables and Math";
+    var mkdocs_page_input_path = "lab02.md";
+    var mkdocs_page_url = "/lab02/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CS010 SI: Spring 2017</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../lab01/">Lab 1: Input and Output</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dis02/">Discussion 2: Variables and Math</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Lab 2: Variables and Math</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#exercise-1">Exercise 1</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-2">Exercise 2</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-3">Exercise 3</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-4">Exercise 4</a></li>
+    
+
+    <li class="toctree-l2"><a href="#exercise-5-advanced">Exercise 5 (advanced)</a></li>
+    
+
+    <li class="toctree-l2"><a href="#quiz">Quiz!</a></li>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CS010 SI: Spring 2017</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Lab 2: Variables and Math</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="exercise-1">Exercise 1</h2>
+<p>Ask the user for 2 numbers, then divide them and show the result.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter the dividend: <u><strong>4</strong></u><br>
+Enter the divisor: <u><strong>2</strong></u><br>
+4 / 2 == 2</p>
+</blockquote>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Get a character from the user, and display its integer equivalent.
+The keyword for the character datatype is <code>char</code>.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter a character: <u><strong>c</strong></u><br>
+'c' in decimal is 99.</p>
+</blockquote>
+<!-- todo: delete -->
+
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Get a 5-character word from the user.
+Convert it to the "proper" capitalization (first letter is capitalized, and the rest are lowercase).</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter a 5-character word: <u><strong>hElLo</strong></u><br>
+Your word is Hello.</p>
+</blockquote>
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Write a program to perform modulus between two floating-point values.
+The modulus operator <code>%</code> will not work on doubles.
+Do not use <code>fmod</code> from the cmath library (although you can use it to verify your results).
+Do not worry about negative values or modding by 0.</p>
+<p>Here is a hint:</p>
+<blockquote>
+<p>For two positive integers N (numerator) and D (denominator),<br>
+N can be expressed as D*m + R.<br>
+m is some integer multiple of D.<br>
+R is the remainder of the division between N and D.<br>
+R = N - D*m<br>
+R and m are unknowns in this equation.<br>
+Find m to solve for R.</p>
+</blockquote>
+<p>Examples:</p>
+<blockquote>
+<p>Enter the dividend: <u><strong>23.4</strong></u><br>
+Enter the divisor: <u><strong>3.2</strong></u><br>
+23.4 % 3.2 == 1</p>
+<p>Enter the dividend: <u><strong>54.7</strong></u><br>
+Enter the divisor: <u><strong>3.14</strong></u><br>
+54.7 % 3.14 == 1.32</p>
+</blockquote>
+<h2 id="exercise-5-advanced">Exercise 5 (advanced)</h2>
+<p>Use modulus and division to print the binary value of a character.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter a character: <u><strong>c</strong></u><br>
+'c' in binary is 01100011.</p>
+</blockquote>
+<p>Hint: once you have the decimal value of a character [part 3],
+you can google something like "<a href="http://lmgtfy.com/?q=99+in+binary" target="_blank">99 in binary</a>"
+to double-check your results.
+Also, characters all have 8 bits.</p>
+<!-- future idea: give them some poorly-formatted code and have them format it properly.
+     It could do anything, because they don't need to understand it to format it. -->
+
+<h2 id="quiz">Quiz!</h2>
+<p><a href="https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSfg05rmW2RMtUtPpVbj4uME7MCHdHpqH_qYJ4EFRNeoFGA3Dw/viewform">quiz02</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../dis02/" class="btn btn-neutral" title="Discussion 2: Variables and Math"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../dis02/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
