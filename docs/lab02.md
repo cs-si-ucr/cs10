@@ -90,6 +90,6 @@ Also, characters all have 8 bits.
 
 Quiz!
 ---
-[quiz02](https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSfg05rmW2RMtUtPpVbj4uME7MCHdHpqH_qYJ4EFRNeoFGA3Dw/viewform)
+[quiz02](https://goo.gl/forms/qdtoVAhsElS8xuiv1)
 
 

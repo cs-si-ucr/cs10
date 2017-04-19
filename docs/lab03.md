@@ -53,5 +53,5 @@ Example:
 
 Quiz!
 ---
-[quiz03](https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSdhx0KAG771b-4_UUHiabldZcYEWCgXnaOZXZNJzyMryMbb0w/viewform)
+[quiz03](https://goo.gl/forms/hot0Diqw6inhTZ4p1)
 
