@@ -9,12 +9,12 @@ operator.
 For two strings to be considered equal, they must have the same number of
 <a style="color:white;border:solid black;border-width:1px">characters</a>
 and each corresponding character must be
-<a style="color:white;boreder:solid black;border-width:1px">identical</a>.
+<a style="color:white;border:solid black;border-width:1px">identical</a>.
 
 The operators
 <a style="color:white;border:solid black;border-width:1px"><, <=, >, >=</a>
 can also be used to order strings 
-<a style="colo:white;border:solid black;border-wiodth:1px">values</a>.
+<a style="color:white;border:solid black;border-width:1px">values</a>.
 
 The string accessor function ``.at(i)`` returns
 <a style="color:white;border:solid black;border-width:1px">a character</a>
