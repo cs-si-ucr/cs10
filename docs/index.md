@@ -4,9 +4,9 @@ This is where all of the labs will be posted.
 
 General Info
 ------------
-- **Instructors:** Kris Miller [001, 002, 003], Kelly Downey [004, 010V-1], and Adam Koehler [005]
-- **Course:** CS10
-- **SI Leaders:** Michael Evans, Robyn Haley, Guthrie Price, and Andre Castro
+- **Instructors:** Paea LePendu
+- **Course:** CS10/V
+- **SI Leaders:** Andre Castro
 - **Website:** [CS10 SI](http://cs-si-ucr.github.io/cs10)
 
 What is SI?
@@ -29,8 +29,8 @@ However, if you are having trouble in the class or think you might run into trou
 CS 10 has a high dropout rate, along with a high failure rate, so if you are running into trouble, let me help you.
 Do not be intimidated if you are trying to start coming later in the quarter (though try not to wait that long), I will help bring you up to speed.
 
-With that in mind, I should mention that SI is required for learning community students.
-If you are not attending, you will be dropped from your learning community.
+[comment]: # (With that in mind, I should mention that SI is required for learning community students.
+If you are not attending, you will be dropped from your learning community.)
 
 Guidelines:
 -----------
