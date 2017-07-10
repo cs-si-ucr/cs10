@@ -244,6 +244,16 @@
             "location": "/dis05/#code-tracing",
             "text": "For the code below answer the following questions.   What does this program output?  What would happen if you switched the values of width and height? (That is,  width = 13;  and  height == 2; )   int main(){\n    char start = 'a';\n    int width = 2;\n    int height = 13;\n\n    for (int i = 0; i < height; i++) {\n        for (int j = 0; j < width; j++) {\n            cout << start << ' ';\n            start++;\n        }\n        cout << endl;\n    }\n\n    return 0;\n}  For the code below answer the following questions.   What does the code output if the user enters 2. What about if the user enters a 3 or a 4? That is, what does the main function output in the seperate cases of  userInput == 2 ,  userInput == 3 , and  userInput == 4 .  What mathematical function does each part represent? (refer to the comments in the code if you are unsure what is meant by 'part')  What mathematical function would we have if we incremented the variable  result  in  n  nested for-loops?   int main() {\n    int userInput = 0;\n\n    cout << \"Enter a number: \";\n    cin >> userInput;\n    cout << endl;\n\n    //PART 1\n    int result = 0;\n\n    for (int i = 0; i < userInput; i++) {\n        result++;\n    }\n\n    cout << result << endl;\n\n    //PART 2\n    result = 0;\n\n    for (int i = 0; i < userInput; i++) {\n        for (int j = 0; j < userInput; j++) {\n            reuslt++;\n        }\n    }\n\n    cout << result << endl;\n\n    //PART 3 \n    result = 0;\n\n    for (int i = 0; i < userInput; i++) {\n        for (int j = 0; j < userInput; j++) {\n            for (int k = 0; k < userInput; k++) {\n                result++;\n            }\n        }\n    }\n\n    cout << result << endl;\n    result = 0;\n\n    return 0;\n}",
             "title": "Code Tracing"
+        },
+        {
+            "location": "/lab05/",
+            "text": "Mock Midterm\n\n\n\n\nMock Midterm\n\n\nSolutions",
+            "title": "Lab Week 5: Mock Midterm"
+        },
+        {
+            "location": "/lab05/#mock-midterm",
+            "text": "Mock Midterm  Solutions",
+            "title": "Mock Midterm"
         }
     ]
 }
