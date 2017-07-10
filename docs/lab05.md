@@ -1,8 +1,8 @@
 Mock Midterm
 ---
 
-* [Mock Midterm](https://docs.google.com/a/ucr.edu/document/d/1VFP1a-wSlKHupjD6CEDd9PPUax8r8ltYpbBRjsqRl-A/edit?usp=sharing)
-* [Solutions](https://docs.google.com/a/ucr.edu/document/d/11nKBgtvP5_MRBo1e34EQr5piH7xQK3ku4Xx3iKGNK_g/edit?usp=sharing)
+* [Mock Midterm](https://docs.google.com/a/ucr.edu/document/d/1IQC1cvuxH_35zdoZ_26I0d_L7tb2AEkNtxLe-6_1z5g/edit?usp=sharing)
+* [Solutions](https://docs.google.com/a/ucr.edu/document/d/1L6y4wVKiJ3k40YjUdqkruHkeSCRYhrlsvfW2C5bIITM/edit?usp=sharing)
 
 <!--
 Exercise 1
