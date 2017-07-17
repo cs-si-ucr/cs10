@@ -256,16 +256,6 @@
             "title": "Mock Midterm"
         },
         {
-            "location": "/dis06/",
-            "text": "Introduction\n\n\nMock Midterm",
-            "title": "Discussion 6: Midterm Preparation"
-        },
-        {
-            "location": "/dis06/#introduction",
-            "text": "Mock Midterm",
-            "title": "Introduction"
-        },
-        {
             "location": "/lab06/",
             "text": "Exercise 1\n\n\nWrite a program that prints one random number in \n[1, 6]\n.\n\n\nExercise 2\n\n\nOutput a sideways \"skyline\" with random building heights.\nDo not print an empty line as part of the skyline.\nThe maximum height building need not be part of the skyline, but no building should be taller.\n\n\nExample:\n\n\n\n\nHow many buildings? \n7\n\nHow tall is the tallest building? \n9\n\n\n\nXXXXXXX\n\nXXX\n\nXXXX\n\nX\n\nXXXXXXXXX\n\nXXXX\n\nXXXX\n\n\n\n\nExercise 3\n\n\nWrite a program that prints \nn\n random numbers in \n[a, b]\n.\nThe values for \nn\n, \na\n, and \nb\n will come from the user.\n\na\n will be less than or equal to \nb\n.\n\n\nExample:\n\n\n\n\nHow many random numbers would you like? \n4\n\nWhat range should the numbers be in (space-separated)? \n-3 3\n\nYour random numbers are:\n\n-2\n\n3\n\n1\n\n-1\n\n\n\n\nBonus\n:\nAllow the user to enter the numbers in the wrong order.\nFor instance, they could enter \n3 -3\n and your program would output numbers in \n[-3, 3]\n.\n\n\nExercise 4\n\n\nImplement your own pseudo-random number generator.\n\n\nHINT:\nBe careful about big numbers.\nChoose your datatypes accordingly.\n\n\nAlgorithm:\n\n\n\n\nPick a number to mod by.\nWe will be using \n6947\n.\n\nPick a number to shift by.\nWe will be using \n27\n.\n\nPick a number to exponentiate by.\nWe will be using \n3\n.\n\nStart with some intial sequence value, called the \nseed\n (mod 6947)\n\nThe next term in the sequencee is the previous term plus the shift value, raised to the third power (mod 6947)\n\n\n\n\nExample:\n\n\n\n\nEnter the seed value: \n0\n\nHow many random numbers would you like? \n5\n\n5789\n\n2500\n\n2438\n\n2844\n\n267\n\n\n\n\nBonus\n:\n\n\nUse the current time to seed our random number generator.",
             "title": "Lab Week 6: Randomness"
