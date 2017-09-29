@@ -4,9 +4,9 @@ This is where all of the labs will be posted.
 
 General Info
 ------------
-- **Instructors:** Paea LePendu
+- **Instructors:** Kris Miller, Kelly Downey
 - **Course:** CS10/V
-- **SI Leaders:** Andre Castro
+- **SI Leaders:** Andre Castro, Leo Segovia, Omar Pereza, Kennen DeRenard, John Pham, Abe Hu, Guthrie Price
 - **Website:** [CS10 SI](http://cs-si-ucr.github.io/cs10)
 
 What is SI?
