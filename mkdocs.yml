@@ -1,6 +1,7 @@
 site_name: "CS010 SI: Summer 2017"
 pages:
     - [index.md, "Home"]
+    - [dis01.md, "Into to iostream library"]
     - [lab01.md, "Lab 1: Input and Output"]
    #- [dis02.md, "Discussion 2: Variables and Math"]
    #- [lab02.md, "Lab 2: Variables and Math"]
