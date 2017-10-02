@@ -56,8 +56,8 @@ int main(){
    // The above two lines are variable declarations
    // we will focus on this more next week
    /* Tip:
-   * multi-line comments can also be written like this!
-     FYI. */
+      multi-line comments can also be written like this!
+      FYI. */
 
    cout << "Let's just write everything on" << test << temp << endl;
 
