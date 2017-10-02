@@ -37,12 +37,12 @@
         },
         {
             "location": "/dis01/",
-            "text": "Introduction\n\n\nCode Tracing\n\n\nWhat do the following programs output \n(If they dont compile what is wrong with the program?) :\n\n\n// 1\nusing namespace std;\n\nint main(){\n   cout << \"Hello World!\"\n\n   return 0;\n}\n\n// 2\n#include <iostream>\nusing namespace std;\n\nint main(){\n   cout << \"Does\"; \n   cout << This;\n   cout << \"\"Print\"\";\n   cout << ?;\n\n   return 0;\n}\n\n// 3\n#include <iostream>\nusing namespace std;\n\nint main(){\n   cout << \"How \";\n   cout << \"About\";\n   cout << \" \\\"This\\\"\";\n   cout << \"?\";\n   cout << endl;\n\n   return 0;\n}\n\n//4\n#include <iostream>\nusing namespace std;\n\nint main(){\n   int test = 1;\n   string temp = \"line\";\n   // The above two lines are variable declarations\n   // we will focus on this more next week\n   /* Tip:\n      multi-line comments can also be written like this!\n      FYI. */\n\n   cout << \"Let's just write everything on\" << test << temp << endl;\n\n   return 0;\n}\n\n\n\n\n\n\n\nFor future reference, we will assume that the lines:\n\n\n\n\n#include <iostream>\nusing namespace std;\n\n\n\n\nare included at the top of the program, even if not shown.",
+            "text": "Introduction\n\n\nCloud 9 registration link!: \nhttps://c9.io/\n\n\nCode Tracing\n\n\nWhat do the following programs output \n(If they dont compile what is wrong with the program?) :\n\n\n// 1\nusing namespace std;\n\nint main(){\n   cout << \"Hello World!\"\n\n   return 0;\n}\n\n// 2\n#include <iostream>\nusing namespace std;\n\nint main(){\n   cout << \"Does\"; \n   cout << This;\n   cout << \"\"Print\"\";\n   cout << ?;\n\n   return 0;\n}\n\n// 3\n#include <iostream>\nusing namespace std;\n\nint main(){\n   cout << \"How \";\n   cout << \"About\";\n   cout << \" \\\"This\\\"\";\n   cout << \"?\";\n   cout << endl;\n\n   return 0;\n}\n\n//4\n#include <iostream>\nusing namespace std;\n\nint main(){\n   int test = 1;\n   string temp = \"line\";\n   // The above two lines are variable declarations\n   // we will focus on this more next week\n   /* Tip:\n      multi-line comments can also be written like this!\n      FYI. */\n\n   cout << \"Let's just write everything on\" << test << temp << endl;\n\n   return 0;\n}\n\n\n\n\n\n\n\nFor future reference, we will assume that the lines:\n\n\n\n\n#include <iostream>\nusing namespace std;\n\n\n\n\nare included at the top of the program, even if not shown.",
             "title": "Discussion 1: Intro to iostream Library"
         },
         {
             "location": "/dis01/#introduction",
-            "text": "",
+            "text": "Cloud 9 registration link!:  https://c9.io/",
             "title": "Introduction"
         },
         {
