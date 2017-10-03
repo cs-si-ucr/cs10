@@ -1,4 +1,4 @@
-site_name: "CS010 SI: Summer 2017"
+site_name: "CS010 SI: Fall 2017"
 pages:
     - [index.md, "Home"]
     - [dis01.md, "Discussion 1: Intro to iostream Library"]

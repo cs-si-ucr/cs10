@@ -1,13 +1,23 @@
 Welcome to CS10 SI!
 ===================
-This is where all of the labs will be posted.
+We will be using this website throughout the quarter for SI Lecture and SI Lab. The material on this website is meant to reinforce your learning for the course. 
 
 General Info
 ------------
-- **Instructors:** Kris Miller, Kelly Downey
-- **Course:** CS10/V
-- **SI Leaders:** Andre Castro, Leo Segovia, Omar Pereza, Kennen DeRenard, John Pham, Abe Hu, Guthrie Price
-- **Website:** [CS10 SI](http://cs-si-ucr.github.io/cs10)
+**Instructors:** 
+
+* Kris Miller [[kmiller@cs.ucr.edu]](mailto:kmiller@cs.ucr.edu)
+* Kelly Downey [[kelly@cs.ucr.edu]](mailto:kelly@cs.ucr.edu)
+
+**SI Leaders:**
+
+* Andre Castro [[acast050@ucr.edu]](mailto:acast050@ucr.edu)
+* Leo Segovia [[esego001@ucr.edu]](mailto:esego001@ucr.edu)
+* Omar Pereza [[opera002@ucr.edu]](mailto:opera002@ucr.edu)
+* Kennen DeRenard [[kdere004@ucr.edu]](mailto:kdere004@ucr.edu)
+* John Pham [[jpham035@ucr.edu]](mailto:jpham035@ucr.edu)
+* Abe Hu [[ahu009@ucr.edu]](mailto:ahu009@ucr.edu)
+* Guthrie Price [[gpric001@ucr.edu]](mailto:gpric001@ucr.edu)
 
 What is SI?
 -----------
@@ -29,9 +39,6 @@ However, if you are having trouble in the class or think you might run into trou
 CS 10 has a high dropout rate, along with a high failure rate, so if you are running into trouble, let me help you.
 Do not be intimidated if you are trying to start coming later in the quarter (though try not to wait that long), I will help bring you up to speed.
 
-[comment]: # (With that in mind, I should mention that SI is required for learning community students.
-If you are not attending, you will be dropped from your learning community.)
-
 Guidelines:
 -----------
 1. Be respectful - This includes silencing your cell phones and not using them during sessions.
@@ -41,6 +48,3 @@ Guidelines:
 However, please do not enter or leave in such a way that draws everyone’s attention to you.
 5. Sign in - There will usually be a working computer for you to sign into when you arrive.
 Please use it to check in (even if you’re not on time).
-
-
-
