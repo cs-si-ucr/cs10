@@ -51,6 +51,23 @@ Example:
 
 <!-- todo: delete -->
 
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    char userInput;
+    
+    cout << "Enter a character: " << endl;
+
+    cin >> userInput;
+
+    cout << "'" << userInput - '0' << endl;
+    
+    return 0;
+}
+```
+
 Exercise 3
 ---
 
