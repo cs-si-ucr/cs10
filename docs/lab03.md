@@ -50,6 +50,35 @@ Example:
 > Enter a character: <u>**=**</u><br>
 > '=' in decimal is 61.
 
+Exercise 4
+---
+Create a password guessing game where a user attempts to break your passcode based on hints.
+Using 4 integers, decide the relationship (less than, greather than, equal to, twice as much, etc)
+between any number of your integers. These relationships is what defines your passcode.
+For exaple, my passcode could be:
+num1 has to be greather than num2, num2 has to be less than num3 and num3 has to be equal to num4.
+The user is then prompted to enter 4 numbers and told whether each number fits your specifications
+or does not. A message is then prompted saying whether the user failed or succeeded.
+
+Example:
+> Enter 4 numbers: **12, 2, 600, 4** <br>
+> The first number looks good! <br>
+> The second number looks good! <br>
+> The third number needs some fixing... <br>
+> The fourth number needs some fixing... <br>
+> Sorry you didn't break the code!
+
+> Enter 4 numbers: **12, 2, 6, 3** <br>
+> The first number looks good! <br>
+> The second number looks good! <br>
+> The third number looks good! <br>
+> The fourth looks good! <br>
+> Congrats! You broke the code! :)
+
+(Challenge: Instead of integers, use floating point numbers)
+*pssst SI Leaders, this is a helpful example to slowly introduce loops if you'd like.
+The program does not have to terminate after every attempt, keep it going with a while.*
+
 
 Quiz!
 ---
