@@ -228,6 +228,38 @@ int main() {
 
     return 0;
 }
+
+//5
+int main(){
+    int j = 1;
+    int k = 2;
+    bool b = false;
+    
+    if(j || k){
+        k = 0;
+    }
+    
+    if(k){
+        j = 0;
+    }
+    
+    if((j == k) || (b = true)){
+        k -= 2;
+    }
+    else if(!b){
+        j += 3;
+        k -= 4;
+    }
+    else{
+        j *= k;
+    }
+    
+    
+    cout << "j = " << j << endl;
+    cout << "k = " << k << endl;
+    return 0;
+}
+//careful...
 ```
 
 Extra Help
