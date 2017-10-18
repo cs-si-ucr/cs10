@@ -343,6 +343,38 @@ int main() {
 
     return 0;
 }
+
+//5
+int main(){
+    int j = 1;
+    int k = 2;
+    bool b = false;
+
+    if(j || k){
+        k = 0;
+    }
+
+    if(k){
+        j = 0;
+    }
+
+    if((j == k) || (b = true)){
+        k -= 2;
+    }
+    else if(!b){
+        j += 3;
+        k -= 4;
+    }
+    else{
+        j *= k;
+    }
+
+
+    cout &lt;&lt; &quot;j = &quot; &lt;&lt; j &lt;&lt; endl;
+    cout &lt;&lt; &quot;k = &quot; &lt;&lt; k &lt;&lt; endl;
+    return 0;
+}
+//careful...
 </code></pre>
 
 <h2 id="extra-help">Extra Help</h2>
