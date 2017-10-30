@@ -307,12 +307,12 @@
         },
         {
             "location": "/lab05/",
-            "text": "Mock Midterm\n\n\n\n\nMock Midterm\n\n\nSolutions",
+            "text": "Mock Midterm\n\n\n\n\nMock Midterm\n\n<!--\n\n\nSolutions\n\n->",
             "title": "Lab Week 5: Mock Midterm"
         },
         {
             "location": "/lab05/#mock-midterm",
-            "text": "Mock Midterm  Solutions",
+            "text": "Mock Midterm \n<!--  Solutions \n->",
             "title": "Mock Midterm"
         }
     ]
