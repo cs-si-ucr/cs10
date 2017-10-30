@@ -2,9 +2,10 @@ Mock Midterm
 ---
 
 * [Mock Midterm](https://docs.google.com/a/ucr.edu/document/d/1IQC1cvuxH_35zdoZ_26I0d_L7tb2AEkNtxLe-6_1z5g/edit?usp=sharing)
+<!--
 * [Solutions](https://docs.google.com/a/ucr.edu/document/d/1L6y4wVKiJ3k40YjUdqkruHkeSCRYhrlsvfW2C5bIITM/edit?usp=sharing)
 
-<!--
+
 Exercise 1
 ---
 
