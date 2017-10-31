@@ -8,7 +8,7 @@ Mock Midterm
 
 <!--
 Exercise 1
----
+-->
 
 Write a program that outputs a menu that asks the user to pick an option between 1 - 6.
 If the option is 6 then the program should exit.
