@@ -339,6 +339,151 @@
             "location": "/lab06/#exercise-4",
             "text": "Implement your own pseudo-random number generator.  HINT:\nBe careful about big numbers.\nChoose your datatypes accordingly.  Algorithm:   Pick a number to mod by.\nWe will be using  6947 . \nPick a number to shift by.\nWe will be using  27 . \nPick a number to exponentiate by.\nWe will be using  3 . \nStart with some intial sequence value, called the  seed  (mod 6947) \nThe next term in the sequencee is the previous term plus the shift value, raised to the third power (mod 6947)   Example:   Enter the seed value:  0 \nHow many random numbers would you like?  5 \n5789 \n2500 \n2438 \n2844 \n267   Bonus :  Use the current time to seed our random number generator.",
             "title": "Exercise 4"
+        },
+        {
+            "location": "/dis07/",
+            "text": "Introduction\n\n\nA\n\nfunction\n\nis a named block of code.\nInvoking a function name, also known as a\n\nfunction call\n\ncauses the functions statements to execute.\n\n\nA function\n\ndeclaration\n\nconsists of a new function name, its return type, and its parameter list.\nIt is optionally followed by a block of statements.\nIncluding the statements is called\n\ndefinition\n.\n\n\nIn the statement \nvoid print(string strName);\n\n\nstrName\n is a\n\nparameter\n.\nA function may have multiple parameters, seperated by\n\ncommas\n.\nA function without parameters must still have parenthesis. \nThe value passed to a parameter is kmown as an\n\nagrument\n.\n\n\nEach non-void function must have a\n\nreturn\n\nstatement which tranfers control of the program back to the where the functions was originally called.\n\n\nThe return value of a function depends on how the function is declared.\nFor example, in the function \nint main()\n a function named \nmain\n is declared to have a return type of \n\nint\n.\nIf a function is declared to be \nvoid\n as it is in the \nprint\n example above, then the return statement should simply be \n\nreturn;\n,\nor could be left out entirely.\n\n\nDesignating blocks of codes as functions can be useful for three reasons:\n\n\n\n\n\n\nImproving program\n\nreadability\n\n\n\n\n\n\nModular\n\nprogram development \n\n\n\n\n\n\nAvoiding\n\nredundant\n\ncode\n\n\n\n\n\n\nCode Tracing\n\n\nWhat do the following programs output?\n\n\n1\n\n\nvoid foo(int a, int b) {\n    a += 6;\n    b += a;\n    b = a * b;\n    a = a + b;\n    cout << a << endl;\n    cout << b << endl;\n}\n\nint main() {\n    int a = 5;\n    int b = 3;\n    cout << \"Functions\" << endl;\n    foo(a,b);\n    cout << \"take parameters.\" << endl;\n\n    return 0;\n}\n\n\n\n\n2\n\n\nvoid printa() {\n    cout << \"the bomb\" << endl;\n}\nvoid printb() {\n    cout << \"dot com\" << endl;\n}\n\nvoid foo(int a) {\n    if (a < 5) {\n        printa();\n    } else if (a == 5) {\n        printb();\n    } else {\n        cout << \"none\" << endl;\n    }\n}\n\nint main() {\n    int a = 5;\n    int b = -5;\n    foo(a);\n    foo(b);\n\n    return 0;\n}\n\n\n\n\n3\n\n\nint foo2(int b) {\n    int c = b + 6;\n    if (c > 13) {\n        b = b + 5;\n    } else {\n        b = b + 9;\n    }\n\n    return c + b;\n}\n\nint foo(int a) {\n    if (a > -1) {\n        return -1;\n    } else if (a < 0) {\n        return 0;\n    }\n}\n\nint main() {\n    int a = 0;\n    int b = 7;\n    if (foo(a) == 1) {\n        cout << \"Positive!\" << endl;\n    } else {\n        cout << \"Negative!\" << endl;\n    }\n\n    cout << foo2(b) + foo(a) << endl;\n\n    return 0;\n}\n\n\n\n\n4\n\n\nint getSize(string t) {\n    return t.size();\n}\n\nstring removeCaps(string text) {\n    for (int i = 0; i < text.size(); i++) {\n        if (text.at(i) == 's' || text.at(i) == 'S') {\n            cout << \"S found!\" << endl;\n            text.replace(i, 1, \"\");\n        }\n    }\n    return text;\n}\n\nint main() {\n    string text = \"StephenStrange\";\n    string modifiedText = removeCaps(text);\n    if (getSize(modifiedText) < getSize(text)) {\n        cout << \"Made at least one change to text!\" << endl;\n    } else {\n        cout << \"Made no changes to text.\" << endl;\n    }\n    cout << modifiedText << endl;\n}",
+            "title": "Discussion 7: Functions"
+        },
+        {
+            "location": "/dis07/#introduction",
+            "text": "A function \nis a named block of code.\nInvoking a function name, also known as a function call \ncauses the functions statements to execute.  A function declaration \nconsists of a new function name, its return type, and its parameter list.\nIt is optionally followed by a block of statements.\nIncluding the statements is called definition .  In the statement  void print(string strName);  strName  is a parameter .\nA function may have multiple parameters, seperated by commas .\nA function without parameters must still have parenthesis. \nThe value passed to a parameter is kmown as an agrument .  Each non-void function must have a return \nstatement which tranfers control of the program back to the where the functions was originally called.  The return value of a function depends on how the function is declared.\nFor example, in the function  int main()  a function named  main  is declared to have a return type of  int .\nIf a function is declared to be  void  as it is in the  print  example above, then the return statement should simply be  return; ,\nor could be left out entirely.  Designating blocks of codes as functions can be useful for three reasons:    Improving program readability    Modular \nprogram development     Avoiding redundant \ncode",
+            "title": "Introduction"
+        },
+        {
+            "location": "/dis07/#code-tracing",
+            "text": "What do the following programs output?",
+            "title": "Code Tracing"
+        },
+        {
+            "location": "/dis07/#1",
+            "text": "void foo(int a, int b) {\n    a += 6;\n    b += a;\n    b = a * b;\n    a = a + b;\n    cout << a << endl;\n    cout << b << endl;\n}\n\nint main() {\n    int a = 5;\n    int b = 3;\n    cout << \"Functions\" << endl;\n    foo(a,b);\n    cout << \"take parameters.\" << endl;\n\n    return 0;\n}",
+            "title": "1"
+        },
+        {
+            "location": "/dis07/#2",
+            "text": "void printa() {\n    cout << \"the bomb\" << endl;\n}\nvoid printb() {\n    cout << \"dot com\" << endl;\n}\n\nvoid foo(int a) {\n    if (a < 5) {\n        printa();\n    } else if (a == 5) {\n        printb();\n    } else {\n        cout << \"none\" << endl;\n    }\n}\n\nint main() {\n    int a = 5;\n    int b = -5;\n    foo(a);\n    foo(b);\n\n    return 0;\n}",
+            "title": "2"
+        },
+        {
+            "location": "/dis07/#3",
+            "text": "int foo2(int b) {\n    int c = b + 6;\n    if (c > 13) {\n        b = b + 5;\n    } else {\n        b = b + 9;\n    }\n\n    return c + b;\n}\n\nint foo(int a) {\n    if (a > -1) {\n        return -1;\n    } else if (a < 0) {\n        return 0;\n    }\n}\n\nint main() {\n    int a = 0;\n    int b = 7;\n    if (foo(a) == 1) {\n        cout << \"Positive!\" << endl;\n    } else {\n        cout << \"Negative!\" << endl;\n    }\n\n    cout << foo2(b) + foo(a) << endl;\n\n    return 0;\n}",
+            "title": "3"
+        },
+        {
+            "location": "/dis07/#4",
+            "text": "int getSize(string t) {\n    return t.size();\n}\n\nstring removeCaps(string text) {\n    for (int i = 0; i < text.size(); i++) {\n        if (text.at(i) == 's' || text.at(i) == 'S') {\n            cout << \"S found!\" << endl;\n            text.replace(i, 1, \"\");\n        }\n    }\n    return text;\n}\n\nint main() {\n    string text = \"StephenStrange\";\n    string modifiedText = removeCaps(text);\n    if (getSize(modifiedText) < getSize(text)) {\n        cout << \"Made at least one change to text!\" << endl;\n    } else {\n        cout << \"Made no changes to text.\" << endl;\n    }\n    cout << modifiedText << endl;\n}",
+            "title": "4"
+        },
+        {
+            "location": "/lab07/",
+            "text": "Tips\n\n\nOnce you complete a function, you can use it in later exercises.\n\n\nWe have written some unit tests for you to use.\nThere are two ways you can get them into your workspace.\n\n\nMethod 1\n:\nRun this command in your terminal where you would like to place \ntests.cpp\n.\n\n\nwget https://raw.githubusercontent.com/cs-si-ucr/cs10tests/master/week07/tests.cpp\n\n\n\n\nMethod 2\n:\nGo \nhere\n and download \ntests.cpp\n to your workspace.\n\n\nIn both cases, make sure \ntests.cpp\n is in the same directory as your other code from this week.\n\n\nUse this as a guide for starting your lab this week:\n\n\n#include \"tests.cpp\"\n\nusing namespace std;\n\n// this is function stubbing:\n// they will compile and run, but not produce the correct result.\n// that is not the point.\n// the point is to get everything to compile.\n\nint myMax(int left, int right) {\n    return 0;\n}\n\nint myMin(int left, int right) {\n    return 0;\n}\n\nint myAbs(int n) {\n    return -1;\n}\n\ndouble myFabs(double n) {\n    return -1.0;\n}\n\nint modInt(int numerator, int denominator) {\n    return -1;\n}\n\ndouble modDouble(double numerator, double denominator) {\n    return -1.0;\n}\n\n// TODO: stub the rest of the functions\n\nint main() {\n    // to run all tests:\n    runAllTests();\n}\n\n\n\n\nExercise 1\n\n\nWrite a function that returns the \nmax\n of two integers.\nCall it \nmyMax\n.\n\n\nExercise 2\n\n\nWrite a function that returns the \nmin\n of two integers.\nCall it \nmyMin\n.\n\n\nExercise 3\n\n\nWrite a function that returns the absolute value of an integer.\nCall it \nmyAbs\n.\n\n\nExercise 4\n\n\nWrite a function that returns the absolute value of a floating-point number.\nCall it \nmyFabs\n.\n\n\nExercise 5\n\n\nWrite a function that returns the \nmodulo\n of two integers.\nDo not use the \n%\n operator.\nCall it \nmodInt\n.\n\n\nExercise 6\n\n\nWrite a function that returns the \nmodulo\n of two floating-point numbers.\nCall it \nmodDouble\n.\n\n\nExercise 7\n\n\nWrite the \nisUpper\n function.\n\nisUpper\n returns true if it is passed an uppercase character.\nCall it \nmyIsUpper\n.\n\n\nExercise 8\n\n\nWrite the \nisLower\n function.\n\nisLower\n returns true if it is passed a lowercase character.\nCall it \nmyIsLower\n.\n\n\nExercise 9\n\n\nWrite the \nisDigit\n function.\n\nisDigit\n returns true if it is passed a numeric character.\nCall it \nmyIsDigit\n.\n\n\nExercise 10\n\n\nWrite the \nisAlpha\n function.\n\nisAlpha\n returns true if it is passed an alphabetic character.\nCall it \nmyIsAlpha\n.\n\n\nExercise 11\n\n\nWrite the \nisAlnum\n function.\n\nisAlnum\n returns true if it is passed an alphabetic character \nor\n a numeric character.\nCall it \nmyIsAlnum\n.\n\n\nExercise 12\n\n\nWrite the \ntoupper\n function.\nCall it \nmyToUpper\n.\n\n\nExercise 13\n\n\nWrite the \ntolower\n function.\nCall it \nmyToLower\n.\n\n\nExercise 14\n\n\nWrite a function that accepts an integer and a character.\nThe function should print the character the number of times passed into it.\nCall it \nprintRow\n.\n\n\nNote\n: This function cannot be tested by \ntests.cpp\n.\nYou will need to check it yourself.\n\n\nExercise 15\n\n\nWrite a floating-point comparison function.\nRemember that floating-point values are not always stored perfectly precisely.\nThe function should accept two doubles to compare, along with a tolerance value.\nThe tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.\nThe difference should be strictly less than the tolerance value.\n\n\nCall it \nflEq\n.\n\n\nExercise 16\n\n\nWrite a function that returns a random number in a specified range.\nCall it \nrandRange\n.\n\n\nExercise 17\n\n\nWrite a function that returns the first index of a character in a provided string.\nReturn \n-1\n if the character is unable to be found.\nCall it \nfindCharBegin\n.\n\n\nExercise 18\n\n\nWrite a funciton that returns the first index of a string in a provided string.\nReturn \n-1\n if the string is unable to be found.\nCall it \nfindStringBegin\n.\n\n\nExercise 19\n\n\nWrite a function that returns the index of a character in a provided string given a starting location.\nReturn \n-1\n if the character is unable to be found.\nCall it \nfindChar\n.\n\n\nExercise 20\n\n\nWrite a funciton that returns the index of a string in a provided string given a starting location.\nReturn \n-1\n if the string is unable to be found.\nCall it \nfindString\n.",
+            "title": "Lab Week 7: Functions"
+        },
+        {
+            "location": "/lab07/#tips",
+            "text": "Once you complete a function, you can use it in later exercises.  We have written some unit tests for you to use.\nThere are two ways you can get them into your workspace.  Method 1 :\nRun this command in your terminal where you would like to place  tests.cpp .  wget https://raw.githubusercontent.com/cs-si-ucr/cs10tests/master/week07/tests.cpp  Method 2 :\nGo  here  and download  tests.cpp  to your workspace.  In both cases, make sure  tests.cpp  is in the same directory as your other code from this week.  Use this as a guide for starting your lab this week:  #include \"tests.cpp\"\n\nusing namespace std;\n\n// this is function stubbing:\n// they will compile and run, but not produce the correct result.\n// that is not the point.\n// the point is to get everything to compile.\n\nint myMax(int left, int right) {\n    return 0;\n}\n\nint myMin(int left, int right) {\n    return 0;\n}\n\nint myAbs(int n) {\n    return -1;\n}\n\ndouble myFabs(double n) {\n    return -1.0;\n}\n\nint modInt(int numerator, int denominator) {\n    return -1;\n}\n\ndouble modDouble(double numerator, double denominator) {\n    return -1.0;\n}\n\n// TODO: stub the rest of the functions\n\nint main() {\n    // to run all tests:\n    runAllTests();\n}",
+            "title": "Tips"
+        },
+        {
+            "location": "/lab07/#exercise-1",
+            "text": "Write a function that returns the  max  of two integers.\nCall it  myMax .",
+            "title": "Exercise 1"
+        },
+        {
+            "location": "/lab07/#exercise-2",
+            "text": "Write a function that returns the  min  of two integers.\nCall it  myMin .",
+            "title": "Exercise 2"
+        },
+        {
+            "location": "/lab07/#exercise-3",
+            "text": "Write a function that returns the absolute value of an integer.\nCall it  myAbs .",
+            "title": "Exercise 3"
+        },
+        {
+            "location": "/lab07/#exercise-4",
+            "text": "Write a function that returns the absolute value of a floating-point number.\nCall it  myFabs .",
+            "title": "Exercise 4"
+        },
+        {
+            "location": "/lab07/#exercise-5",
+            "text": "Write a function that returns the  modulo  of two integers.\nDo not use the  %  operator.\nCall it  modInt .",
+            "title": "Exercise 5"
+        },
+        {
+            "location": "/lab07/#exercise-6",
+            "text": "Write a function that returns the  modulo  of two floating-point numbers.\nCall it  modDouble .",
+            "title": "Exercise 6"
+        },
+        {
+            "location": "/lab07/#exercise-7",
+            "text": "Write the  isUpper  function. isUpper  returns true if it is passed an uppercase character.\nCall it  myIsUpper .",
+            "title": "Exercise 7"
+        },
+        {
+            "location": "/lab07/#exercise-8",
+            "text": "Write the  isLower  function. isLower  returns true if it is passed a lowercase character.\nCall it  myIsLower .",
+            "title": "Exercise 8"
+        },
+        {
+            "location": "/lab07/#exercise-9",
+            "text": "Write the  isDigit  function. isDigit  returns true if it is passed a numeric character.\nCall it  myIsDigit .",
+            "title": "Exercise 9"
+        },
+        {
+            "location": "/lab07/#exercise-10",
+            "text": "Write the  isAlpha  function. isAlpha  returns true if it is passed an alphabetic character.\nCall it  myIsAlpha .",
+            "title": "Exercise 10"
+        },
+        {
+            "location": "/lab07/#exercise-11",
+            "text": "Write the  isAlnum  function. isAlnum  returns true if it is passed an alphabetic character  or  a numeric character.\nCall it  myIsAlnum .",
+            "title": "Exercise 11"
+        },
+        {
+            "location": "/lab07/#exercise-12",
+            "text": "Write the  toupper  function.\nCall it  myToUpper .",
+            "title": "Exercise 12"
+        },
+        {
+            "location": "/lab07/#exercise-13",
+            "text": "Write the  tolower  function.\nCall it  myToLower .",
+            "title": "Exercise 13"
+        },
+        {
+            "location": "/lab07/#exercise-14",
+            "text": "Write a function that accepts an integer and a character.\nThe function should print the character the number of times passed into it.\nCall it  printRow .  Note : This function cannot be tested by  tests.cpp .\nYou will need to check it yourself.",
+            "title": "Exercise 14"
+        },
+        {
+            "location": "/lab07/#exercise-15",
+            "text": "Write a floating-point comparison function.\nRemember that floating-point values are not always stored perfectly precisely.\nThe function should accept two doubles to compare, along with a tolerance value.\nThe tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.\nThe difference should be strictly less than the tolerance value.  Call it  flEq .",
+            "title": "Exercise 15"
+        },
+        {
+            "location": "/lab07/#exercise-16",
+            "text": "Write a function that returns a random number in a specified range.\nCall it  randRange .",
+            "title": "Exercise 16"
+        },
+        {
+            "location": "/lab07/#exercise-17",
+            "text": "Write a function that returns the first index of a character in a provided string.\nReturn  -1  if the character is unable to be found.\nCall it  findCharBegin .",
+            "title": "Exercise 17"
+        },
+        {
+            "location": "/lab07/#exercise-18",
+            "text": "Write a funciton that returns the first index of a string in a provided string.\nReturn  -1  if the string is unable to be found.\nCall it  findStringBegin .",
+            "title": "Exercise 18"
+        },
+        {
+            "location": "/lab07/#exercise-19",
+            "text": "Write a function that returns the index of a character in a provided string given a starting location.\nReturn  -1  if the character is unable to be found.\nCall it  findChar .",
+            "title": "Exercise 19"
+        },
+        {
+            "location": "/lab07/#exercise-20",
+            "text": "Write a funciton that returns the index of a string in a provided string given a starting location.\nReturn  -1  if the string is unable to be found.\nCall it  findString .",
+            "title": "Exercise 20"
         }
     ]
 }
