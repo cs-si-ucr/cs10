@@ -13,7 +13,7 @@ pages:
     - [dis05.md, "Discussion 5: Nested Loops and Do-While"]
     - [lab05.md, "Lab Week 5: Mock Midterm"]
    #- [dis06.md, "Discussion 6: Midterm Preparation"]
-   #- [lab06.md, "Lab Week 6: Randomness"]
+    - [lab06.md, "Lab Week 6: Randomness"]
    #- [dis07.md, "Discussion 7: Functions"]
    #- [lab07.md, "Lab Week 7: Functions"]
    #- [dis08.md, "Discussion 8: Reference parameters"]
