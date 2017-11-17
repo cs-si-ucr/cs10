@@ -10,11 +10,11 @@ You are allowed to use assert in your tests.
 
 # Exercise 1
 
-Write a funciton that orders two integers.
+Write a function that orders two integers.
 The first passed in should be set to the least of the two.
 The second passed in should be set to the greatest of the two.
 
-Exmaple:
+Example:
 
 ```c++ 
 // in main
@@ -94,7 +94,7 @@ The second integer is how many characters to get.
 
 The function should return a bool, signaling whether or not the string was modified.
 Do not modify the string if the substr size requested is too big.
-Do not modify the string if the starting position is inside the string.
+Do not modify the string if the starting position is outside the string.
 
 For example, given the following code:
 
@@ -131,6 +131,8 @@ The output should be:
 > origami
 
 # Excercise 5
+
+DO NOT IMPLEMENT THE FUNCTIONS BELOW. READ INSTRUCTIONS.
 
 The code below implements a guessing game.
 There are some function headers given to you.
