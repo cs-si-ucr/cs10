@@ -619,6 +619,26 @@
             "location": "/lab09/#exercise-4",
             "text": "Say I want to shoot myself out of a cannon;\nI might as well go as far as possible! if I am going to do such a thing...  I need to write a program that can help me estimate what angle I have to launch to go the furthest.  I wrote some of the program already, but since I am a lazy SI leader, I am going to have you write the rest.\nGiven the code below, fill out the sections labeled TODO to determine the correct launch angle.  Make sure you understand what the helper function  getDistance  is doing.\nThe details are not important, but knowing how to use it is.  Remember to ask questions if you are struggling!  #include <iostream>\n#include <vector>\n#include <cmath>\n\nusing namespace std;\n\ndouble getDistance(double, double);\ndouble metersToMiles(double);\n\nint main() {\n    const int min_angle = 20;    // The minimum angle\n    const int max_angle = 70;    // The maximum angle\n    const int angle_inc = 1;     // The amount I increment the angle\n    const double velocity = 120; // My initial velocity as I leave the cannon\n    vector<double> angles;       // Vector for storing angles\n    vector<double> distances;    // Vector for storing distances \n\n    // TODO: Store the angles we will be using to calculate the distance \n\n\n    // TODO: Store the impact distance for each angle \n\n\n    // TODO: Find the maximum distance and corresponding angle\n\n\n    // TODO: Output the result\n\n\n    return 0;\n}\n\n// Returns the distance where I impact the ground given a velocity and angle\ndouble getDistance(double velocity, double angle) {\n    const double pi = 3.14;                          // constant for pi\n    const double gravity = 9.81;                     // gravity constant for earth\n    double radians = (angle * pi / 180);             // convert angle to radians\n    double velocity_y = velocity * sin(radians);     // velocity in y direction\n    double velocity_x = velocity * cos(radians);     // velocity in x direction\n    double impact_time = (2 * velocity_y) / gravity; // the time when I hit the ground\n    return metersToMiles(velocity_x * impact_time);  // the total distance I traveled\n}\n\n// Converts from meters to miles\ndouble metersToMiles(double meters) {\n    return meters / 1609.34;\n}                         Bonus :\nLook up different gravity values, such as on the moon or Jupiter.\nHow far could I go on those planets?",
             "title": "Exercise 4"
+        },
+        {
+            "location": "/dis10/",
+            "text": "Instructions\n\n\nPrepare a piece of paper, or a digital document.\n\n\nOnce you are instructed to begin, go to the following link:\n\nMock Final\n\n\nOnce everyone has finished, or an hour has passed, we will go over the answers.\n\n\nThe solutions can be found \nhere\n\n\nWARNING:\n I have not checked the answer key since the last time this test was used. If you believe\nyou have come across an error in the answer key, please double, triple check your work and let me know. That being\nsaid there shouldn't be any errors.",
+            "title": "Discussion 10: Open Questions"
+        },
+        {
+            "location": "/dis10/#instructions",
+            "text": "Prepare a piece of paper, or a digital document.  Once you are instructed to begin, go to the following link: Mock Final  Once everyone has finished, or an hour has passed, we will go over the answers.  The solutions can be found  here  WARNING:  I have not checked the answer key since the last time this test was used. If you believe\nyou have come across an error in the answer key, please double, triple check your work and let me know. That being\nsaid there shouldn't be any errors.",
+            "title": "Instructions"
+        },
+        {
+            "location": "/lab10/",
+            "text": "Instructions\n\n\nTake out a piece of paper and a pencil/pen. \n\n\nOnce you are instructed to begin, go to the following link:\n\nMock Final\n\n\nOnce everyone has finished, we will go over the answers as a class.\n\n\nThe solutions can be found \nhere\n\n\nWARNING:\n I have not checked the answer key since the last time this test was used. If you believe\nyou have come across an error in the answer key, please double, triple check your work and let me know. That being\nsaid there shouldn't be any errors.",
+            "title": "Lab Week 10: Mock Final"
+        },
+        {
+            "location": "/lab10/#instructions",
+            "text": "Take out a piece of paper and a pencil/pen.   Once you are instructed to begin, go to the following link: Mock Final  Once everyone has finished, we will go over the answers as a class.  The solutions can be found  here  WARNING:  I have not checked the answer key since the last time this test was used. If you believe\nyou have come across an error in the answer key, please double, triple check your work and let me know. That being\nsaid there shouldn't be any errors.",
+            "title": "Instructions"
         }
     ]
 }
