@@ -9,6 +9,3 @@ Once everyone has finished, we will go over the answers as a class.
 
 [comment]: <> (The solutions can be found [here](https://docs.google.com/a/ucr.edu/document/d/1G0kflatAYWaBLzK_bPP8Q9iPdDtIKHDp4a6ZFKSLBXY/edit?usp=sharing))
 
-[comment]: <> (**WARNING:** I have not checked the answer key since the last time this test was used. If you believe
-you have come across an error in the answer key, please double, triple check your work and let me know. That being
-said there shouldn't be any errors.)
