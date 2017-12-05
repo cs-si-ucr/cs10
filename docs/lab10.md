@@ -7,5 +7,5 @@ Once you are instructed to begin, go to the following link:
 
 Once everyone has finished, we will go over the answers as a class.
 
-The solutions can be found [here](https://docs.google.com/a/ucr.edu/document/d/1G0kflatAYWaBLzK_bPP8Q9iPdDtIKHDp4a6ZFKSLBXY/edit?usp=sharing)
+[comment]: <> (The solutions can be found [here](https://docs.google.com/a/ucr.edu/document/d/1G0kflatAYWaBLzK_bPP8Q9iPdDtIKHDp4a6ZFKSLBXY/edit?usp=sharing))
 
