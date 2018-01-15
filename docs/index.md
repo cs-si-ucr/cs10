@@ -6,17 +6,11 @@ General Info
 ------------
 **Instructors:** 
 
-* Kris Miller [[kmiller@cs.ucr.edu]](mailto:kmiller@cs.ucr.edu)
 * Kelly Downey [[kelly@cs.ucr.edu]](mailto:kelly@cs.ucr.edu)
 
 **SI Leaders:**
 
-* Andre Castro [[acast050@ucr.edu]](mailto:acast050@ucr.edu)
-* Leo Segovia [[esego001@ucr.edu]](mailto:esego001@ucr.edu)
-* Omar Pereza [[opera002@ucr.edu]](mailto:opera002@ucr.edu)
 * Kennen DeRenard [[kdere004@ucr.edu]](mailto:kdere004@ucr.edu)
-* John Pham [[jpham035@ucr.edu]](mailto:jpham035@ucr.edu)
-* Abe Hu [[ahu009@ucr.edu]](mailto:ahu009@ucr.edu)
 * Guthrie Price [[gpric001@ucr.edu]](mailto:gpric001@ucr.edu)
 
 What is SI?
