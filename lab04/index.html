@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lab 3: Characters and Branches - CS010 SI: Winter 2018</title>
+  <title>Lab Week 4: Strings and loops - CS010 SI: Winter 2018</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Lab 3: Characters and Branches";
+    var mkdocs_page_name = "Lab Week 4: Strings and loops";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -99,8 +99,22 @@
 <li>
           
             <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis04/">Discussion 4: Strings and Loops</a>
+        
+    </li>
+<li>
+          
+            <li>
     <li class="toctree-l1 current">
-        <a class="current" href="./">Lab 3: Characters and Branches</a>
+        <a class="current" href="./">Lab Week 4: Strings and loops</a>
         
             <ul>
             
@@ -116,24 +130,13 @@
                 <li class="toctree-l3"><a href="#exercise-4">Exercise 4</a></li>
                 
             
+                <li class="toctree-l3"><a href="#exercise-5">Exercise 5</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#quiz">Quiz!</a></li>
                 
             
             </ul>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../dis04/">Discussion 4: Strings and Loops</a>
-        
-    </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lab04/">Lab Week 4: Strings and loops</a>
         
     </li>
 <li>
@@ -160,7 +163,7 @@
     
       
     
-    <li>Lab 3: Characters and Branches</li>
+    <li>Lab Week 4: Strings and loops</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -171,73 +174,128 @@
             <div class="section">
               
                 <h2 id="exercise-1">Exercise 1</h2>
-<p>Take in a number from the user (between -50 and 50) then output between which multiples of 10 the number is between and whether it is positive or negative.
-If the number is 0, simply output that the number was 0. 
-If the number is a multiple of 10, output that the number was a positive/negative multiple of 10. 
-If the number is not between -50 and 50, inclusive, then do nothing.</p>
+<p>Get two integers from the user and multiply them without using the <code>*</code> operator.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter two numbers: <u><strong>5 6</strong></u></br>
+5 * 6 = 30</p>
+</blockquote>
+<p><strong>Bonus</strong>:</p>
+<p>Consider the input cases <code>10000 2</code> and <code>2 10000</code>.
+Modify your code so you loop as few times as possible in both cases.</p>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Write a program that prints a collatz conjecture sequence.
+The collatz conjecture is defined as follows:</p>
+<blockquote>
+<p>Take any positive integer <code>n</code><br>
+If <code>n</code> is even, divide it by two.<br>
+If <code>n</code> is odd, multiply it by 3 and add 1<br>
+Repeat this until <code>n == 1</code></p>
+</blockquote>
+<p>The collatz conjecture states that no matter what <code>n</code> you choose, you will always end up at 1.
+No one has found a number that does <em>not</em> satisfy this conjecture.
+No one has proven that all numbers eventually lead to 1.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter an integer: <u><strong>3</strong></u></br>
+10</br>
+5</br>
+16</br>
+8</br>
+4</br>
+2</br>
+1</p>
+</blockquote>
+<p>Take a look at the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">collatz conjecture on wikipedia</a> if you would like to read more about it.</p>
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Get a word from the user.
+Repeat the word, removing one letter at a time (see example below).
+Stop printing when there are no more characters.</p>
+<p><strong>Bonus 1</strong>:</p>
+<p>Get an entire line of text from the user.</p>
+<p><strong>Bonus 2</strong>:</p>
+<p>Always reduce the printed word by one <em>visible</em> character (spaces are not visible).
+There is a function in the <code>cctype</code> library that you may use to determine if a character is a space or not.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter a word: <u><strong>Test</strong></u></br>
+Test </br>
+Tes </br>
+Te </br>
+T</p>
+</blockquote>
+<p>Bonus 2 example:</p>
+<blockquote>
+<p>Enter a phrase: <u><strong>Hey there!</strong></u></br>
+Hey there</br>
+Hey ther</br>
+Hey the</br>
+Hey th</br>
+Hey t</br>
+Hey</br>
+He</br>
+H</br></p>
+</blockquote>
+<p>An <strong>incorrect</strong> version of bonus 2:</p>
+<blockquote>
+<p>Enter a phrase: <u><strong>Hey there!</strong></u></br>
+Hey there</br>
+Hey ther</br>
+Hey the</br>
+Hey th</br>
+Hey t</br>
+Hey </br>
+Hey</br>
+He</br>
+H</br></p>
+</blockquote>
+<p>(notice the repetition)</p>
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Write a program that takes a phrase and prints it reversed.
+<strong>Note</strong>: you do not need to reverse the string, just <em>print</em> it reversed.</p>
+<p><strong>Bonus</strong>:</p>
+<p>If it is a palindrome, output a sentnce saying so.</p>
 <p>Example 1:</p>
 <blockquote>
-<p>Enter a number: <u><strong>-37</strong></u><br>
-Your number is negative and between -30 and -40</p>
+<p>Enter a phrase: <u><strong>Andre Castro</strong></u><br>
+ortsaC erdnA</p>
 </blockquote>
-<p>Example 2:</p>
+<p>Bonus Example:</p>
 <blockquote>
-<p>Enter a number: <u><strong>40</strong></u><br>
-Your number is a positive multiple of 10</p>
+<p>Enter a phrase: <u><strong>lionoil</strong></u><br>
+lionoil<br>
+lionoil is a palindrome!</p>
 </blockquote>
-<p>Example 3:</p>
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Password-protect one of the previous exercises from this lab.
+The user gets at least 5 attempts to guess the password before the program quits with a failure message.
+The maximum number of tries is up to you.
+Read a single word as the password.
+Output a hint if the user gets it wrong.</p>
+<p>[Bonus]: treat words with lowercase and uppercase letters the same.
+ For instance, <code>WorD</code> and <code>woRd</code> should both be considered correct.</p>
+<p>Example 1:</p>
 <blockquote>
-<p>Enter a number: <u><strong>0</strong></u><br>
-Your number is 0</p>
+<p>Enter a word: <strong>Test</strong> <br>
+The word "Test" is incorrect. Hint: it is green.<br>
+Enter another word: <strong>Grass</strong><br>
+The word "Grass" is correct!</p>
 </blockquote>
-<h2 id="exercise-2">Exercise 2</h2>
-<p>Take in a 5-character word from the user.</br>
-Then, convert the "word" to proper capitalization (first letter is capitalized, and the rest lowercase).</p>
-<p>Example:</p>
+<p>Exmaple 2:</p>
 <blockquote>
-<p>Enter a 5-letter word: <u><strong>hElLo</strong></u><br>
-Your word is Hello.</p>
+<p>Enter a word: <strong>Temporary</strong><br>
+The word is incorrect. Hint: it starts with s<br>
+Enter another word: <strong>Sentence</strong><br>
+The word is incorrect. Hint: it starts with s<br>
+Enter another word: <strong>Stilts</strong><br>
+The word is incorrect. Hint: it starts with s<br>
+Enter another word: <strong>Sit</strong><br>
+The word is incorrect. Hint: it starts with s<br>
+Enter another word: <strong>Stow</strong><br>
+Im sorry. You failed to guesss the word. Goodbye.</p>
 </blockquote>
-<h2 id="exercise-3">Exercise 3</h2>
-<p>Get a character from the user, and display its integer equivalent.
-If it is a letter, print the opposite case.
-Additionally, print the integer equivqalent of the opposite case if applicable.</p>
-<p>Example:</p>
-<blockquote>
-<p>Enter a character: <u><strong>c</strong></u><br>
-'c' in decimal is 99.<br>
-'C' in decimal is 67.</p>
-<p>Enter a character: <u><strong>=</strong></u><br>
-'=' in decimal is 61.</p>
-</blockquote>
-<h2 id="exercise-4">Exercise 4</h2>
-<p>Create a password guessing game where a user attempts to break your passcode based on hints.
-Using 4 integers, decide the relationship (less than, greather than, equal to, twice as much, etc)
-between any number of your integers. These relationships is what defines your passcode.
-For example, my passcode could be:
-num1 has to be greather than num2, num2 has to be less than num3 and num3 has to be equal to num4.
-The user is then prompted to enter 4 numbers and told whether each number fits your specifications
-or does not. A message is then prompted saying whether the user failed or succeeded.</p>
-<p>Example:</p>
-<blockquote>
-<p>Enter 4 numbers: <strong>12, 2, 600, 4</strong> <br>
-The first number looks good! <br>
-The second number looks good! <br>
-The third number needs some fixing... <br>
-The fourth number needs some fixing... <br>
-Sorry you didn't break the code!</p>
-<p>Enter 4 numbers: <strong>12, 2, 6, 3</strong> <br>
-The first number looks good! <br>
-The second number looks good! <br>
-The third number looks good! <br>
-The fourth looks good! <br>
-Congrats! You broke the code! :)</p>
-</blockquote>
-<p>(Challenge: Instead of integers, use floating point numbers)</p>
-<p><em>pssst SI Leaders, this is a helpful example to slowly introduce loops if you'd like.
-The program does not have to terminate after every attempt, keep it going with a while.</em></p>
 <h2 id="quiz">Quiz!</h2>
-<p><a href="https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSdhx0KAG771b-4_UUHiabldZcYEWCgXnaOZXZNJzyMryMbb0w/viewform">quiz03</a></p>
+<p><a href="https://goo.gl/forms/NWbZ5G4ZiYieqh2B3">quiz04</a></p>
               
             </div>
           </div>
@@ -245,10 +303,8 @@ The program does not have to terminate after every attempt, keep it going with a
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dis04/" class="btn btn-neutral float-right" title="Discussion 4: Strings and Loops"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../dis03/" class="btn btn-neutral" title="Discussion 3: Characters and Branches"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis04/" class="btn btn-neutral" title="Discussion 4: Strings and Loops"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -274,10 +330,8 @@ The program does not have to terminate after every attempt, keep it going with a
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../dis03/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis04/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../dis04/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
