@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discussion 1: Intro to iostream Library - CS010 SI: Winter 2018</title>
+  <title>Lab Week 9: Arrays and Vectors - CS010 SI: Winter 2018</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Discussion 1: Intro to iostream Library";
+    var mkdocs_page_name = "Lab Week 9: Arrays and Vectors";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -57,18 +57,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Discussion 1: Intro to iostream Library</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#code-tracing">Code Tracing</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis01/">Discussion 1: Intro to iostream Library</a>
         
     </li>
 <li>
@@ -193,8 +183,27 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../lab09/">Lab Week 9: Arrays and Vectors</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Lab Week 9: Arrays and Vectors</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#instructions">Instructions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-2">Exercise 2</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-3">Exercise 3</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-4">Exercise 4</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -221,7 +230,7 @@
     
       
     
-    <li>Discussion 1: Intro to iostream Library</li>
+    <li>Lab Week 9: Arrays and Vectors</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -231,75 +240,110 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="introduction">Introduction</h2>
-<p>Cloud 9 registration link!: <a href="https://c9.io/">https://c9.io/</a></p>
-<h2 id="code-tracing">Code Tracing</h2>
-<p>What do the following programs output 
-(If they dont compile what is wrong with the program?) :</p>
-<pre><code class="c++">// 1
-using namespace std;
-
-int main(){
-   cout &lt;&lt; &quot;Hello World!&quot;
-
-   return 0;
-}
-
-// 2
-#include &lt;iostream&gt;
-using namespace std;
-
-int main(){
-   cout &lt;&lt; &quot;Does&quot;; 
-   cout &lt;&lt; This;
-   cout &lt;&lt; &quot;&quot;Print&quot;&quot;;
-   cout &lt;&lt; ?;
-
-   return 0;
-}
-
-// 3
-#include &lt;iostream&gt;
-using namespace std;
-
-int main(){
-   cout &lt;&lt; &quot;How &quot;;
-   cout &lt;&lt; &quot;About&quot;;
-   cout &lt;&lt; &quot; \&quot;This\&quot;&quot;;
-   cout &lt;&lt; &quot;?&quot;;
-   cout &lt;&lt; endl;
-
-   return 0;
-}
-
-//4
-#include &lt;iostream&gt;
-using namespace std;
-
-int main(){
-   int test = 1;
-   string temp = &quot;line&quot;;
-   // The above two lines are variable declarations
-   // we will focus on this more next week
-   /* Tip:
-      multi-line comments can also be written like this!
-      FYI. */
-
-   cout &lt;&lt; &quot;Let's just write everything on&quot; &lt;&lt; test &lt;&lt; temp &lt;&lt; endl;
-
-   return 0;
-}
-
-</code></pre>
-
-<ul>
-<li>For future reference, we will assume that the lines:</li>
-</ul>
+                <h2 id="instructions">Instructions</h2>
+<p>READ EACH EXERCISE CAREFULLY!</p>
+<p>Make sure you understand the problem before attempting to code the solution.
+Please ask your SI Leader for clarification if you are having trouble understanding the problem.</p>
+<p>Complete exercises 1 through 4, then write tests for all of them.
+Show your tests to the SI leader.
+You are allowed to use assert.</p>
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Write a function that takes as input a vector, and prints to the terminal the contents of the vector.
+This will be useful for testing the output of the rest of the exercises.</p>
+<p>To do this you need to know how to define a vector, iterate through a vector, and how to access vector elements.</p>
+<p>You can use the following code as a template for this exercise.</p>
 <pre><code class="c++">#include &lt;iostream&gt;
+
 using namespace std;
+
+// YOUR FUNCTION DECLARATION HERE
+
+int main(){
+    vector&lt;int&gt; myVec;
+    for (int i = 1; i &lt;= 6; ++i) {
+        myVec.push_back(i);
+    }
+    print(myVec);
+    return 0;
+}
+
+// YOUR FUNCTION DEFINITION HERE
 </code></pre>
 
-<p>are included at the top of the program, even if not shown.</p>
+<p>The above code when completed should output something like: {1, 2, 3, 4, 5, 6}</p>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>The first few numbers of the Fibonacci sequence are <code>0, 1, 1, 2, 3, 5, 8, 13, ...</code></p>
+<p>Each term in the Fibonacci sequence is defined as the sum of the previous two numbers in the sequence.
+The first two numbers are 0 and 1 because those two sequence values each do not have two previous terms.</p>
+<p>Write a function that accepts an integer <code>n</code> and returns a vector that contains the first <code>n</code> Fibonacci numbers.</p>
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Write a function that reverses a vector of strings.
+The function should accept a reference to a vector.
+The function should not return anything. </p>
+<p><em>Bonus</em>:
+Modifiy your code to also reverse each string.</p>
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Say I want to shoot myself out of a cannon;
+I might as well go as far as possible!
+<i>if I am going to do such a thing...</i></p>
+<p>I need to write a program that can help me estimate what angle I have to launch to go the furthest.</p>
+<p>I wrote some of the program already, but since I am a lazy SI leader, I am going to have you write the rest.
+Given the code below, fill out the sections labeled TODO to determine the correct launch angle.</p>
+<p>Make sure you understand what the helper function <code>getDistance</code> is doing.
+The details are not important, but knowing how to use it is.</p>
+<p>Remember to ask questions if you are struggling!</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+
+using namespace std;
+
+double getDistance(double, double);
+double metersToMiles(double);
+
+int main() {
+    const int min_angle = 20;    // The minimum angle
+    const int max_angle = 70;    // The maximum angle
+    const int angle_inc = 1;     // The amount I increment the angle
+    const double velocity = 120; // My initial velocity as I leave the cannon
+    vector&lt;double&gt; angles;       // Vector for storing angles
+    vector&lt;double&gt; distances;    // Vector for storing distances 
+
+    // TODO: Store the angles we will be using to calculate the distance 
+
+
+    // TODO: Store the impact distance for each angle 
+
+
+    // TODO: Find the maximum distance and corresponding angle
+
+
+    // TODO: Output the result
+
+
+    return 0;
+}
+
+// Returns the distance where I impact the ground given a velocity and angle
+double getDistance(double velocity, double angle) {
+    const double pi = 3.14;                          // constant for pi
+    const double gravity = 9.81;                     // gravity constant for earth
+    double radians = (angle * pi / 180);             // convert angle to radians
+    double velocity_y = velocity * sin(radians);     // velocity in y direction
+    double velocity_x = velocity * cos(radians);     // velocity in x direction
+    double impact_time = (2 * velocity_y) / gravity; // the time when I hit the ground
+    return metersToMiles(velocity_x * impact_time);  // the total distance I traveled
+}
+
+// Converts from meters to miles
+double metersToMiles(double meters) {
+    return meters / 1609.34;
+}                       
+</code></pre>
+
+<p><em>Bonus</em>:
+Look up different gravity values, such as on the moon or Jupiter.
+How far could I go on those planets?</p>
               
             </div>
           </div>
@@ -307,10 +351,8 @@ using namespace std;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab01/" class="btn btn-neutral float-right" title="Lab 1: Input and Output"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis09/" class="btn btn-neutral" title="Discussion 9: Arrays and Vectors"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -336,10 +378,8 @@ using namespace std;
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis09/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab01/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
