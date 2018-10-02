@@ -12,12 +12,11 @@ General Info
 **SI Leaders:**
 
 * Andre Castro [[acast050@ucr.edu]](mailto:acast050@ucr.edu)
-* Leo Segovia [[esego001@ucr.edu]](mailto:esego001@ucr.edu)
 * Omar Pereza [[opera002@ucr.edu]](mailto:opera002@ucr.edu)
-* Kennen DeRenard [[kdere004@ucr.edu]](mailto:kdere004@ucr.edu)
-* John Pham [[jpham035@ucr.edu]](mailto:jpham035@ucr.edu)
-* Abe Hu [[ahu009@ucr.edu]](mailto:ahu009@ucr.edu)
-* Guthrie Price [[gpric001@ucr.edu]](mailto:gpric001@ucr.edu)
+* Cody Khu
+* Amanda Cao [[acao004@ucr.edu]](mailto:acao004@ucr.edu)
+* John Shin
+* Ankush [[avang001@ucr.edu]](mailto:avang001@ucr.edu)
 
 What is SI?
 -----------
