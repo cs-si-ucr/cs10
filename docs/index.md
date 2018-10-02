@@ -13,9 +13,8 @@ General Info
 
 * Andre Castro [[acast050@ucr.edu]](mailto:acast050@ucr.edu)
 * Omar Pereza [[opera002@ucr.edu]](mailto:opera002@ucr.edu)
-* Cody Khu
 * Amanda Cao [[acao004@ucr.edu]](mailto:acao004@ucr.edu)
-* John Shin
+* John Shin [[jshin029@ucr.edu]](mailto:john029@ucr.edu)
 * Ankush [[avang001@ucr.edu]](mailto:avang001@ucr.edu)
 
 What is SI?
