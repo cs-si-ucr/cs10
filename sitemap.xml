@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-10-01</lastmod>
+     <lastmod>2018-10-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/dis01/</loc>
-     <lastmod>2018-10-01</lastmod>
+     <lastmod>2018-10-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,23 @@
     
     <url>
      <loc>/lab01/</loc>
-     <lastmod>2018-10-01</lastmod>
+     <lastmod>2018-10-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/dis02/</loc>
+     <lastmod>2018-10-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/lab02/</loc>
+     <lastmod>2018-10-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
