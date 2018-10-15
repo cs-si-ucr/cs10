@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Lab 2: Variables and Math - CS010 SI: Fall 2017</title>
+  <title>Lab 3: Characters and Branches - CS010 SI: Fall 2017</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Lab 2: Variables and Math";
-    var mkdocs_page_input_path = "lab02.md";
-    var mkdocs_page_url = "/lab02/";
+    var mkdocs_page_name = "Lab 3: Characters and Branches";
+    var mkdocs_page_input_path = "lab03.md";
+    var mkdocs_page_url = "/lab03/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -67,9 +67,19 @@
     <a class="" href="../dis02/">Discussion 2: Variables and Math</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../lab02/">Lab 2: Variables and Math</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dis03/">Discussion 3: Characters and Branches</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Lab 2: Variables and Math</a>
+    <a class="current" href="./">Lab 3: Characters and Branches</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#exercise-1">Exercise 1</a></li>
@@ -84,23 +94,10 @@
     <li class="toctree-l2"><a href="#exercise-4">Exercise 4</a></li>
     
 
-    <li class="toctree-l2"><a href="#exercise-5-advanced">Exercise 5 (advanced)</a></li>
-    
-
     <li class="toctree-l2"><a href="#quiz">Quiz!</a></li>
     
 
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../dis03/">Discussion 3: Characters and Branches</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
 	    </li>
           
         </ul>
@@ -125,7 +122,7 @@
     
       
     
-    <li>Lab 2: Variables and Math</li>
+    <li>Lab 3: Characters and Branches</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -136,71 +133,73 @@
             <div class="section">
               
                 <h2 id="exercise-1">Exercise 1</h2>
-<p>Ask the user for 2 numbers, then divide them and show the result.</p>
-<p>Example:</p>
+<p>Take in a number from the user (between -50 and 50) then output between which multiples of 10 the number is between and whether it is positive or negative.
+If the number is 0, simply output that the number was 0. 
+If the number is a multiple of 10, output that the number was a positive/negative multiple of 10. 
+If the number is not between -50 and 50, inclusive, then do nothing.</p>
+<p>Example 1:</p>
 <blockquote>
-<p>Enter the dividend: <u><strong>4</strong></u><br>
-Enter the divisor: <u><strong>2</strong></u><br>
-4 / 2 == 2</p>
+<p>Enter a number: <u><strong>-37</strong></u><br>
+Your number is negative and between -30 and -40</p>
+</blockquote>
+<p>Example 2:</p>
+<blockquote>
+<p>Enter a number: <u><strong>40</strong></u><br>
+Your number is a positive multiple of 10</p>
+</blockquote>
+<p>Example 3:</p>
+<blockquote>
+<p>Enter a number: <u><strong>0</strong></u><br>
+Your number is 0</p>
 </blockquote>
 <h2 id="exercise-2">Exercise 2</h2>
-<p>Get a character from the user, and display its integer equivalent.
-The keyword for the character datatype is <code>char</code>.</p>
+<p>Take in a 5-character word from the user.</br>
+Then, convert the "word" to proper capitalization (first letter is capitalized, and the rest lowercase).</p>
 <p>Example:</p>
 <blockquote>
-<p>Enter a character: <u><strong>c</strong></u><br>
-'c' in decimal is 99.</p>
-</blockquote>
-<!-- todo: delete -->
-
-<h2 id="exercise-3">Exercise 3</h2>
-<p>Get a 5-character word from the user.
-Convert it to the "proper" capitalization (first letter is capitalized, and the rest are lowercase).</p>
-<p>Example:</p>
-<blockquote>
-<p>Enter a 5-character word: <u><strong>hElLo</strong></u><br>
+<p>Enter a 5-letter word: <u><strong>hElLo</strong></u><br>
 Your word is Hello.</p>
 </blockquote>
-<h2 id="exercise-4">Exercise 4</h2>
-<p>Write a program to perform modulus between two floating-point values.
-The modulus operator <code>%</code> will not work on doubles.
-Do not use <code>fmod</code> from the cmath library (although you can use it to verify your results).
-Do not worry about negative values or modding by 0.</p>
-<p>Here is a hint:</p>
-<blockquote>
-<p>For two positive integers N (numerator) and D (denominator),<br>
-N can be expressed as D*m + R.<br>
-m is some integer multiple of D.<br>
-R is the remainder of the division between N and D.<br>
-R = N - D*m<br>
-R and m are unknowns in this equation.<br>
-Find m to solve for R.</p>
-</blockquote>
-<p>Examples:</p>
-<blockquote>
-<p>Enter the dividend: <u><strong>23.4</strong></u><br>
-Enter the divisor: <u><strong>3.2</strong></u><br>
-23.4 % 3.2 == 1</p>
-<p>Enter the dividend: <u><strong>54.7</strong></u><br>
-Enter the divisor: <u><strong>3.14</strong></u><br>
-54.7 % 3.14 == 1.32</p>
-</blockquote>
-<h2 id="exercise-5-advanced">Exercise 5 (advanced)</h2>
-<p>Use modulus and division to print the binary value of a character.</p>
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Get a character from the user, and display its integer equivalent.
+If it is a letter, print the opposite case.
+Additionally, print the integer equivqalent of the opposite case if applicable.</p>
 <p>Example:</p>
 <blockquote>
 <p>Enter a character: <u><strong>c</strong></u><br>
-'c' in binary is 01100011.</p>
+'c' in decimal is 99.<br>
+'C' in decimal is 67.</p>
+<p>Enter a character: <u><strong>=</strong></u><br>
+'=' in decimal is 61.</p>
 </blockquote>
-<p>Hint: once you have the decimal value of a character [part 3],
-you can google something like "<a href="http://lmgtfy.com/?q=99+in+binary" target="_blank">99 in binary</a>"
-to double-check your results.
-Also, characters all have 8 bits.</p>
-<!-- future idea: give them some poorly-formatted code and have them format it properly.
-     It could do anything, because they don't need to understand it to format it. -->
-
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Create a password guessing game where a user attempts to break your passcode based on hints.
+Using 4 integers, decide the relationship (less than, greather than, equal to, twice as much, etc)
+between any number of your integers. These relationships is what defines your passcode.
+For example, my passcode could be:
+num1 has to be greather than num2, num2 has to be less than num3 and num3 has to be equal to num4.
+The user is then prompted to enter 4 numbers and told whether each number fits your specifications
+or does not. A message is then prompted saying whether the user failed or succeeded.</p>
+<p>Example:</p>
+<blockquote>
+<p>Enter 4 numbers: <strong>12, 2, 600, 4</strong> <br>
+The first number looks good! <br>
+The second number looks good! <br>
+The third number needs some fixing... <br>
+The fourth number needs some fixing... <br>
+Sorry you didn't break the code!</p>
+<p>Enter 4 numbers: <strong>12, 2, 6, 3</strong> <br>
+The first number looks good! <br>
+The second number looks good! <br>
+The third number looks good! <br>
+The fourth looks good! <br>
+Congrats! You broke the code! :)</p>
+</blockquote>
+<p>(Challenge: Instead of integers, use floating point numbers)</p>
+<p><em>pssst SI Leaders, this is a helpful example to slowly introduce loops if you'd like.
+The program does not have to terminate after every attempt, keep it going with a while.</em></p>
 <h2 id="quiz">Quiz!</h2>
-<p><a href="https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSfg05rmW2RMtUtPpVbj4uME7MCHdHpqH_qYJ4EFRNeoFGA3Dw/viewform">quiz02</a></p>
+<p><a href="https://docs.google.com/a/ucr.edu/forms/d/e/1FAIpQLSdhx0KAG771b-4_UUHiabldZcYEWCgXnaOZXZNJzyMryMbb0w/viewform">quiz03</a></p>
               
             </div>
           </div>
@@ -208,10 +207,8 @@ Also, characters all have 8 bits.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dis03/" class="btn btn-neutral float-right" title="Discussion 3: Characters and Branches">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../dis02/" class="btn btn-neutral" title="Discussion 2: Variables and Math"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis03/" class="btn btn-neutral" title="Discussion 3: Characters and Branches"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -237,10 +234,8 @@ Also, characters all have 8 bits.</p>
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../dis02/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis03/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../dis03/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
