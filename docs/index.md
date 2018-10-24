@@ -10,8 +10,11 @@ General Info
 
 **SI Leaders:**
 
-* Kennen DeRenard [[kdere004@ucr.edu]](mailto:kdere004@ucr.edu)
-* Guthrie Price [[gpric001@ucr.edu]](mailto:gpric001@ucr.edu)
+* Andre Castro [[acast050@ucr.edu]](mailto:acast050@ucr.edu)
+* Omar Pereza [[opera002@ucr.edu]](mailto:opera002@ucr.edu)
+* Amanda Cao [[acao004@ucr.edu]](mailto:acao004@ucr.edu)
+* John Shin [[jshin029@ucr.edu]](mailto:john029@ucr.edu)
+* Ankush [[avang001@ucr.edu]](mailto:avang001@ucr.edu)
 
 What is SI?
 -----------
