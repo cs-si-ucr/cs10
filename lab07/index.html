@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lab Week 7: Functions - CS010 SI: Winter 2018</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lab Week 7: Functions";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> CS010 SI: Winter 2018</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis01/">Discussion 1: Intro to iostream Library</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab01/">Lab 1: Input and Output</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis02/">Discussion 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab02/">Lab 2: Variables and Math</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab02-solution/">Lab 2: Variables and Math - Solutions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis03/">Discussion 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab03/">Lab 3: Characters and Branches</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis04/">Discussion 4: Strings and Loops</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab04/">Lab Week 4: Strings and loops</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis05/">Discussion 5: Nested Loops and Do-While</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab05/">Lab Week 5: Mock Midterm</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis06/">Discussion 6: Midterm Preparation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab06/">Lab Week 6: Randomness</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis07/">Discussion 7: Functions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Lab Week 7: Functions</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#tips">Tips</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-1">Exercise 1</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-2">Exercise 2</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-3">Exercise 3</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-4">Exercise 4</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-5">Exercise 5</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-6">Exercise 6</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-7">Exercise 7</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-8">Exercise 8</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-9">Exercise 9</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-10">Exercise 10</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-11">Exercise 11</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-12">Exercise 12</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-13">Exercise 13</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-14">Exercise 14</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-15">Exercise 15</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-16">Exercise 16</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-17">Exercise 17</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-18">Exercise 18</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-19">Exercise 19</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#exercise-20">Exercise 20</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis08/">Discussion 8: Reference parameters</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab08/">Lab Week 8: Reference parameters</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis09/">Discussion 9: Arrays and Vectors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab09/">Lab Week 9: Arrays and Vectors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis10/">Discussion 10: Open Questions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lab10/">Lab Week 10: Mock Final</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">CS010 SI: Winter 2018</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Lab Week 7: Functions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="tips">Tips</h2>
+<p>Once you complete a function, you can use it in later exercises.</p>
+<p>We have written some unit tests for you to use.
+There are two ways you can get them into your workspace.</p>
+<p><strong>Method 1</strong>:
+Run this command in your terminal where you would like to place <code>tests.cpp</code>.</p>
+<pre><code class="sh">wget https://raw.githubusercontent.com/cs-si-ucr/cs10tests/master/week07/tests.cpp
+</code></pre>
+
+<p><strong>Method 2</strong>:
+Go <a href="https://github.com/cs-si-ucr/cs10tests/tree/master/week07" target="_blank">here</a> and download <code>tests.cpp</code> to your workspace.</p>
+<p>In both cases, make sure <code>tests.cpp</code> is in the same directory as your other code from this week.</p>
+<p>Use this as a guide for starting your lab this week:</p>
+<pre><code class="cpp">#include &quot;tests.cpp&quot;
+
+using namespace std;
+
+// this is function stubbing:
+// they will compile and run, but not produce the correct result.
+// that is not the point.
+// the point is to get everything to compile.
+
+int myMax(int left, int right) {
+    return 0;
+}
+
+int myMin(int left, int right) {
+    return 0;
+}
+
+int myAbs(int n) {
+    return -1;
+}
+
+double myFabs(double n) {
+    return -1.0;
+}
+
+int modInt(int numerator, int denominator) {
+    return -1;
+}
+
+double modDouble(double numerator, double denominator) {
+    return -1.0;
+}
+
+// TODO: stub the rest of the functions
+
+int main() {
+    // to run all tests:
+    runAllTests();
+}
+</code></pre>
+
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Write a function that returns the <code>max</code> of two integers.
+Call it <code>myMax</code>.</p>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Write a function that returns the <code>min</code> of two integers.
+Call it <code>myMin</code>.</p>
+<h2 id="exercise-3">Exercise 3</h2>
+<p>Write a function that returns the absolute value of an integer.
+Call it <code>myAbs</code>.</p>
+<h2 id="exercise-4">Exercise 4</h2>
+<p>Write a function that returns the absolute value of a floating-point number.
+Call it <code>myFabs</code>.</p>
+<h2 id="exercise-5">Exercise 5</h2>
+<p>Write a function that returns the <code>modulo</code> of two integers.
+Do not use the <code>%</code> operator.
+Call it <code>modInt</code>.</p>
+<h2 id="exercise-6">Exercise 6</h2>
+<p>Write a function that returns the <code>modulo</code> of two floating-point numbers.
+Call it <code>modDouble</code>.</p>
+<h2 id="exercise-7">Exercise 7</h2>
+<p>Write the <code>isUpper</code> function.
+<code>isUpper</code> returns true if it is passed an uppercase character.
+Call it <code>myIsUpper</code>.</p>
+<h2 id="exercise-8">Exercise 8</h2>
+<p>Write the <code>isLower</code> function.
+<code>isLower</code> returns true if it is passed a lowercase character.
+Call it <code>myIsLower</code>.</p>
+<h2 id="exercise-9">Exercise 9</h2>
+<p>Write the <code>isDigit</code> function.
+<code>isDigit</code> returns true if it is passed a numeric character.
+Call it <code>myIsDigit</code>.</p>
+<h2 id="exercise-10">Exercise 10</h2>
+<p>Write the <code>isAlpha</code> function.
+<code>isAlpha</code> returns true if it is passed an alphabetic character.
+Call it <code>myIsAlpha</code>.</p>
+<h2 id="exercise-11">Exercise 11</h2>
+<p>Write the <code>isAlnum</code> function.
+<code>isAlnum</code> returns true if it is passed an alphabetic character <em>or</em> a numeric character.
+Call it <code>myIsAlnum</code>.</p>
+<h2 id="exercise-12">Exercise 12</h2>
+<p>Write the <code>toupper</code> function.
+Call it <code>myToUpper</code>.</p>
+<h2 id="exercise-13">Exercise 13</h2>
+<p>Write the <code>tolower</code> function.
+Call it <code>myToLower</code>.</p>
+<h2 id="exercise-14">Exercise 14</h2>
+<p>Write a function that accepts an integer and a character.
+The function should print the character the number of times passed into it.
+Call it <code>printRow</code>.</p>
+<p><strong>Note</strong>: This function cannot be tested by <code>tests.cpp</code>.
+You will need to check it yourself.</p>
+<h2 id="exercise-15">Exercise 15</h2>
+<p>Write a floating-point comparison function.
+Remember that floating-point values are not always stored perfectly precisely.
+The function should accept two doubles to compare, along with a tolerance value.
+The tolerance specifies how much of a difference between two numbers there can be while still considered to be equal.
+The difference should be strictly less than the tolerance value.</p>
+<p>Call it <code>flEq</code>.</p>
+<h2 id="exercise-16">Exercise 16</h2>
+<p>Write a function that returns a random number in a specified range.
+Call it <code>randRange</code>.</p>
+<h2 id="exercise-17">Exercise 17</h2>
+<p>Write a function that returns the first index of a character in a provided string.
+Return <code>-1</code> if the character is unable to be found.
+Call it <code>findCharBegin</code>.</p>
+<h2 id="exercise-18">Exercise 18</h2>
+<p>Write a funciton that returns the first index of a string in a provided string.
+Return <code>-1</code> if the string is unable to be found.
+Call it <code>findStringBegin</code>.</p>
+<h2 id="exercise-19">Exercise 19</h2>
+<p>Write a function that returns the index of a character in a provided string given a starting location.
+Return <code>-1</code> if the character is unable to be found.
+Call it <code>findChar</code>.</p>
+<h2 id="exercise-20">Exercise 20</h2>
+<p>Write a funciton that returns the index of a string in a provided string given a starting location.
+Return <code>-1</code> if the string is unable to be found.
+Call it <code>findString</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../dis08/" class="btn btn-neutral float-right" title="Discussion 8: Reference parameters"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../dis07/" class="btn btn-neutral" title="Discussion 7: Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../dis07/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../dis08/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -3,56 +3,72 @@
 
     
     <url>
-     <loc>/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <loc>None/</loc>
+     <lastmod>2018-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/dis01/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <loc>None/dis01/</loc>
+     <lastmod>2018-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/lab01/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <loc>None/lab01/</loc>
+     <lastmod>2018-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/dis02/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <loc>None/dis02/</loc>
+     <lastmod>2018-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/lab02/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <loc>None/lab02/</loc>
+     <lastmod>2018-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/dis03/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <loc>None/dis03/</loc>
+     <lastmod>2018-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/lab03/</loc>
-     <lastmod>2018-10-14</lastmod>
+     <loc>None/lab03/</loc>
+     <lastmod>2018-10-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/dis04/</loc>
+     <lastmod>2018-10-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/lab04/</loc>
+     <lastmod>2018-10-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
