@@ -3,72 +3,88 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/dis01/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/dis01/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lab01/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/lab01/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/dis02/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/dis02/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lab02/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/lab02/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/dis03/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/dis03/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lab03/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/lab03/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/dis04/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/dis04/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>None/lab04/</loc>
-     <lastmod>2018-10-24</lastmod>
+     <loc>/lab04/</loc>
+     <lastmod>2018-10-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/dis05/</loc>
+     <lastmod>2018-10-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/lab05/</loc>
+     <lastmod>2018-10-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
