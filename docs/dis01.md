@@ -1,8 +1,3 @@
-Introduction
-------------
-
-Cloud 9 registration link!: [https://c9.io/](https://c9.io/)
-
 Code Tracing
 ------------
 
