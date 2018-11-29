@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Discussion 8: Reference parameters - CS010 SI: Winter 2018</title>
+  <title>Lab Week 10: Mock Final - CS010 SI: Winter 2018</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -20,7 +20,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Discussion 8: Reference parameters";
+    var mkdocs_page_name = "Lab Week 10: Mock Final";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -86,6 +86,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="../lab02-solution/">Lab 2: Variables and Math - Solutions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="../dis03/">Discussion 3: Characters and Branches</a>
         
     </li>
@@ -128,6 +135,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="../dis06/">Discussion 6: Midterm Preparation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="../lab06/">Lab Week 6: Randomness</a>
         
     </li>
@@ -148,24 +162,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Discussion 8: Reference parameters</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#tracing-1">Tracing 1</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#tracing-2">Tracing 2</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#tracing-3">Tracing 3</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis08/">Discussion 8: Reference parameters</a>
         
     </li>
 <li>
@@ -187,6 +185,27 @@
             <li>
     <li class="toctree-l1 ">
         <a class="" href="../lab09/">Lab Week 9: Arrays and Vectors</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dis10/">Discussion 10: Open Questions</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Lab Week 10: Mock Final</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#instructions">Instructions</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -213,7 +232,7 @@
     
       
     
-    <li>Discussion 8: Reference parameters</li>
+    <li>Lab Week 10: Mock Final</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -223,153 +242,15 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="introduction">Introduction</h2>
-<p>Value parameters receive a
-<a style="color:white;border:solid black;border-width:1px">copy</a>
-of the argument passed to the function.
-Reference parameters receive a 
-<a style="color:white;border:solid black;border-width:1px">reference</a>
-to the argument passed to the function.</p>
-<p>The scope of variables in c++ is from the moment they are
-<a style="color:red;border:solid black;border-width:1px">declared</a>
-to the
-<a style="color:white;border:solid black;border-width:1px">close brace</a>
-of the block they were
-<a style="color:red;border:solid black;border-width:1px">declared</a>
-in.</p>
-<p><a style="color:white;border:solid black;border-width:1px">global variables</a>
-can be accessed in any scope.
-They only stop existing when the program ends.
-We do not use these in CS10 because it is considered bad practice.</p>
-<p>A function
-<a style="color:white;border:solid black;border-width:1px">prototype</a>
-or
-<a style="color:white;border:solid black;border-width:1px">declaration</a>
-tells the compiler what a functions name, return type, and parameter list is.</p>
-<p>A function
-<a style="color:white;border:solid black;border-width:1px">definition</a>
-tells the compiler what code is associated with a function.</p>
-<p>The
-<a style="color:white;border:solid black;border-width:1px">include</a>
-preprocessor directive gets the content of another file and puts it in the current file.</p>
-<h2 id="tracing-1">Tracing 1</h2>
-<pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-int foo(int a, int&amp; b, int c) {
-    int temp = a;
-    a = b;
-    b = c;
-    c = temp;
-
-    return a - c;
-    return b - a;
-}
-
-int main() {
-    int a = 7, b = 2, c = 13;
-    int x = 1, y = 12, z = 7;
-
-    int r1 = foo(a, c, b);
-    int r2 = foo(c, b, a);
-    int r3 = foo(y, z, r2);
-    foo(r1, z, r3);
-    foo(z, a, y);
-
-    cout &lt;&lt; &quot;a: &quot; &lt;&lt; a &lt;&lt; endl;
-    cout &lt;&lt; &quot;b: &quot; &lt;&lt; b &lt;&lt; endl;
-    cout &lt;&lt; &quot;c: &quot; &lt;&lt; c &lt;&lt; endl;
-    cout &lt;&lt; &quot;x: &quot; &lt;&lt; x &lt;&lt; endl;
-    cout &lt;&lt; &quot;y: &quot; &lt;&lt; y &lt;&lt; endl;
-    cout &lt;&lt; &quot;z: &quot; &lt;&lt; z &lt;&lt; endl;
-}
-</code></pre>
-
-<h2 id="tracing-2">Tracing 2</h2>
-<pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-void foo(int&amp; a, int&amp; b, int&amp; c) {
-    a += b - c;
-    b += c - a;
-    c /= a * b;
-}
-
-
-int main() {
-    int a = 10, b = 5, c = 2;
-
-    for (int i = 0; i &lt; 3; ++i) {
-        foo (c, a, b);
-    }
-
-    cout &lt;&lt; &quot;a: &quot; &lt;&lt; a &lt;&lt; endl;
-    cout &lt;&lt; &quot;b: &quot; &lt;&lt; b &lt;&lt; endl;
-    cout &lt;&lt; &quot;c: &quot; &lt;&lt; c &lt;&lt; endl;
-}
-</code></pre>
-
-<h2 id="tracing-3">Tracing 3</h2>
-<pre><code class="c++">#include &lt;iostream&gt;
-
-using namespace std;
-
-void inc(int&amp; n) {
-    #include &lt;iostream&gt;
-    n++;
-}
-
-#include &lt;iostream&gt;
-
-void dec(int&amp; n) {
-    #include &lt;iostream&gt;
-    n--;
-}
-
-#include &lt;iostream&gt;
-
-int sq(int&amp; n) {
-    #include &lt;iostream&gt;
-    if (n &lt; 0) {
-        n *= -n;
-    } else {
-        n *= n;
-    }
-    return n;
-}
-
-int main() {
-    #include &lt;iostream&gt;
-
-    int x = -7;
-    int y = 13;
-
-    while (x &lt; y) {
-        int i = 0;
-        do {
-            inc(x);
-            i++;
-        } while (i &lt; x / 10);
-
-        for (i = 0; i &lt;= y / 5; ++i) {
-            dec(y);
-        }
-
-        if (x &gt; -4) {
-            sq(x);
-        }
-    }
-
-    cout &lt;&lt; &quot;x: &quot; &lt;&lt; x &lt;&lt; endl;
-    cout &lt;&lt; &quot;y: &quot; &lt;&lt; y &lt;&lt; endl;
-
-    return 0;
-    #include &lt;iostream&gt;
-    return 0;
-}
-</code></pre>
+                <h1 id="instructions">Instructions</h1>
+<p>Take out a piece of paper and a pencil/pen. </p>
+<p>Once you are instructed to begin, go to the following link:
+<a href="https://docs.google.com/document/d/1btoS3CokpMmFq68v_CnIqUx7BpF4irOvdC5xx1fimCs/edit?usp=sharing">Mock Final</a></p>
+<p>Once everyone has finished, we will go over the answers as a class.</p>
+<p>The solutions can be found <a href="https://docs.google.com/a/ucr.edu/document/d/1G0kflatAYWaBLzK_bPP8Q9iPdDtIKHDp4a6ZFKSLBXY/edit?usp=sharing">here</a></p>
+<p><strong>WARNING:</strong> I have not checked the answer key since the last time this test was used. If you believe
+you have come across an error in the answer key, please double, triple check your work and let me know. That being
+said there shouldn't be any errors.</p>
               
             </div>
           </div>
@@ -377,10 +258,8 @@ int main() {
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lab08/" class="btn btn-neutral float-right" title="Lab Week 8: Reference parameters"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../lab07/" class="btn btn-neutral" title="Lab Week 7: Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../dis10/" class="btn btn-neutral" title="Discussion 10: Open Questions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -406,10 +285,8 @@ int main() {
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../lab07/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../dis10/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../lab08/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
